@@ -1,0 +1,1164 @@
+
+technologies = {
+	
+	@1025 = 0
+	@1035 = 4
+	@1039 = 8
+	@1042 = 12
+	@1045 = 16
+	@1048 = 20
+	@1051 = 24
+	@1054 = 28
+	
+	
+	can_use_magical_doctrine = {
+		research_cost = 0
+		start_year = 1020
+		
+		categories = {
+			cat_infantry_weapons
+			infantry_tech
+		}
+	}
+	
+	magical_weapons_tech_0 = {
+		research_cost = 0 ### Everyone has one at start
+		path = {
+			leads_to_tech = magical_weapons_tech_1
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			magical_weapons_0
+		}
+		
+		enable_subunits = {
+			magical_infantry
+		}
+		
+		
+		folder = {
+			name = magitech_folder
+			position = { x = 0 y = @1025 }
+		}
+		start_year = 1025
+		
+		categories = {
+			cat_magical_weapons
+			infantry_tech
+		}
+	}
+	
+	magical_weapons_tech_1 = {
+		research_cost = 2
+		path = {
+			leads_to_tech = magical_weapons_tech_2
+			research_cost_coeff = 1
+		}
+	
+		folder = {
+			name = magitech_folder
+			position = { x = 0 y = @1035 }
+		}
+		start_year = 1035
+		
+		categories = {
+			cat_magical_weapons
+			infantry_tech
+		}
+	}
+	
+	magical_weapons_tech_2 = {
+		research_cost = 2
+		path = {
+			leads_to_tech = magical_weapons_tech_3
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			magical_weapons_1
+		}
+		
+		
+		folder = {
+			name = magitech_folder
+			position = { x = 0 y = @1039 }
+		}
+		start_year = 1040
+		
+		categories = {
+			cat_magical_weapons
+			infantry_tech
+		}
+	}
+	
+	magical_weapons_tech_3 = {
+		research_cost = 2
+		path = {
+			leads_to_tech = magical_weapons_tech_4
+			research_cost_coeff = 1
+		}
+		
+		
+		folder = {
+			name = magitech_folder
+			position = { x = 0 y = @1042 }
+		}
+		start_year = 1042
+		
+		categories = {
+			cat_magical_weapons
+			infantry_tech
+		}
+	}
+	
+	magical_weapons_tech_4 = {
+		research_cost = 2
+		path = {
+			leads_to_tech = magical_weapons_tech_5
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			magical_weapons_2
+		}
+		
+		
+		folder = {
+			name = magitech_folder
+			position = { x = 0 y = @1045 }
+		}
+		start_year = 1045
+		
+		categories = {
+			cat_magical_weapons
+			infantry_tech
+		}
+	}
+	
+	magical_weapons_tech_5 = {
+		research_cost = 2
+		path = {
+			leads_to_tech = magical_weapons_tech_6
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			magical_weapons_3
+		}
+		
+		
+		folder = {
+			name = magitech_folder
+			position = { x = 0 y = @1048 }
+		}
+		start_year = 1048
+		
+		categories = {
+			cat_magical_weapons
+			infantry_tech
+		}
+	}
+	
+	magical_weapons_tech_6 = {
+		research_cost = 2
+		path = {
+			leads_to_tech = magical_weapons_tech_7
+			research_cost_coeff = 1
+		}
+		enable_equipments = {
+			magical_weapons_4
+		}
+		
+		folder = {
+			name = magitech_folder
+			position = { x = 0 y = @1051 }
+		}
+		start_year = 1051
+		
+		categories = {
+			cat_magical_weapons
+			infantry_tech
+		}
+	}
+	
+	magical_weapons_tech_7 = {
+		research_cost = 2
+	
+		
+		enable_equipments = {
+			magical_weapons_5
+		}
+		
+		folder = {
+			name = magitech_folder
+			position = { x = 0 y = @1054 }
+		}
+		
+		start_year = 1054
+		
+		categories = {
+			cat_magical_weapons
+			infantry_tech
+		}
+	}
+	
+	magical_gw_towed_howitzer_tech = {
+		
+		start_year = 1020
+		research_cost = 0
+		
+		path = {
+			leads_to_tech = magical_howitzer_tech_0
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = magical_spa_tech_0
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			magical_gw_towed_howitzer_equipment
+		}
+		
+		enable_subunits = {
+			magical_towed_artillery_unit
+			magical_towed_artillery_support
+		}
+		
+		folder = {
+			name = magitech_folder
+			position = { x = 6 y = @1025 }
+		}
+		
+		categories = {
+			artillery
+			RT_linear_artillery
+		}
+		
+	}
+	
+	magical_howitzer_tech_0 = {
+		start_year = 1040
+		research_cost = 1.2
+		
+		path = {
+			leads_to_tech = magical_howitzer_upgrade_1
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			magical_towed_howitzer_equipment_0
+		}
+		
+		folder = {
+			name = magitech_folder
+			position = { x = 6 y = @1035 }
+		}
+		
+		categories = {
+			artillery
+			RT_linear_artillery
+		}
+		
+	}
+	
+	magical_howitzer_upgrade_1 = {
+		start_year = 1042
+		research_cost = 1.2
+		
+		path = {
+			leads_to_tech = magical_howitzer_tech_1
+			research_cost_coeff = 1
+		}
+		
+		folder = {
+			name = magitech_folder
+			position = { x = 6 y = @1039 }
+		}
+		
+		categories = {
+			artillery
+			RT_linear_artillery
+		}
+	}
+	
+	magical_howitzer_tech_1 = {
+		start_year = 1045
+		research_cost = 1.2
+		
+		path = {
+			leads_to_tech = magical_howitzer_upgrade_2
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			magical_towed_howitzer_equipment_1
+		}
+		
+		folder = {
+			name = magitech_folder
+			position = { x = 6 y = @1042 }
+		}
+		
+		categories = {
+			artillery
+			RT_linear_artillery
+		}
+	}
+	
+	magical_howitzer_upgrade_2 = {
+		start_year = 1048
+		research_cost = 1.2
+		
+		path = {
+			leads_to_tech = magical_howitzer_tech_2
+			research_cost_coeff = 1
+		}
+		
+		folder = {
+			name = magitech_folder
+			position = { x = 6 y = @1045 }
+		}
+		
+		categories = {
+			artillery
+			RT_linear_artillery
+		}
+	}
+	
+	magical_howitzer_tech_2 = {
+		start_year = 1051
+		research_cost = 1.2
+		
+		path = {
+			leads_to_tech = magical_howitzer_upgrade_3
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			magical_towed_howitzer_equipment_2
+		}
+		
+		folder = {
+			name = magitech_folder
+			position = { x = 6 y = @1048 }
+		}
+		
+		categories = {
+			artillery
+			RT_linear_artillery
+		}
+	}
+	
+	magical_howitzer_upgrade_3 = {
+		start_year = 1055
+		research_cost = 1.2
+		
+		path = {
+			leads_to_tech = magical_howitzer_tech_3
+			research_cost_coeff = 1
+		}
+		
+		folder = {
+			name = magitech_folder
+			position = { x = 6 y = @1051 }
+		}
+		
+		categories = {
+			artillery
+			RT_linear_artillery
+		}
+	}
+	
+	magical_howitzer_tech_3 = {
+		start_year = 1058
+		research_cost = 1.2
+		
+		enable_equipments = {
+			magical_towed_howitzer_equipment_3
+		}
+		
+		folder = {
+			name = magitech_folder
+			position = { x = 6 y = @1054 }
+		}
+		
+		categories = {
+			artillery
+			RT_linear_artillery
+		}
+	}	
+	
+	magical_spa_tech_0 = {
+		start_year = 1040
+		research_cost = 2.3
+		
+		path = {
+			leads_to_tech = magical_spa_upgrade_1
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			magical_spa_equipment_0
+		}
+		
+		enable_subunits = {
+			magical_spa_artillery_unit
+			magical_spa_artillery_support
+		}
+		
+		folder = {
+			name = magitech_folder
+			position = { x = 8 y = @1035 }
+		}
+		
+		categories = {
+			artillery
+			RT_linear_artillery
+		}
+	}
+	
+	magical_spa_upgrade_1 = {
+		start_year = 1042
+		research_cost = 1.2
+		
+		path = {
+			leads_to_tech = magical_spa_tech_1
+			research_cost_coeff = 1
+		}
+		
+		folder = {
+			name = magitech_folder
+			position = { x = 8 y = @1039 }
+		}
+		
+		categories = {
+			artillery
+			RT_linear_artillery
+		}
+	}
+	
+	magical_spa_tech_1 = {
+		start_year = 1045
+		research_cost = 2.3
+		
+		path = {
+			leads_to_tech = magical_spa_upgrade_2
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			magical_spa_equipment_1
+		}
+		
+		
+		folder = {
+			name = magitech_folder
+			position = { x = 8 y = @1042 }
+		}
+		
+		categories = {
+			artillery
+			RT_linear_artillery
+		}
+	}
+	
+	magical_spa_upgrade_2 = {
+		start_year = 1048
+		research_cost = 1.2
+		
+		path = {
+			leads_to_tech = magical_spa_tech_2
+			research_cost_coeff = 1
+		}
+		
+		folder = {
+			name = magitech_folder
+			position = { x = 8 y = @1045 }
+		}
+		
+		categories = {
+			artillery
+			RT_linear_artillery
+		}
+	}
+	
+	magical_spa_tech_2 = {
+		start_year = 1051
+		research_cost = 2.3
+		
+		path = {
+			leads_to_tech = magical_spa_upgrade_3
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			magical_spa_equipment_2
+		}
+		
+		
+		folder = {
+			name = magitech_folder
+			position = { x = 8 y = @1048 }
+		}
+		
+		categories = {
+			artillery
+			RT_linear_artillery
+		}
+	}
+	
+	magical_spa_upgrade_3 = {
+		start_year = 1055
+		research_cost = 1.2
+		
+		path = {
+			leads_to_tech = magical_spa_tech_3
+			research_cost_coeff = 1
+		}
+		
+		folder = {
+			name = magitech_folder
+			position = { x = 8 y = @1051 }
+		}
+		
+		categories = {
+			artillery
+			RT_linear_artillery
+		}
+	}
+	
+	magical_spa_tech_3 = {
+		start_year = 1058
+		research_cost = 2.3
+		
+		enable_equipments = {
+			magical_spa_equipment_3
+		}
+		
+		
+		folder = {
+			name = magitech_folder
+			position = { x = 8 y = @1054 }
+		}
+		
+		categories = {
+			artillery
+			RT_linear_artillery
+		}
+	}
+	
+	support_equipment_tech_magitech = {
+		
+		research_cost = 2.8
+		
+		path = {
+			leads_to_tech = shield_company_tech_0
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = magical_logistics_company_tech_0
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = battle_medics_tech_0
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = initiative_company_tech_0
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = stealth_company_tech_0
+			research_cost_coeff = 1
+		}
+		
+		
+		enable_equipments = {
+			support_equipment_1
+		}
+		
+		folder = {
+			name = magitech_folder
+			position = { x = 10 y = @1025 }
+		}
+		
+		on_research_complete = {
+			hidden_effect = {
+				set_technology = { support_equipment_tech = 1 popup = no }
+			}
+		}
+		
+		start_year = 1025
+		
+		categories = {
+			support_tech
+		}
+	}
+	
+	shield_company_tech_0 = {
+		research_cost = 1.5
+		
+		path = {
+			leads_to_tech = shield_company_tech_1
+			research_cost_coeff = 1
+		}
+		
+		enable_subunits = {
+			shield_company
+		}
+		
+		folder = {
+			name = magitech_folder
+			position = { x = 10 y = @1042 }
+		}
+		
+		start_year = 1036
+		
+		categories = {
+			support_tech
+			shield_unit_support_tech
+		}
+		
+	}
+	
+	shield_company_tech_1 = {
+		research_cost = 1.5
+		
+		path = {
+			leads_to_tech = shield_company_tech_2
+			research_cost_coeff = 1
+		}
+		
+		folder = {
+			name = magitech_folder
+			position = { x = 10 y = @1045 }
+		}
+		
+		start_year = 1041
+		
+		categories = {
+			support_tech
+			shield_unit_support_tech
+		}
+		
+	}
+	
+	shield_company_tech_2 = {
+		research_cost = 1.5
+		
+		path = {
+			leads_to_tech = shield_company_tech_3
+			research_cost_coeff = 1
+		}
+		
+		
+		folder = {
+			name = magitech_folder
+			position = { x = 10 y = @1048 }
+		}
+		
+		start_year = 1045
+		
+		categories = {
+			support_tech
+			shield_unit_support_tech
+		}
+		
+	}
+	
+	shield_company_tech_3 = {
+		research_cost = 1.5
+		
+		path = {
+			leads_to_tech = shield_company_tech_4
+			research_cost_coeff = 1
+		}
+		
+		
+		folder = {
+			name = magitech_folder
+			position = { x = 10 y = @1051 }
+		}
+		
+		start_year = 1049
+		
+		categories = {
+			support_tech
+			shield_unit_support_tech
+		}
+		
+	}
+	
+	shield_company_tech_4 = {
+		research_cost = 1.5
+		
+		
+		folder = {
+			name = magitech_folder
+			position = { x = 10 y = @1054 }
+		}
+		
+		start_year = 1054
+		
+		categories = {
+			support_tech
+			shield_unit_support_tech
+		}
+		
+	}
+	
+	
+	magical_logistics_company_tech_0 = {
+		research_cost = 1.5
+		
+		path = {
+			leads_to_tech = magical_logistics_company_tech_1
+			research_cost_coeff = 1
+		}
+		
+		enable_subunits = {
+			magical_logistics_company
+		}
+		
+		folder = {
+			name = magitech_folder
+			position = { x = 12 y = @1042 }
+		}
+		
+		start_year = 1036
+		
+		categories = {
+			support_tech
+			magical_logistics_company_tech
+		}
+		
+	}
+	
+	magical_logistics_company_tech_1 = {
+		research_cost = 1.5
+		
+		path = {
+			leads_to_tech = magical_logistics_company_tech_2
+			research_cost_coeff = 1
+		}
+		
+		folder = {
+			name = magitech_folder
+			position = { x = 12 y = @1045 }
+		}
+		
+		start_year = 1041
+		
+		categories = {
+			support_tech
+			magical_logistics_company_tech
+		}
+		
+	}
+	
+	magical_logistics_company_tech_2 = {
+		research_cost = 1.5
+		
+		path = {
+			leads_to_tech = magical_logistics_company_tech_3
+			research_cost_coeff = 1
+		}
+		
+		
+		folder = {
+			name = magitech_folder
+			position = { x = 12 y = @1048 }
+		}
+		
+		start_year = 1045
+		
+		categories = {
+			support_tech
+			magical_logistics_company_tech
+		}
+		
+	}
+	
+	magical_logistics_company_tech_3 = {
+		research_cost = 1.5
+		
+		path = {
+			leads_to_tech = magical_logistics_company_tech_4
+			research_cost_coeff = 1
+		}
+		
+		
+		folder = {
+			name = magitech_folder
+			position = { x = 12 y = @1051 }
+		}
+		
+		start_year = 1049
+		
+		categories = {
+			support_tech
+			magical_logistics_company_tech
+		}
+		
+	}
+	
+	magical_logistics_company_tech_4 = {
+		research_cost = 1.5
+		
+		
+		folder = {
+			name = magitech_folder
+			position = { x = 12 y = @1054 }
+		}
+		
+		start_year = 1054
+		
+		categories = {
+			support_tech
+			magical_logistics_company_tech
+		}
+		
+	}
+	
+	
+	battle_medics_tech_0 = {
+		research_cost = 1.5
+		
+		path = {
+			leads_to_tech = battle_medics_tech_1
+			research_cost_coeff = 1
+		}
+		
+		enable_subunits = {
+			battle_medics
+		}
+		
+		folder = {
+			name = magitech_folder
+			position = { x = 14 y = @1042 }
+		}
+		
+		start_year = 1036
+		
+		categories = {
+			support_tech
+			battle_medics_tech
+		}
+		
+	}
+	
+	battle_medics_tech_1 = {
+		research_cost = 1.5
+		
+		path = {
+			leads_to_tech = battle_medics_tech_2
+			research_cost_coeff = 1
+		}
+		
+		folder = {
+			name = magitech_folder
+			position = { x = 14 y = @1045 }
+		}
+		
+		start_year = 1041
+		
+		categories = {
+			support_tech
+			battle_medics_tech
+		}
+		
+	}
+	
+	battle_medics_tech_2 = {
+		research_cost = 1.5
+		
+		path = {
+			leads_to_tech = battle_medics_tech_3
+			research_cost_coeff = 1
+		}
+		
+		
+		folder = {
+			name = magitech_folder
+			position = { x = 14 y = @1048 }
+		}
+		
+		start_year = 1045
+		
+		categories = {
+			support_tech
+			battle_medics_tech
+		}
+		
+	}
+	
+	battle_medics_tech_3 = {
+		research_cost = 1.5
+		
+		path = {
+			leads_to_tech = battle_medics_tech_4
+			research_cost_coeff = 1
+		}
+		
+		
+		folder = {
+			name = magitech_folder
+			position = { x = 14 y = @1051 }
+		}
+		
+		start_year = 1049
+		
+		categories = {
+			support_tech
+			battle_medics_tech
+		}
+		
+	}
+	
+	battle_medics_tech_4 = {
+		research_cost = 1.5
+		
+		
+		folder = {
+			name = magitech_folder
+			position = { x = 14 y = @1054 }
+		}
+		
+		start_year = 1054
+		
+		categories = {
+			support_tech
+			battle_medics_tech
+		}
+		
+	}
+	
+	
+	initiative_company_tech_0 = {
+		research_cost = 1.5
+		
+		path = {
+			leads_to_tech = initiative_company_tech_1
+			research_cost_coeff = 1
+		}
+		
+		enable_subunits = {
+			initiative_company
+		}
+		
+		folder = {
+			name = magitech_folder
+			position = { x = 16 y = @1042 }
+		}
+		
+		start_year = 1036
+		
+		categories = {
+			support_tech
+			initiative_company_tech
+		}
+		
+	}
+	
+	initiative_company_tech_1 = {
+		research_cost = 1.5
+		
+		path = {
+			leads_to_tech = initiative_company_tech_2
+			research_cost_coeff = 1
+		}
+		
+		folder = {
+			name = magitech_folder
+			position = { x = 16 y = @1045 }
+		}
+		
+		start_year = 1041
+		
+		categories = {
+			support_tech
+			initiative_company_tech
+		}
+		
+	}
+	
+	initiative_company_tech_2 = {
+		research_cost = 1.5
+		
+		path = {
+			leads_to_tech = initiative_company_tech_3
+			research_cost_coeff = 1
+		}
+		
+		
+		folder = {
+			name = magitech_folder
+			position = { x = 16 y = @1048 }
+		}
+		
+		start_year = 1045
+		
+		categories = {
+			support_tech
+			initiative_company_tech
+		}
+		
+	}
+	
+	initiative_company_tech_3 = {
+		research_cost = 1.5
+		
+		path = {
+			leads_to_tech = initiative_company_tech_4
+			research_cost_coeff = 1
+		}
+		
+		
+		folder = {
+			name = magitech_folder
+			position = { x = 16 y = @1051 }
+		}
+		
+		start_year = 1049
+		
+		categories = {
+			support_tech
+			initiative_company_tech
+		}
+		
+	}
+	
+	initiative_company_tech_4 = {
+		research_cost = 1.5
+		
+		
+		folder = {
+			name = magitech_folder
+			position = { x = 16 y = @1054 }
+		}
+		
+		start_year = 1054
+		
+		categories = {
+			support_tech
+			initiative_company_tech
+		}
+		
+	}
+	
+	
+	stealth_company_tech_0 = {
+		research_cost = 1.5
+		
+		path = {
+			leads_to_tech = stealth_company_tech_1
+			research_cost_coeff = 1
+		}
+		
+		enable_subunits = {
+			stealth_company
+		}
+		
+		folder = {
+			name = magitech_folder
+			position = { x = 18 y = @1042 }
+		}
+		
+		start_year = 1036
+		
+		categories = {
+			support_tech
+			stealth_company_tech
+		}
+		
+	}
+	
+	stealth_company_tech_1 = {
+		research_cost = 1.5
+		
+		path = {
+			leads_to_tech = stealth_company_tech_2
+			research_cost_coeff = 1
+		}
+		
+		folder = {
+			name = magitech_folder
+			position = { x = 18 y = @1045 }
+		}
+		
+		start_year = 1041
+		
+		categories = {
+			support_tech
+			stealth_company_tech
+		}
+		
+	}
+	
+	stealth_company_tech_2 = {
+		research_cost = 1.5
+		
+		path = {
+			leads_to_tech = stealth_company_tech_3
+			research_cost_coeff = 1
+		}
+		
+		
+		folder = {
+			name = magitech_folder
+			position = { x = 18 y = @1048 }
+		}
+		
+		start_year = 1045
+		
+		categories = {
+			support_tech
+			stealth_company_tech
+		}
+		
+	}
+	
+	stealth_company_tech_3 = {
+		research_cost = 1.5
+		
+		path = {
+			leads_to_tech = stealth_company_tech_4
+			research_cost_coeff = 1
+		}
+		
+		
+		folder = {
+			name = magitech_folder
+			position = { x = 18 y = @1051 }
+		}
+		
+		start_year = 1049
+		
+		categories = {
+			support_tech
+			stealth_company_tech
+		}
+		
+	}
+	
+	stealth_company_tech_4 = {
+		research_cost = 1.5
+		
+		
+		folder = {
+			name = magitech_folder
+			position = { x = 18 y = @1054 }
+		}
+		
+		start_year = 1054
+		
+		categories = {
+			support_tech
+			stealth_company_tech
+		}
+		
+	}
+	
+	

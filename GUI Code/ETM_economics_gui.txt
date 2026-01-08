@@ -1,0 +1,341 @@
+scripted_gui = {
+	economics_gui = {
+		window_name = "economics_window"
+		context_type = player_context
+		visible = {
+			
+		}
+		effects = {
+			economics_btn_open_close_shift_click = {
+				if = {
+					limit = { check_variable = { eco_overview_viisble = 1 } }
+					set_variable = { eco_overview_viisble = 0 }
+				}
+				else = { 
+					set_variable = { eco_overview_viisble = 1 }
+				}
+			}
+		}
+		triggers = {
+		
+		}
+	}
+	
+	economics_overview_gui = {
+	
+		window_name = "eco_overview_window"
+		context_type = player_context
+		visible = {
+			check_variable = { eco_overview_viisble = 1 }
+		}
+		effects = {
+			eco_overview_close_click = {
+				set_variable = { eco_overview_viisble = 0 }
+			}
+		}
+		triggers = {
+		
+		}
+	}
+	
+	economic_ideas_btn = {
+		context_type = player_context
+		window_name = "eco_btn_window"
+		parent_window_token = politics_tab
+		dirty = zzz_eco_update_dv 
+		effects = {
+			eco_open_laws_button_click = {
+				if = {
+					limit = { check_variable = { eco_show_window = 1 } }
+					set_variable = { eco_show_window = 0 }
+				}
+				else = { 
+					set_variable = { eco_show_window = 1 }
+				}
+				if = { 
+					limit = { check_variable = { eco_ptr_button_num < 1 } }
+					set_variable = { eco_ptr_button_num = 1 }
+					ETM_economics_populate_display_array_cat = yes 
+				}
+				ETM_economics_populate_display_array_cat = yes
+				add_to_variable = { zzz_eco_update_dv = 0.1 }
+			}
+		}
+		
+		triggers = {
+			eco_open_laws_overlay_visible = {
+				check_button_overlay_availability = yes 
+				has_political_power > 150 
+			}
+		}
+		
+	}
+	
+	economics_ideas_gui = {
+	
+		context_type = player_context
+		window_name = "economics_ideas_window"
+		parent_window_token = politics_tab
+		dirty = zzz_eco_update_dv 
+		dynamic_lists = {
+			
+			economics_categories_grid = {
+				array = ETM_current_array_display_categories
+				entry_container = economics_categories_entry
+				index = cat_i
+				value = cat_n
+			}
+		}
+		
+		visible = {
+			check_variable = { eco_show_window = 1 }
+		}
+		
+		triggers = {
+			eco_close_button_visible = {
+				check_variable = { ETM_current_array_display_ideas^num = 0 }
+			}
+			eco_back_button_visible = {
+				check_variable = { ETM_current_array_display_ideas^num > 0 }
+			}
+			economics_category_click_enabled = {
+				meta_trigger = {
+					text = {
+						etm_pol_category_[X]_[Y]_trigger = yes 
+					}
+					X = "[?eco_ptr_button_num]"
+					Y = "[?cat_n]"
+				}
+			}
+			economics_category_overlay_visible = {
+				AND = {
+					meta_trigger = {
+						text = {
+							etm_pol_category_[X]_[Y]_trigger = yes 
+						}
+						X = "[?eco_ptr_button_num]"
+						Y = "[?cat_n]"
+					}
+					has_political_power > 149 
+				}
+			}
+		}
+		
+		effects = {
+			eco_close_button_click = {
+				clear_array = ETM_current_array_display_categories
+				clear_array = ETM_current_array_display_ideas
+				set_variable = { eco_show_window = 0 }
+			}
+			eco_back_button_click = { 
+				clear_array = ETM_current_array_display_ideas
+				ETM_economics_populate_display_array_cat = yes 
+			}
+			
+			eco_btn_pol_ideas_click = {
+				set_variable = { eco_ptr_button_num = 1 }
+				ETM_economics_populate_display_array_cat = yes 
+			}	
+			eco_btn_gov_ideas_click = {
+				set_variable = { eco_ptr_button_num = 2 }
+				ETM_economics_populate_display_array_cat = yes 
+			}	
+			eco_btn_trd_ideas_click = {
+				set_variable = { eco_ptr_button_num = 3 }
+				ETM_economics_populate_display_array_cat = yes 
+			}	
+			eco_btn_civ_ideas_click = {
+				set_variable = { eco_ptr_button_num = 4 }
+				ETM_economics_populate_display_array_cat = yes 
+			}	
+			eco_btn_mil_ideas_click = {
+				set_variable = { eco_ptr_button_num = 5 }
+				ETM_economics_populate_display_array_cat = yes 
+			}
+			
+			economics_category_click = {
+				set_variable = { eco_ptr_idea_num = cat_n }
+				ETM_economics_populate_display_array_ideas = yes
+			}
+			
+		}
+		
+		properties = {
+			economics_category = {
+				image = "[ETM_ECO_CATEGORY_GET]"
+			}
+		}
+	}
+	
+	economics_incat_ideas = {
+		context_type = player_context
+		window_name = "economics_states_grid_container"
+		dirty = zzz_eco_update_dv 
+		parent_window_token = politics_tab
+		dynamic_lists = {
+			economics_ideas_grid = {
+				array = ETM_current_array_display_ideas
+				entry_container = economics_ideas_entry
+				index = idea_i
+				value = idea_n
+			}
+		}
+		triggers = {
+			economics_idea_click_enabled = {
+				meta_trigger = {
+					text = {
+						eco_[IDEA]_trigger = yes
+						NOT = { has_idea = [IDEA] }
+					}
+					IDEA = "[?idea_n.GetTokenKey]"
+				}
+				has_political_power > 149 
+			}
+			economics_idea_active_visible = {
+				meta_trigger = {
+					text = {
+						has_idea = [IDEA] 
+					}
+					IDEA = "[?idea_n.GetTokenKey]"
+				}
+			}
+		
+		}
+		
+		properties = {
+			economics_idea = {
+				image = "[GetIdeaImage]"
+			}
+		}
+		
+		effects = {
+			economics_idea_click = {
+				meta_effect = {
+					text = {
+						add_ideas = [IDEA]
+					}
+					IDEA = "[?idea_n.GetTokenKey]"
+				}
+				add_to_variable = { zzz_eco_update_dv = 0.1 }
+			}
+		}
+		visible = {
+			check_variable = { ETM_current_array_display_ideas^num > 0 }
+			check_variable = { eco_show_window = 1 }
+		}
+	}
+	
+	development_levels_button = {
+		context_type = player_context 
+		parent_window_name  = "after_intel_agency_button"
+		window_name = "dev_level_toggle"
+		visible = {  } 
+		effects = {
+			development_open_close_click = {
+				if = {
+					limit = { check_variable = { dev_show_window = 1 } }
+					set_variable = { dev_show_window = 0 }
+					set_variable = { dev_btn_frame = 1 } 
+					add_to_variable = { zzz_dev_update_dv = 0.1 }
+					clear_array = ETM_visible_laws_list
+					resize_array = { array = ETM_visible_laws_list size = 12 value = 0 }
+				}
+				else = { 
+					set_variable = { dev_show_window = 1 }
+					set_variable = { dev_btn_frame = 2 } 
+					add_to_variable = { zzz_dev_update_dv = 0.1 }
+					clear_array = ETM_visible_laws_list
+					resize_array = { array = ETM_visible_laws_list size = 12 value = 0 }
+					ETM_development_populate_corresponding_prev_next_ideas = yes 
+				}
+			}
+		}
+		
+		properties = {
+			development_open_close = {
+				frame = dev_btn_frame
+			}				
+		}
+		triggers = {
+			
+		}
+		
+	}
+	development_levels_window = {
+		context_type = player_context
+		
+		window_name = "dev_levels_window"
+		dirty = zzz_dev_update_dv 
+	
+		dynamic_lists = {
+			development_categories_grid = {
+				array = global.ETM_development_categories
+				entry_container = economics_development_entry
+				index = idea_i
+				value = idea_n
+			}
+			development_ideas_list = {
+				array = ETM_dev_ideas_list
+				entry_container = dev_idea_entry
+				index = dev_i
+				value = dev_n
+			}
+		}
+		
+		properties = {
+			dev_upgoing_bg = {
+				frame = ETM_positive_graph_list^idea_i
+			}
+			dev_downgoing_bg = {
+				frame = ETM_negative_graph_list^idea_i
+			}
+			dev_idea = {
+				image = "[GetIdeaIcon]"
+			}
+		}
+		
+		visible = {
+			check_variable = { dev_show_window = 1 }
+		}
+		effects = {
+			dev_lists_close_click = {
+				set_variable = { dev_show_window = 0 }
+				add_to_variable = { zzz_dev_update_dv = 0.1 }
+			}
+			dev_idea_curr_click = {
+				clear_array = ETM_visible_laws_list
+				resize_array = { array = ETM_visible_laws_list size = 13 value = 0 }
+				set_variable = { ETM_visible_laws_list^idea_i = 1 } 
+				ETM_development_populate_display_array = yes 
+				add_to_variable = { zzz_dev_update_dv = 0.1 }
+			}
+			dev_idea_close_click = {
+				clear_array = ETM_visible_laws_list
+				add_to_variable = { zzz_dev_update_dv = 0.1 }
+				resize_array = { array = ETM_visible_laws_list size = 13 value = 0 }
+			}
+		} 
+		
+		triggers = {
+			dev_ideas_bg_visible = {
+				check_variable = { ETM_visible_laws_list^idea_i > 0 }
+			}
+			dev_idea_visible = {
+				check_variable = { ETM_visible_laws_list^idea_i > 0 }
+			}
+			dev_idea_close_visible = {
+				check_variable = { ETM_visible_laws_list^idea_i > 0 }
+			}
+			dev_idea_curr_visible = {
+				meta_trigger = {
+					text = {
+						set_temp_variable = { displ_curr = ETM_disp_curridea_[IDEAPTR] }
+						set_temp_variable = { displ_prev = ETM_disp_previdea_[IDEAPTR] }
+						set_temp_variable = { displ_next = ETM_disp_nextidea_[IDEAPTR] }
+					}
+					IDEAPTR = "[?idea_n]"
+				}
+			}
+		}
+	}
+}

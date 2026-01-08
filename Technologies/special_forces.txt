@@ -1,0 +1,744 @@
+technologies = {
+
+	@TIER0 = 0
+	@TIER1 = 4
+	@TIER2 = 8
+	@TIER3 = 12
+	@TIER4 = 16 
+	
+	spec_forces_weapons_tech_0 = {
+		
+		research_cost = 1.5
+		path = {
+			leads_to_tech = spec_forces_weapons_tech_1
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = paratrooper_armor_0
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			spec_forces_infantry_weapons_0
+		}
+		
+		enable_subunits = {
+			paratrooper
+			marine
+			army_specops
+			armored_army_specops
+		}
+		
+		
+		folder = {
+			name = special_forces_folder
+			position = { x = 0 y = @TIER0 }
+		}
+		
+		start_year = 1025
+		
+		categories = {
+			cat_special_forces
+			para_tech
+		}
+		
+	}
+	
+	spec_forces_weapons_tech_1 = {
+		
+		start_year = 1040
+		research_cost = 1.5
+		path = {
+			leads_to_tech = spec_forces_weapons_tech_2
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			spec_forces_infantry_weapons_1
+		}
+		
+		
+		folder = {
+			name = special_forces_folder
+			position = { x = 0 y = @TIER1 }
+		}
+		
+		start_year = 1040
+		
+		categories = {
+			cat_special_forces
+			para_tech
+		}
+	
+	}
+	
+	spec_forces_weapons_tech_2 = {
+		research_cost = 1.5
+		path = {
+			leads_to_tech = spec_forces_weapons_tech_3
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			spec_forces_infantry_weapons_2
+		}
+		
+		
+		folder = {
+			name = special_forces_folder
+			position = { x = 0 y = @TIER2 }
+		}
+		
+		start_year = 1045
+		
+		categories = {
+			cat_special_forces
+			para_tech
+		}
+	
+	}
+	
+	spec_forces_weapons_tech_3 = {
+	
+		research_cost = 1.5
+		
+		
+		enable_equipments = {
+			spec_forces_infantry_weapons_3
+		}
+		
+		folder = {
+			name = special_forces_folder
+			position = { x = 0 y = @TIER4 }
+		}
+		
+		start_year = 1055
+		
+		categories = {
+			cat_special_forces
+			para_tech
+		}
+	
+	}
+	
+	paratrooper_armor_0 = {
+		research_cost = 1.5
+		path = {
+			leads_to_tech = paratrooper_armor_1
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			paratrooper_carrier_0
+		}
+		
+		enable_subunits = {
+			armored_paratrooper
+		}
+		
+		
+		folder = {
+			name = special_forces_folder
+			position = { x = 2 y = @TIER1 }
+		}
+		
+		start_year = 1040
+		
+		categories = {
+			cat_special_forces
+			para_tech
+		}
+	
+	}
+	
+	paratrooper_armor_1 = {
+		research_cost = 1.5
+		path = {
+			leads_to_tech = paratrooper_armor_2
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			paratrooper_carrier_1
+		}
+		
+		folder = {
+			name = special_forces_folder
+			position = { x = 2 y = @TIER2 }
+		}
+		
+		start_year = 1045
+		
+		categories = {
+			cat_special_forces
+			para_tech
+		}
+	
+	}
+	
+	paratrooper_armor_2 = {
+		research_cost = 1.5
+		path = {
+			leads_to_tech = paratrooper_armor_2
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			paratrooper_carrier_1
+		}
+		
+		folder = {
+			name = special_forces_folder
+			position = { x = 2 y = @TIER4 }
+		}
+		
+		start_year = 1055
+		
+		categories = {
+			cat_special_forces
+			para_tech
+		}
+	
+	}
+	
+	paratrooper_training_base = {
+	
+		research_cost = 2
+		path = {
+			leads_to_tech = paratrooper_training_scouts_0
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = paratrooper_training_assault_0
+			research_cost_coeff = 1
+		}
+		
+		start_year = 1030
+		
+		dependencies = {
+			spec_forces_weapons_tech_0 = 1
+		}
+		
+		folder = {
+			name = special_forces_folder
+			position = { x = 5 y = @TIER0 }
+		}
+		categories = {
+			cat_special_forces
+			para_tech
+		}
+	}
+	
+	paratrooper_training_scouts_0 = {
+	
+		research_cost = 2
+		path = {
+			leads_to_tech = paratrooper_training_scouts_1
+			research_cost_coeff = 1
+		}
+		
+		start_year = 1040
+		
+		folder = {
+			name = special_forces_folder
+			position = { x = 4 y = @TIER1 }
+		}
+		categories = {
+			cat_special_forces
+			para_tech
+		}
+	}
+	
+	paratrooper_training_scouts_1 = {
+	
+		research_cost = 2
+		path = {
+			leads_to_tech = paratrooper_training_scouts_2
+			research_cost_coeff = 1
+		}
+		
+		start_year = 1040
+		
+		folder = {
+			name = special_forces_folder
+			position = { x = 4 y = @TIER2 }
+		}
+		categories = {
+			cat_special_forces
+			para_tech
+		}
+	}
+	
+	paratrooper_training_scouts_2 = {
+	
+		research_cost = 2
+		path = {
+			leads_to_tech = paratrooper_training_scouts_3
+			research_cost_coeff = 1
+		}
+		
+		start_year = 1040
+		
+		folder = {
+			name = special_forces_folder
+			position = { x = 4 y = @TIER3 }
+		}
+		categories = {
+			cat_special_forces
+			para_tech
+		}
+	}
+	
+	paratrooper_training_scouts_3 = {
+	
+		research_cost = 2
+
+		start_year = 1040
+		
+		folder = {
+			name = special_forces_folder
+			position = { x = 4 y = @TIER4 }
+		}
+		categories = {
+			cat_special_forces
+			para_tech
+		}
+	}
+	
+	paratrooper_training_assault_0 = {
+	
+		research_cost = 2
+		path = {
+			leads_to_tech = paratrooper_training_assault_1
+			research_cost_coeff = 1
+		}
+		
+		start_year = 1040
+		
+		folder = {
+			name = special_forces_folder
+			position = { x = 6 y = @TIER1 }
+		}
+		categories = {
+			cat_special_forces
+			para_tech
+		}
+	}
+	
+	paratrooper_training_assault_1 = {
+	
+		research_cost = 2
+		path = {
+			leads_to_tech = paratrooper_training_assault_2
+			research_cost_coeff = 1
+		}
+		
+		start_year = 1040
+		
+		folder = {
+			name = special_forces_folder
+			position = { x = 6 y = @TIER2 }
+		}
+		categories = {
+			cat_special_forces
+			para_tech
+		}
+	}
+	
+	paratrooper_training_assault_2 = {
+	
+		research_cost = 2
+		path = {
+			leads_to_tech = paratrooper_training_assault_3
+			research_cost_coeff = 1
+		}
+		
+		start_year = 1040
+		
+		folder = {
+			name = special_forces_folder
+			position = { x = 6 y = @TIER3 }
+		}
+		categories = {
+			cat_special_forces
+			para_tech
+		}
+	}
+	
+	paratrooper_training_assault_3 = {
+	
+		research_cost = 2
+
+		start_year = 1040
+		
+		folder = {
+			name = special_forces_folder
+			position = { x = 6 y = @TIER4 }
+		}
+		categories = {
+			cat_special_forces
+			para_tech
+		}
+	}
+	
+	
+	marines_training_base = {
+	
+		research_cost = 2
+		path = {
+			leads_to_tech = marines_training_scouts_0
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = marines_training_assault_0
+			research_cost_coeff = 1
+		}
+		
+		start_year = 1030
+		
+		dependencies = {
+			spec_forces_weapons_tech_0 = 1
+		}
+		
+		folder = {
+			name = special_forces_folder
+			position = { x = 9 y = @TIER0 }
+		}
+		categories = {
+			cat_special_forces
+			marine_tech
+		}
+	}
+	
+	marines_training_scouts_0 = {
+	
+		research_cost = 2
+		path = {
+			leads_to_tech = marines_training_scouts_1
+			research_cost_coeff = 1
+		}
+		
+		start_year = 1040
+		
+		folder = {
+			name = special_forces_folder
+			position = { x = 8 y = @TIER1 }
+		}
+		categories = {
+			cat_special_forces
+			marine_tech
+		}
+	}
+	
+	marines_training_scouts_1 = {
+	
+		research_cost = 2
+		path = {
+			leads_to_tech = marines_training_scouts_2
+			research_cost_coeff = 1
+		}
+		
+		start_year = 1040
+		
+		folder = {
+			name = special_forces_folder
+			position = { x = 8 y = @TIER2 }
+		}
+		categories = {
+			cat_special_forces
+			marine_tech
+		}
+	}
+	
+	marines_training_scouts_2 = {
+	
+		research_cost = 2
+		path = {
+			leads_to_tech = marines_training_scouts_3
+			research_cost_coeff = 1
+		}
+		
+		start_year = 1040
+		
+		folder = {
+			name = special_forces_folder
+			position = { x = 8 y = @TIER3 }
+		}
+		categories = {
+			cat_special_forces
+			marine_tech
+		}
+	}
+	
+	marines_training_scouts_3 = {
+	
+		research_cost = 2
+
+		start_year = 1040
+		
+		folder = {
+			name = special_forces_folder
+			position = { x = 8 y = @TIER4 }
+		}
+		categories = {
+			cat_special_forces
+			marine_tech
+		}
+	}
+	
+	marines_training_assault_0 = {
+	
+		research_cost = 2
+		path = {
+			leads_to_tech = marines_training_assault_1
+			research_cost_coeff = 1
+		}
+		
+		start_year = 1040
+		
+		folder = {
+			name = special_forces_folder
+			position = { x = 10 y = @TIER1 }
+		}
+		categories = {
+			cat_special_forces
+			marine_tech
+		}
+	}
+	
+	marines_training_assault_1 = {
+	
+		research_cost = 2
+		path = {
+			leads_to_tech = marines_training_assault_2
+			research_cost_coeff = 1
+		}
+		
+		start_year = 1040
+		
+		folder = {
+			name = special_forces_folder
+			position = { x = 10 y = @TIER2 }
+		}
+		categories = {
+			cat_special_forces
+			marine_tech
+		}
+	}
+	
+	marines_training_assault_2 = {
+	
+		research_cost = 2
+		path = {
+			leads_to_tech = marines_training_assault_3
+			research_cost_coeff = 1
+		}
+		
+		start_year = 1040
+		
+		folder = {
+			name = special_forces_folder
+			position = { x = 10 y = @TIER3 }
+		}
+		categories = {
+			cat_special_forces
+			marine_tech
+		}
+	}
+	
+	marines_training_assault_3 = {
+	
+		research_cost = 2
+
+		start_year = 1040
+		
+		folder = {
+			name = special_forces_folder
+			position = { x = 10 y = @TIER4 }
+		}
+		categories = {
+			cat_special_forces
+			marine_tech
+		}
+	}
+	
+	
+	army_cpecops_training_base = {
+	
+		research_cost = 2
+		path = {
+			leads_to_tech = army_cpecops_training_scouts_0
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = army_cpecops_training_assault_0
+			research_cost_coeff = 1
+		}
+		
+		start_year = 1030
+		
+		dependencies = {
+			spec_forces_weapons_tech_0 = 1
+		}
+		
+		folder = {
+			name = special_forces_folder
+			position = { x = 13 y = @TIER0 }
+		}
+		categories = {
+			cat_special_forces
+			army_special_forces_tech
+		}
+	}
+	
+	army_cpecops_training_scouts_0 = {
+	
+		research_cost = 2
+		path = {
+			leads_to_tech = army_cpecops_training_scouts_1
+			research_cost_coeff = 1
+		}
+		
+		start_year = 1040
+		
+		folder = {
+			name = special_forces_folder
+			position = { x = 12 y = @TIER1 }
+		}
+		categories = {
+			cat_special_forces
+			army_special_forces_tech
+		}
+	}
+	
+	army_cpecops_training_scouts_1 = {
+	
+		research_cost = 2
+		path = {
+			leads_to_tech = army_cpecops_training_scouts_2
+			research_cost_coeff = 1
+		}
+		
+		start_year = 1040
+		
+		folder = {
+			name = special_forces_folder
+			position = { x = 12 y = @TIER2 }
+		}
+		categories = {
+			cat_special_forces
+			army_special_forces_tech
+		}
+	}
+	
+	army_cpecops_training_scouts_2 = {
+	
+		research_cost = 2
+		path = {
+			leads_to_tech = army_cpecops_training_scouts_3
+			research_cost_coeff = 1
+		}
+		
+		start_year = 1040
+		
+		folder = {
+			name = special_forces_folder
+			position = { x = 12 y = @TIER3 }
+		}
+		categories = {
+			cat_special_forces
+			army_special_forces_tech
+		}
+	}
+	
+	army_cpecops_training_scouts_3 = {
+	
+		research_cost = 2
+
+		start_year = 1040
+		
+		folder = {
+			name = special_forces_folder
+			position = { x = 12 y = @TIER4 }
+		}
+		categories = {
+			cat_special_forces
+			army_special_forces_tech
+		}
+	}
+	
+	army_cpecops_training_assault_0 = {
+	
+		research_cost = 2
+		path = {
+			leads_to_tech = army_cpecops_training_assault_1
+			research_cost_coeff = 1
+		}
+		
+		start_year = 1040
+		
+		folder = {
+			name = special_forces_folder
+			position = { x = 14 y = @TIER1 }
+		}
+		categories = {
+			cat_special_forces
+			army_special_forces_tech
+		}
+	}
+	
+	army_cpecops_training_assault_1 = {
+	
+		research_cost = 2
+		path = {
+			leads_to_tech = army_cpecops_training_assault_2
+			research_cost_coeff = 1
+		}
+		
+		start_year = 1040
+		
+		folder = {
+			name = special_forces_folder
+			position = { x = 14 y = @TIER2 }
+		}
+		categories = {
+			cat_special_forces
+			army_special_forces_tech
+		}
+	}
+	
+	army_cpecops_training_assault_2 = {
+	
+		research_cost = 2
+		path = {
+			leads_to_tech = army_cpecops_training_assault_3
+			research_cost_coeff = 1
+		}
+		
+		start_year = 1040
+		
+		folder = {
+			name = special_forces_folder
+			position = { x = 14 y = @TIER3 }
+		}
+		categories = {
+			cat_special_forces
+			army_special_forces_tech
+		}
+	}
+	
+	army_cpecops_training_assault_3 = {
+	
+		research_cost = 2
+
+		start_year = 1040
+		
+		folder = {
+			name = special_forces_folder
+			position = { x = 14 y = @TIER4 }
+		}
+		categories = {
+			cat_special_forces
+			army_special_forces_tech
+		}
+	}

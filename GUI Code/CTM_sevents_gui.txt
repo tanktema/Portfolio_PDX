@@ -1,0 +1,42 @@
+scripted_gui = {
+	super_event_gui = {
+	
+		context_type = player_context
+		window_name = "sevent_window_container"
+		parent_window_token = top_bar
+		
+		visible = {
+			has_global_flag = sevents_visible
+		}
+		
+		triggers = {
+			
+		}
+		
+		effects = {
+			sevents_next_page_click = {
+				add_to_variable = { sevent_text_pg = 1 }
+				clamp_variable = { 
+					var = sevent_text_pg
+					max = global.max_sevent_num
+				}
+			}
+			sevents_prev_page_click = {
+				add_to_variable = { sevent_text_pg = -1 }
+				clamp_variable = { 
+					var = sevent_text_pg
+					min = global.min_sevent_num
+				}
+			}
+			sevents_close_click = {
+				clr_global_flag = sevents_visible
+			}
+		}
+		
+		properties = {
+			sevent_picture = {
+				image = "[GetSeventSlidePic]"
+			}
+		}
+	}
+}

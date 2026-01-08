@@ -1,0 +1,1739 @@
+
+technologies = {
+	
+	@1030 = 0
+	@1042 = 4
+	@1046 = 8
+	@1049 = 12
+	@1052 = 16
+	@1055 = 20
+	
+	gw_light_tank_tech = {
+		
+		research_cost = 0 ### Everyone has one at start
+		
+		path = {
+			leads_to_tech = mechanized_tech_0
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = asv_tech_0
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			light_tank_modern_chassis
+		}
+		
+		enable_subunits = {
+			light_armor
+		}
+		
+		folder = {
+			name = nsb_armor_folder
+			position = { x = 0 y = @1030 }
+		}
+		
+		start_year = 1025
+		
+		categories = {
+			armor
+			cat_light_armor
+		}
+		
+	}
+	
+	mechanized_tech_0 = {
+		research_cost = 2.1
+		
+		path = {
+			leads_to_tech = mechanized_tech_1
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			armored_personal_carrier_equipment_0
+		}
+		
+		enable_subunits = {
+			mechanized_infantry
+		}
+		
+		folder = {
+			name = nsb_armor_folder
+			position = { x = 0 y = @1042 }
+		}
+		
+		start_year = 1042
+		
+		categories = {
+			armor
+			RT_icav_tech
+		}
+	}
+	
+	mechanized_tech_1 = {
+		research_cost = 1.6
+		
+		path = {
+			leads_to_tech = mechanized_tech_2
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			armored_personal_carrier_equipment_1
+		}
+		
+		folder = {
+			name = nsb_armor_folder
+			position = { x = 0 y = @1046 }
+		}
+		
+		start_year = 1046
+		
+		categories = {
+			armor
+			RT_icav_tech
+		}
+	}
+	
+	mechanized_tech_2 = {
+		research_cost = 1.6
+		
+		path = {
+			leads_to_tech = mechanized_tech_3
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			armored_personal_carrier_equipment_2
+		}
+		
+		folder = {
+			name = nsb_armor_folder
+			position = { x = 0 y = @1049 }
+		}
+		
+		start_year = 1049
+		
+		categories = {
+			armor
+			RT_icav_tech
+		}
+	}
+	
+	mechanized_tech_3 = {
+		research_cost = 1.6
+		
+		path = {
+			leads_to_tech = mechanized_tech_4
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			armored_personal_carrier_equipment_3
+		}
+		
+		folder = {
+			name = nsb_armor_folder
+			position = { x = 0 y = @1052 }
+		}
+		
+		start_year = 1052
+		
+		categories = {
+			armor
+			RT_icav_tech
+		}
+	}
+	
+	mechanized_tech_4 = {
+		research_cost = 1.6
+		
+		
+		enable_equipments = {
+			armored_personal_carrier_equipment_4
+		}
+		
+		folder = {
+			name = nsb_armor_folder
+			position = { x = 0 y = @1055 }
+		}
+		
+		start_year = 1055
+		
+		categories = {
+			armor
+			RT_icav_tech
+		}
+	}
+	
+	asv_tech_0 = {
+		research_cost = 2.1
+		
+		path = {
+			leads_to_tech = asv_tech_1
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			infantry_fighting_vehicle_0
+		}
+		
+		folder = {
+			name = nsb_armor_folder
+			position = { x = 2 y = @1042 }
+		}
+		
+		start_year = 1042
+		
+		categories = {
+			armor
+			RT_asv_tech
+		}
+	}
+	
+	asv_tech_1 = {
+		research_cost = 1.6
+		
+		path = {
+			leads_to_tech = asv_tech_2
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			infantry_fighting_vehicle_1
+		}
+		
+		folder = {
+			name = nsb_armor_folder
+			position = { x = 2 y = @1046 }
+		}
+		
+		start_year = 1046
+		
+		categories = {
+			armor
+			RT_asv_tech
+		}
+	}
+	
+	asv_tech_2 = {
+		research_cost = 1.6
+		
+		path = {
+			leads_to_tech = asv_tech_3
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			infantry_fighting_vehicle_2
+		}
+		
+		folder = {
+			name = nsb_armor_folder
+			position = { x = 2 y = @1049 }
+		}
+		
+		start_year = 1049
+		
+		categories = {
+			armor
+			RT_asv_tech
+		}
+	}
+	
+	asv_tech_3 = {
+		research_cost = 1.6
+		
+		path = {
+			leads_to_tech = asv_tech_4
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			infantry_fighting_vehicle_3
+		}
+		
+		folder = {
+			name = nsb_armor_folder
+			position = { x = 2 y = @1052 }
+		}
+		
+		start_year = 1052
+		
+		categories = {
+			armor
+			RT_asv_tech
+		}
+	}
+	
+	asv_tech_4 = {
+		research_cost = 1.6
+		
+		
+		enable_equipments = {
+			infantry_fighting_vehicle_4
+		}
+		
+		folder = {
+			name = nsb_armor_folder
+			position = { x = 2 y = @1055 }
+		}
+		
+		start_year = 1055
+		
+		categories = {
+			armor
+			RT_asv_tech
+		}
+	}
+	
+	gw_medium_tank_tech = {
+			
+		research_cost = 0 ### Everyone has one at start
+		
+		path = {
+			leads_to_tech = main_battle_tank_tech_0_eqs
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = main_battle_tank_tech_0_stg
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = main_battle_tank_tech_0_wng
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = main_battle_tank_tech_0_gri
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = main_battle_tank_tech_0_rct
+			research_cost_coeff = 1
+		}
+	
+		enable_equipments = {
+			medium_tank_modern_chassis
+		}
+		
+		enable_equipment_modules = {
+			tank_tracks_chassis
+			tank_wheeled_chassis
+			tank_antigrav_chassis
+			tank_torsion_suspension
+			tank_balanced_suspension
+			tank_amortisated_suspension
+			tank_hydropneumatic_suspension
+			tank_spring_suspension
+			tank_handheld_charger
+		}
+		
+		enable_subunits = {
+			medium_armor
+		}
+		
+		folder = {
+			name = nsb_armor_folder
+			position = { x = 4 y = @1030 }
+		}
+		
+		start_year = 1025
+		
+		categories = {
+			armor
+			cat_medium_armor
+		}
+		
+	}
+	
+	main_battle_tank_tech_0_eqs = {
+		
+		research_cost = 2.5
+		allow_branch = {
+			has_country_flag = sp_selected_eqs_mbt
+		}
+		path = {
+			leads_to_tech = main_battle_tank_tech_1_eqs
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			main_battle_tank_chassis_0_eqs
+		}
+		
+		enable_equipment_modules = {
+			tank_reactor_module
+			test_fixed_tank_turret_type_slot
+			text_fixed_tank_optics_slot
+			test_fixed_tank_communication_slot
+			test_fixed_tank_main_armament_slot
+			test_fixed_tank_engine_type_slot
+			test_fixed_tank_armor_type_slot
+			test_fixed_tank_suspension_type
+			test_fixed_tank_chassis_part
+			test_fixed_tank_charger_slot
+			test_fixed_tank_ammunition_type_slot
+		}
+		
+		enable_subunits = {
+			modern_armor
+		}
+		
+		folder = {
+			name = nsb_armor_folder
+			position = { x = 4 y = @1042 }
+		}
+		
+		start_year = 1042
+		
+		categories = {
+			armor
+			RT_mbt_tech
+		}
+		
+		
+	}
+	
+	main_battle_tank_tech_1_eqs = {
+		
+		research_cost = 2.5
+		
+		path = {
+			leads_to_tech = main_battle_tank_tech_2_eqs
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			main_battle_tank_chassis_1_eqs
+		}
+		
+		folder = {
+			name = nsb_armor_folder
+			position = { x = 4 y = @1046 }
+		}
+		
+		start_year = 1046
+		
+		categories = {
+			armor
+			RT_mbt_tech
+		}
+		
+		
+	}
+	
+	main_battle_tank_tech_2_eqs = {
+		
+		research_cost = 2.5
+		
+		path = {
+			leads_to_tech = main_battle_tank_tech_3_eqs
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			main_battle_tank_chassis_2_eqs
+		}
+		
+		folder = {
+			name = nsb_armor_folder
+			position = { x = 4 y = @1049 }
+		}
+		
+		start_year = 1049
+		
+		categories = {
+			armor
+			RT_mbt_tech
+		}
+		
+		
+	}
+	
+	main_battle_tank_tech_3_eqs = {
+		
+		research_cost = 2.5
+		
+		path = {
+			leads_to_tech = main_battle_tank_tech_4_eqs
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			main_battle_tank_chassis_3_eqs
+		}
+		
+		folder = {
+			name = nsb_armor_folder
+			position = { x = 4 y = @1052 }
+		}
+		
+		start_year = 1052
+		
+		categories = {
+			armor
+			RT_mbt_tech
+		}
+	}
+	
+	main_battle_tank_tech_4_eqs = {
+		
+		research_cost = 2.5
+		
+		enable_equipments = {
+			main_battle_tank_chassis_4_eqs
+		}
+		
+		folder = {
+			name = nsb_armor_folder
+			position = { x = 4 y = @1055 }
+		}
+		
+		start_year = 1055
+		
+		categories = {
+			armor
+			RT_mbt_tech
+		}
+	}
+	### ICONS NOT HERE
+	main_battle_tank_tech_0_stg = {
+		
+		research_cost = 2.5
+		allow_branch = {
+			has_country_flag = sp_selected_stg_mbt
+		}
+		path = {
+			leads_to_tech = main_battle_tank_tech_1_stg
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			main_battle_tank_chassis_0_stg
+		}
+		
+		enable_subunits = {
+			modern_armor
+		}
+		
+		folder = {
+			name = nsb_armor_folder
+			position = { x = 4 y = @1042 }
+		}
+		
+		start_year = 1042
+		
+		categories = {
+			armor
+			RT_mbt_tech
+		}
+		
+		
+	}
+	
+	main_battle_tank_tech_1_stg = {
+		
+		research_cost = 2.5
+		
+		path = {
+			leads_to_tech = main_battle_tank_tech_2_stg
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			main_battle_tank_chassis_1_stg
+		}
+		
+		folder = {
+			name = nsb_armor_folder
+			position = { x = 4 y = @1046 }
+		}
+		
+		start_year = 1046
+		
+		categories = {
+			armor
+			RT_mbt_tech
+		}
+		
+		
+	}
+	
+	main_battle_tank_tech_2_stg = {
+		
+		research_cost = 2.5
+		
+		path = {
+			leads_to_tech = main_battle_tank_tech_3_stg
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			main_battle_tank_chassis_2_stg
+		}
+		
+		folder = {
+			name = nsb_armor_folder
+			position = { x = 4 y = @1049 }
+		}
+		
+		start_year = 1049
+		
+		categories = {
+			armor
+			RT_mbt_tech
+		}
+		
+		
+	}
+	
+	main_battle_tank_tech_3_stg = {
+		
+		research_cost = 2.5
+		
+		path = {
+			leads_to_tech = main_battle_tank_tech_4_stg
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			main_battle_tank_chassis_3_stg
+		}
+		
+		folder = {
+			name = nsb_armor_folder
+			position = { x = 4 y = @1052 }
+		}
+		
+		start_year = 1052
+		
+		categories = {
+			armor
+			RT_mbt_tech
+		}
+	}
+	
+	main_battle_tank_tech_4_stg = {
+		
+		research_cost = 2.5
+		
+		enable_equipments = {
+			main_battle_tank_chassis_4_stg
+		}
+		
+		folder = {
+			name = nsb_armor_folder
+			position = { x = 4 y = @1055 }
+		}
+		
+		start_year = 1055
+		
+		categories = {
+			armor
+			RT_mbt_tech
+		}
+	}
+	
+	main_battle_tank_tech_0_wng = {
+		
+		research_cost = 2.5
+		allow_branch = {
+			has_country_flag = sp_selected_wng_mbt
+		}
+		path = {
+			leads_to_tech = main_battle_tank_tech_1_wng
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			main_battle_tank_chassis_0_wng
+		}
+		
+		enable_subunits = {
+			modern_armor
+		}
+		
+		folder = {
+			name = nsb_armor_folder
+			position = { x = 4 y = @1042 }
+		}
+		
+		start_year = 1042
+		
+		categories = {
+			armor
+			RT_mbt_tech
+		}
+		
+		
+	}
+	
+	main_battle_tank_tech_1_wng = {
+		
+		research_cost = 2.5
+		
+		path = {
+			leads_to_tech = main_battle_tank_tech_2_wng
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			main_battle_tank_chassis_1_wng
+		}
+		
+		folder = {
+			name = nsb_armor_folder
+			position = { x = 4 y = @1046 }
+		}
+		
+		start_year = 1046
+		
+		categories = {
+			armor
+			RT_mbt_tech
+		}
+		
+		
+	}
+	
+	main_battle_tank_tech_2_wng = {
+		
+		research_cost = 2.5
+		
+		path = {
+			leads_to_tech = main_battle_tank_tech_3_wng
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			main_battle_tank_chassis_2_wng
+		}
+		
+		folder = {
+			name = nsb_armor_folder
+			position = { x = 4 y = @1049 }
+		}
+		
+		start_year = 1049
+		
+		categories = {
+			armor
+			RT_mbt_tech
+		}
+		
+		
+	}
+	
+	main_battle_tank_tech_3_wng = {
+		
+		research_cost = 2.5
+		
+		path = {
+			leads_to_tech = main_battle_tank_tech_4_wng
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			main_battle_tank_chassis_3_wng
+		}
+		
+		folder = {
+			name = nsb_armor_folder
+			position = { x = 4 y = @1052 }
+		}
+		
+		start_year = 1052
+		
+		categories = {
+			armor
+			RT_mbt_tech
+		}
+	}
+	
+	main_battle_tank_tech_4_wng = {
+		
+		research_cost = 2.5
+		
+		enable_equipments = {
+			main_battle_tank_chassis_4_wng
+		}
+		
+		folder = {
+			name = nsb_armor_folder
+			position = { x = 4 y = @1055 }
+		}
+		
+		start_year = 1055
+		
+		categories = {
+			armor
+			RT_mbt_tech
+		}
+	}
+	
+	main_battle_tank_tech_0_gri = {
+		
+		research_cost = 2.5
+		allow_branch = {
+			has_country_flag = sp_selected_gri_mbt
+		}
+		path = {
+			leads_to_tech = main_battle_tank_tech_1_gri
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			main_battle_tank_chassis_0_gri
+		}
+		
+		enable_subunits = {
+			modern_armor
+		}
+		
+		folder = {
+			name = nsb_armor_folder
+			position = { x = 4 y = @1042 }
+		}
+		
+		start_year = 1042
+		
+		categories = {
+			armor
+			RT_mbt_tech
+		}
+		
+		
+	}
+	
+	main_battle_tank_tech_1_gri = {
+		
+		research_cost = 2.5
+		
+		path = {
+			leads_to_tech = main_battle_tank_tech_2_gri
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			main_battle_tank_chassis_1_gri
+		}
+		
+		folder = {
+			name = nsb_armor_folder
+			position = { x = 4 y = @1046 }
+		}
+		
+		start_year = 1046
+		
+		categories = {
+			armor
+			RT_mbt_tech
+		}
+		
+		
+	}
+	
+	main_battle_tank_tech_2_gri = {
+		
+		research_cost = 2.5
+		
+		path = {
+			leads_to_tech = main_battle_tank_tech_3_gri
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			main_battle_tank_chassis_2_gri
+		}
+		
+		folder = {
+			name = nsb_armor_folder
+			position = { x = 4 y = @1049 }
+		}
+		
+		start_year = 1049
+		
+		categories = {
+			armor
+			RT_mbt_tech
+		}
+		
+		
+	}
+	
+	main_battle_tank_tech_3_gri = {
+		
+		research_cost = 2.5
+		
+		path = {
+			leads_to_tech = main_battle_tank_tech_4_gri
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			main_battle_tank_chassis_3_gri
+		}
+		
+		folder = {
+			name = nsb_armor_folder
+			position = { x = 4 y = @1052 }
+		}
+		
+		start_year = 1052
+		
+		categories = {
+			armor
+			RT_mbt_tech
+		}
+	}
+	
+	main_battle_tank_tech_4_gri = {
+		
+		research_cost = 2.5
+		
+		enable_equipments = {
+			main_battle_tank_chassis_4_gri
+		}
+		
+		folder = {
+			name = nsb_armor_folder
+			position = { x = 4 y = @1055 }
+		}
+		
+		start_year = 1055
+		
+		categories = {
+			armor
+			RT_mbt_tech
+		}
+	}
+	
+	main_battle_tank_tech_0_rct = {
+		
+		research_cost = 2.5
+		allow_branch = {
+			has_country_flag = sp_selected_rct_mbt
+		}
+		path = {
+			leads_to_tech = main_battle_tank_tech_1_rct
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			main_battle_tank_chassis_0_rct
+		}
+		
+		enable_subunits = {
+			modern_armor
+		}
+		
+		folder = {
+			name = nsb_armor_folder
+			position = { x = 4 y = @1042 }
+		}
+		
+		start_year = 1042
+		
+		categories = {
+			armor
+			RT_mbt_tech
+		}
+		
+		
+	}
+	
+	main_battle_tank_tech_1_rct = {
+		
+		research_cost = 2.5
+		
+		path = {
+			leads_to_tech = main_battle_tank_tech_2_rct
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			main_battle_tank_chassis_1_rct
+		}
+		
+		folder = {
+			name = nsb_armor_folder
+			position = { x = 4 y = @1046 }
+		}
+		
+		start_year = 1046
+		
+		categories = {
+			armor
+			RT_mbt_tech
+		}
+		
+		
+	}
+	
+	main_battle_tank_tech_2_rct = {
+		
+		research_cost = 2.5
+		
+		path = {
+			leads_to_tech = main_battle_tank_tech_3_rct
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			main_battle_tank_chassis_2_rct
+		}
+		
+		folder = {
+			name = nsb_armor_folder
+			position = { x = 4 y = @1049 }
+		}
+		
+		start_year = 1049
+		
+		categories = {
+			armor
+			RT_mbt_tech
+		}
+		
+		
+	}
+	
+	main_battle_tank_tech_3_rct = {
+		
+		research_cost = 2.5
+		
+		path = {
+			leads_to_tech = main_battle_tank_tech_4_rct
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			main_battle_tank_chassis_3_rct
+		}
+		
+		folder = {
+			name = nsb_armor_folder
+			position = { x = 4 y = @1052 }
+		}
+		
+		start_year = 1052
+		
+		categories = {
+			armor
+			RT_mbt_tech
+		}
+	}
+	
+	main_battle_tank_tech_4_rct = {
+		
+		research_cost = 2.5
+		
+		enable_equipments = {
+			main_battle_tank_chassis_4_rct
+		}
+		
+		folder = {
+			name = nsb_armor_folder
+			position = { x = 4 y = @1055 }
+		}
+		
+		start_year = 1055
+		
+		categories = {
+			armor
+			RT_mbt_tech
+		}
+	}
+	
+	
+	### ICONS ARE HERE
+	
+	motorized_tech_0 = {
+		
+		research_cost = 0
+		
+		path = {
+			leads_to_tech = motorized_tech_1
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			motorized_equipment_1
+		}
+		
+		folder = {
+			name = nsb_armor_folder
+			position = { x = 6 y = @1030 }
+		}
+		
+		
+		start_year = 1030
+		
+		categories = {
+			armor
+			motorized_equipment
+		}
+	}
+	
+	motorized_tech_1 = {
+		
+		research_cost = 1.5
+		
+		path = {
+			leads_to_tech = motorized_tech_2
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			motorized_equipment_2
+		}
+		
+		folder = {
+			name = nsb_armor_folder
+			position = { x = 6 y = @1046 }
+		}
+		
+		
+		start_year = 1046
+		
+		categories = {
+			armor
+			motorized_equipment
+		}
+	}
+	
+	motorized_tech_2 = {
+		
+		research_cost = 1.5
+		
+		enable_equipments = {
+			motorized_equipment_3
+		}
+		
+		folder = {
+			name = nsb_armor_folder
+			position = { x = 6 y = @1055 }
+		}
+		
+		
+		start_year = 1055
+		
+		categories = {
+			armor
+			motorized_equipment
+		}
+	}
+	
+	armored_car_tech_0 = {
+		
+		research_cost = 0
+		
+		path = {
+			leads_to_tech = armored_car_tech_1
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			armored_car_equipment_1
+		}
+		
+		folder = {
+			name = nsb_armor_folder
+			position = { x = 8 y = @1030 }
+		}
+		
+		
+		start_year = 1030
+		
+		categories = {
+			armor
+			cat_armored_car
+		}
+	}
+	
+	armored_car_tech_1 = {
+		
+		research_cost = 1.5
+		
+		path = {
+			leads_to_tech = armored_car_tech_2
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			armored_car_equipment_2
+		}
+		
+		folder = {
+			name = nsb_armor_folder
+			position = { x = 8 y = @1046 }
+		}
+		
+		
+		start_year = 1046
+		
+		categories = {
+			armor
+			cat_armored_car
+		}
+	}
+	
+	armored_car_tech_2 = {
+		
+		research_cost = 1.5
+		
+		enable_equipments = {
+			armored_car_equipment_3
+		}
+		
+		folder = {
+			name = nsb_armor_folder
+			position = { x = 8 y = @1055 }
+		}
+		
+		
+		start_year = 1055
+		
+		categories = {
+			armor
+			cat_armored_car
+		}
+	}
+	 
+	tank_diesel_engine = {
+		
+		start_year = 1000
+		
+		path = {
+			leads_to_tech = tank_advanced_engines
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 0
+		
+		enable_equipment_modules = {
+			tank_diesel_engine
+			tank_gasoline_engine
+		}
+		
+		folder = {
+			name = nsb_armor_folder
+			position = { x = 10 y = @1030 }
+		}
+		
+		categories = {
+			RT_engine_tech
+			RT_mbt_upgrades
+		}
+	
+	}
+	
+	tank_advanced_engines = {
+		start_year = 1045
+		
+		path = {
+			leads_to_tech = tank_superior_engines
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 4
+		
+		enable_equipment_modules = {
+			engine_hybrid_engine
+			tank_gas_turbine_engine
+			tank_higheff_diesel_engine
+		}
+		
+		folder = {
+			name = nsb_armor_folder
+			position = { x = 10 y = @1046 }
+		}
+		
+		categories = {
+			RT_engine_tech
+			RT_mbt_upgrades
+		}
+	}
+	
+	tank_superior_engines = {
+		start_year = 1055
+		
+		
+		research_cost = 4
+		
+		enable_equipment_modules = {
+			engine_crystal_engine
+		}
+		
+		folder = {
+			name = nsb_armor_folder
+			position = { x = 10 y = @1055 }
+		}
+		
+		categories = {
+			RT_engine_tech
+			RT_mbt_upgrades
+		}
+	}
+	
+	tank_gw_turret = {
+		start_year = 1000
+		
+		path = {
+			leads_to_tech = early_mbt_turret
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = early_light_turret
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		
+		enable_equipment_modules = {
+			mbt_three_manned_turret_0
+			mbt_two_manned_turret_0
+			tank_mounted_scope_0
+		}
+		
+		folder = {
+			name = nsb_armor_folder
+			position = { x = 12 y = @1030 }
+		}
+		
+		categories = {
+			RT_mbt_turrets
+			RT_mbt_upgrades
+		}
+	}
+	
+	early_mbt_turret = {
+		start_year = 1042
+		
+		path = {
+			leads_to_tech = advanced_mbt_turret
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		
+		enable_equipment_modules = {
+			mbt_three_manned_turret_1
+			mbt_two_manned_turret_1
+			tank_mounted_scope_1
+		}
+		
+		folder = {
+			name = nsb_armor_folder
+			position = { x = 12 y = @1042 }
+		}
+		
+		categories = {
+			RT_mbt_turrets
+			RT_mbt_upgrades
+		}
+	}
+	
+	advanced_mbt_turret = {
+		start_year = 1049
+		
+		path = {
+			leads_to_tech = unpopulated_mbt_turret
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		
+		enable_equipment_modules = {
+			mbt_three_manned_turret_2
+			mbt_two_manned_turret_2
+			tank_mounted_scope_2
+		}
+		
+		folder = {
+			name = nsb_armor_folder
+			position = { x = 12 y = @1049 }
+		}
+		
+		categories = {
+			RT_mbt_turrets
+			RT_mbt_upgrades
+		}
+	}
+	
+	unpopulated_mbt_turret = {
+		start_year = 1055
+		
+		
+		research_cost = 2
+		
+		enable_equipment_modules = {
+			mbt_non_populated_turret
+			tank_night_vis_scope_0
+		}
+		
+		folder = {
+			name = nsb_armor_folder
+			position = { x = 12 y = @1055 }
+		}
+		
+		categories = {
+			RT_mbt_turrets
+			RT_mbt_upgrades
+		}
+	}
+	
+	early_light_turret = {
+		start_year = 1042
+		
+		path = {
+			leads_to_tech = advanced_light_turret
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		
+		enable_equipment_modules = {
+			apc_turret_0
+			ifv_turret_0
+		}
+		
+		folder = {
+			name = nsb_armor_folder
+			position = { x = 14 y = @1042 }
+		}
+		
+		categories = {
+			RT_asv_turrets
+			RT_mbt_upgrades
+		}
+	}
+	
+	advanced_light_turret = {
+		start_year = 1049
+		
+		path = {
+			leads_to_tech = unpopulated_light_turret
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		
+		enable_equipment_modules = {
+			apc_turret_1
+			ifv_turret_1
+		}
+		
+		folder = {
+			name = nsb_armor_folder
+			position = { x = 14 y = @1049 }
+		}
+		
+		categories = {
+			RT_asv_turrets
+			RT_mbt_upgrades
+		}
+	}
+	
+	unpopulated_light_turret = {
+		start_year = 1055
+		
+		
+		research_cost = 2
+		
+		enable_equipment_modules = {
+			apc_turret_2
+			ifv_turret_2
+		}
+		
+		folder = {
+			name = nsb_armor_folder
+			position = { x = 14 y = @1055 }
+		}
+		
+		categories = {
+			RT_asv_turrets
+			RT_mbt_upgrades
+		}
+	}
+	
+	gw_tank_radio = {
+		start_year = 1020
+		
+		path = {
+			leads_to_tech = early_tank_radio
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = early_mbt_fcs
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 0
+		
+		enable_equipment_modules = {
+			tank_radio_module_0
+		}
+		
+		folder = {
+			name = nsb_armor_folder
+			position = { x = 16 y = @1030 }
+		}
+		
+		categories = {
+			RT_mbt_turrets
+			RT_mbt_upgrades
+		}
+	}
+	
+	early_tank_radio = {
+		start_year = 1042
+		
+		path = {
+			leads_to_tech = advanced_tank_radio
+			research_cost_coeff = 1
+		}
+		research_cost = 2
+		
+		enable_equipment_modules = {
+			tank_radio_module_1
+		}
+		
+		folder = {
+			name = nsb_armor_folder
+			position = { x = 16 y = @1042 }
+		}
+		
+		categories = {
+			RT_mbt_turrets
+			RT_mbt_upgrades
+		}
+	}
+	
+	advanced_tank_radio = {
+		start_year = 1049
+		
+		path = {
+			leads_to_tech = modern_tank_radio
+			research_cost_coeff = 1
+		}
+		research_cost = 2
+		
+		enable_equipment_modules = {
+			tank_radio_module_2
+		}
+		
+		folder = {
+			name = nsb_armor_folder
+			position = { x = 16 y = @1049 }
+		}
+		
+		categories = {
+			RT_mbt_turrets
+			RT_mbt_upgrades
+		}
+	}
+	
+	
+	early_mbt_fcs = {
+		start_year = 1042
+		
+		path = {
+			leads_to_tech = advanced_mbt_fcs
+			research_cost_coeff = 1
+		}
+		research_cost = 4
+		
+		enable_equipment_modules = {
+			tank_bics_0
+			tank_tele_relay_0
+		}
+		
+		folder = {
+			name = nsb_armor_folder
+			position = { x = 18 y = @1042 }
+		}
+		
+		categories = {
+			RT_mbt_turrets
+			RT_mbt_upgrades
+		}
+	}
+	
+	advanced_mbt_fcs = {
+		start_year = 1054
+		
+		path = {
+			leads_to_tech = modern_mbt_fcs
+			research_cost_coeff = 1
+		}
+		research_cost = 6
+		
+		enable_equipment_modules = {
+			tank_bics_1
+			tank_tele_relay_1
+		}
+		
+		folder = {
+			name = nsb_armor_folder
+			position = { x = 18 y = @1052 }
+		}
+		
+		categories = {
+			RT_mbt_turrets
+			RT_mbt_upgrades
+		}
+	}
+	
+	
+	basic_upgrades_set = {
+		
+		start_year = 1030
+		research_cost = 5
+		
+		path = {
+			leads_to_tech = advanced_upgrades_set
+			research_cost_coeff = 1
+		}
+		
+		enable_equipment_modules = {
+			
+		}
+		
+		folder = {
+			name = nsb_armor_folder
+			position = { x = 20 y = @1030 }
+		}
+		
+		categories = {
+			RT_mbt_turrets
+			RT_mbt_upgrades
+		}
+		
+	}
+	
+	advanced_upgrades_set = {
+		
+		start_year = 1046
+		research_cost = 5
+		
+		path = {
+			leads_to_tech = modern_upgrades_set
+			research_cost_coeff = 1
+		}
+		
+		enable_equipment_modules = {
+			
+		}
+		
+		folder = {
+			name = nsb_armor_folder
+			position = { x = 20 y = @1046 }
+		}
+		
+		categories = {
+			RT_mbt_turrets
+			RT_mbt_upgrades
+		}
+		
+	}
+	
+	modern_upgrades_set = {
+		
+		start_year = 1055
+		research_cost = 5
+		
+		enable_equipment_modules = {
+			
+		}
+		
+		folder = {
+			name = nsb_armor_folder
+			position = { x = 20 y = @1055 }
+		}
+		
+		categories = {
+			RT_mbt_turrets
+			RT_mbt_upgrades
+		}
+		
+	}
+	 
+	tank_base_armor = {
+		
+		start_year = 1000
+		
+		path = {
+			leads_to_tech = tank_advanced_armor
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 0
+		
+		enable_equipment_modules = {
+			rolled_homogen_armor_0
+			composite_armor
+			
+		}
+		
+		folder = {
+			name = nsb_armor_folder
+			position = { x = 22 y = @1030 }
+		}
+		
+		categories = {
+			RT_armor_tech
+			RT_mbt_upgrades
+		}
+	
+	}
+	
+	tank_advanced_armor = {
+		start_year = 1045
+		
+		path = {
+			leads_to_tech = tank_superior_armor
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 4
+		
+		enable_equipment_modules = {
+			rolled_homogen_armor_1
+			lightweight_alloy_armor
+		}
+		
+		folder = {
+			name = nsb_armor_folder
+			position = { x = 22 y = @1046 }
+		}
+		
+		categories = {
+			RT_armor_tech
+			RT_mbt_upgrades
+		}
+	}
+	
+	tank_superior_armor = {
+		start_year = 1055
+		
+		
+		research_cost = 4
+		
+		enable_equipment_modules = {
+			rolled_homogen_armor_2
+			complex_armor
+		}
+		
+		folder = {
+			name = nsb_armor_folder
+			position = { x = 22 y = @1055 }
+		}
+		
+		categories = {
+			RT_armor_tech
+			RT_mbt_upgrades
+		}
+	}

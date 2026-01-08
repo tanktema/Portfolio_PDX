@@ -1,0 +1,581 @@
+scripted_gui = {
+	
+	PMC_toggle_button = {
+		context_type = player_context
+		parent_window_name = "templatedeploymentwindow"
+		
+		effects = {
+			PMC_toggle_btn_click = {
+				if = {
+					limit = {
+						check_variable = { pmc_window_open_var < 1 }
+					}
+					set_variable = { pmc_window_open_var = 1 }
+				}
+				else = {
+					set_variable = { pmc_window_open_var = 0 }
+				}
+			}
+		}
+		
+		triggers = {
+			PMC_toggle_btn_click_enabled = {
+				
+				AND = {
+					has_tech = great_war_infantry_eqpm
+					has_tech = great_war_magical_eqpm
+					has_tech = paratroopers_tech_1
+					has_tech = marines_tech_1
+					has_tech = army_special_forces_tech_1
+					
+					OR = {
+						has_tech = mbt_1040_tech_legacy
+						has_tech = mbt_1040_tech
+					}
+					OR = {
+						has_tech = asv_1040_tech_legacy
+						has_tech = asv_1040_tech
+					}
+					OR = {
+						has_tech = icav_1040_tech_legacy
+						has_tech = icav_1040_tech
+					}
+					has_tech = infantry_artillery_tech
+					has_tech = linear_artillery_tech
+					has_tech = heavy_artillery_tech
+					has_tech = magical_artillery_tech
+					has_tech = tech_engineers
+					has_tech = tech_recon
+					has_tech = tech_maintenance_company
+					has_tech = tech_field_hospital
+					has_tech = tech_logistics_company
+					has_tech = tech_signal_company
+					has_tech = tech_targeting_company
+					has_tech = tech_pontone_company
+					has_tech = tech_fast_react_company
+					has_tech = tech_countermagic_company
+					
+				}
+			}
+		}
+		
+		window_name = open_close_pmc_windows_window
+	}
+	
+	PMC_companies_list_gui = {
+		context_type = player_context
+		#parent_window_token = deployment_tab
+		parent_window_name = "templatedeploymentwindow"
+		
+		window_name = pmc_list_gui
+		
+		visible = {
+			check_variable = { pmc_window_open_var > 0 }
+		}
+		
+		effects = {
+			pmc_octavia_send_goods_1_click = {
+				set_country_flag = {
+					flag = pmc_octavia_recent_sent_weap
+					days = 90
+					value = 1
+				}
+				add_equipment_to_stockpile = {
+					type = infantry_weapons
+					amount = -500
+				}
+				add_to_variable = { amount_of_octavia_common_weapons = 500 }
+				add_equipment_to_stockpile = {
+					type = infantry_artillery_equipment
+					amount = -500
+				}
+				add_to_variable = { amount_of_octavia_grenade_launchers = 500 }
+				add_equipment_to_stockpile = {
+					type = infantry_antiair_equipment
+					amount = -500
+				}
+				add_to_variable = { amount_of_octavia_atgm_launchers = 500 }
+				add_equipment_to_stockpile = {
+					type = infantry_antitank_equipment
+					amount = -500
+				}
+				add_to_variable = { amount_of_octavia_aagm_launchers = 500 }
+				add_equipment_to_stockpile = {
+					type = magical_weapons
+					amount = -500
+				}
+				add_to_variable = { amount_of_octavia_magical_weapons = 500 }
+				add_to_variable = {
+					pmc_octavia_acceptance = 5
+				}
+				calculate_pmc_ocavia_bonuses = yes 
+				calculate_amount_available_octavia_divs = yes
+			}
+			pmc_octavia_send_goods_2_click = {
+				set_country_flag = {
+					flag = pmc_octavia_recent_sent_veh
+					days = 90
+					value = 1
+				}
+				add_equipment_to_stockpile = {
+					type = infantry_carrying_armored_vehicle
+					amount = -250
+				}
+				add_to_variable = { amount_of_octavia_apcs = 250 }
+				add_to_variable = {
+					pmc_octavia_acceptance = 5
+				}
+				
+				calculate_pmc_ocavia_bonuses = yes 
+				calculate_amount_available_octavia_divs = yes
+			}
+			pmc_octavia_send_recruits_click = {
+				set_country_flag = {
+					flag = pmc_octavia_recent_sent_rec
+					days = 90
+					value = 1
+				}
+				add_manpower = -1000
+				add_to_variable = { amount_of_octavia_manpower = 1000 }
+				add_to_variable = {
+					pmc_octavia_acceptance = 2
+				}
+				
+				calculate_pmc_ocavia_bonuses = yes 
+				calculate_amount_available_octavia_divs = yes
+			}
+			
+			pmc_octavia_hire_theorist_click = {
+				
+				if = {
+					limit = {
+						has_idea = generic_pmc_whitehill_concern
+					}
+					add_to_variable = { pmc_whitehill_acceptance = -10 }
+				}
+				if = {
+					limit = {
+						has_idea = generic_pmc_stable_concern
+					}
+					add_to_variable = { pmc_stable_acceptance = -10 }
+
+				}
+				if = {
+					limit = {
+						has_idea = generic_pmc_caliber_concern
+					}
+					add_to_variable = { pmc_calibre_acceptance = -10 }
+					
+				}
+				if = {
+					limit = {
+						has_idea = generic_pmc_legione_concern
+					}
+					add_to_variable = { pmc_legione_acceptance = -10 }
+					
+				}
+				add_ideas = generic_pmc_octavia_concern
+				add_to_variable = { pmc_octavia_acceptance = -15 }
+				check_pmc_variables = yes 
+				calculate_pmc_ocavia_bonuses = yes 
+				calculate_amount_available_octavia_divs = yes
+			}
+			
+			pmc_octavia_t1_minus_click = {
+				add_to_variable = { ROOT.amount_t1_ocavia_hiring = -1  }
+				clamp_variable = { var = ROOT.amount_t1_ocavia_hiring min = 0 }
+				set_variable = { pay_for_oct_t1 = 150 }
+				multiply_variable = { pay_for_oct_t1 = amount_t1_ocavia_hiring }
+			}
+			
+			pmc_octavia_t1_plus_click = {
+				add_to_variable = { ROOT.amount_t1_ocavia_hiring = 1  }
+				clamp_variable = { var = ROOT.amount_t1_ocavia_hiring max = ROOT.amount_of_octavia_max_div_t1 }
+				clamp_variable = { var = ROOT.amount_t1_ocavia_hiring max = global.amount_of_octavia_div_tier1 }
+				set_variable = { pay_for_oct_t1 = 150 }
+				multiply_variable = { pay_for_oct_t1 = amount_t1_ocavia_hiring }
+			}
+			
+			pmc_octavia_t1_confirm_click = {
+				if = {
+					limit = {
+						NOT = {
+							has_template = "Octavia Group"
+						}
+					}
+					division_template = {
+						name = "Octavia Group"
+						is_locked = yes 
+						proirity = 2
+						regiments = {
+							mechanized_infantry = { x = 0 y = 0 }
+							mechanized_infantry = { x = 0 y = 1 }
+							mechanized_infantry = { x = 0 y = 2 }
+							mechanized_infantry = { x = 1 y = 0 }
+							mechanized_infantry = { x = 1 y = 1 }
+						}
+						support = {
+							signal_company = { x = 0 y = 0 }
+							recon = { x = 0 y = 1 }
+							fast_initiative_unit = { x = 0 y = 2 }
+						}
+					}
+				}
+				country_event = { id = octavia.1 days = 180 }
+				for_loop_effect = {
+					end = amount_t1_ocavia_hiring
+					compare_type = less_than
+					
+					capital_scope = {
+						create_unit = {
+							division = "name = \"Octavia Group\" division_template = \"Octavia Group\" start_experience_factor = 1 start_equipment_factor = 1 start_manpower_factor = 1"
+							owner = ROOT 
+						}
+					}
+				}
+				subtract_from_variable = { current_country_budget = pay_for_oct_t1 }
+				set_variable = { oct_t1_have = amount_t1_ocavia_hiring }
+				subtract_from_variable = { global.amount_of_octavia_div_tier1 = amount_t1_ocavia_hiring }
+				subtract_from_variable = { root.amount_of_octavia_max_div_t1 = amount_t1_ocavia_hiring }
+				set_variable = { amount_t1_ocavia_hiring = 0 }
+				
+			}
+			
+			pmc_octavia_t2_minus_click = {
+				add_to_variable = { ROOT.amount_t2_ocavia_hiring = -1  }
+				clamp_variable = { var = ROOT.amount_t2_ocavia_hiring min = 0 }
+				set_variable = { pay_for_oct_t2 = 750 }
+				multiply_variable = { pay_for_oct_t2 = amount_t1_ocavia_hiring }
+			}
+			
+			pmc_octavia_t2_plus_click = {
+				add_to_variable = { ROOT.amount_t2_ocavia_hiring = 1  }
+				clamp_variable = { var = ROOT.amount_t2_ocavia_hiring max = ROOT.amount_of_octavia_max_div_t2 }
+				clamp_variable = { var = ROOT.amount_t2_ocavia_hiring max = global.amount_of_octavia_div_tier2 }
+				set_variable = { pay_for_oct_t2 = 750 }
+				multiply_variable = { pay_for_oct_t2 = amount_t1_ocavia_hiring }
+			}
+			
+			pmc_octavia_t2_confirm_click = {
+				if = {
+					limit = {
+						NOT = {
+							has_template = "Death from Above"
+						}
+					}
+					division_template = {
+						name = "Death from Above"
+						is_locked = yes 
+						proirity = 2
+						regiments = {
+							mechanized_infantry = { x = 0 y = 0 }
+							mechanized_infantry = { x = 0 y = 1 }
+							mechanized_infantry = { x = 0 y = 2 }
+							infantry_gl_unit = { x = 1 y = 0 }
+							infantry_gl_unit = { x = 1 y = 1 }
+							infantry_gl_unit = { x = 1 y = 2 }
+						}
+						support = {
+							signal_company = { x = 0 y = 0 }
+							recon = { x = 0 y = 1 }
+							fast_initiative_unit = { x = 0 y = 2 }
+							infantry_gl_support = { x = 0 y = 3 }
+						}
+					}
+				}
+				country_event = { id = octavia.2 days = 180 }
+				for_loop_effect = {
+					end = amount_t2_ocavia_hiring
+					compare_type = less_than
+					
+					capital_scope = {
+						create_unit = {
+							division = "name = \"Death from Above\" division_template = \"Death from Above\" start_experience_factor = 1 start_equipment_factor = 1 start_manpower_factor = 1"
+							owner = ROOT 
+						}
+					}
+				}
+				subtract_from_variable = { current_country_budget = pay_for_oct_t2 }
+				set_variable = { oct_t2_have = amount_t2_ocavia_hiring }
+				subtract_from_variable = { global.amount_of_octavia_div_tier2 = amount_t2_ocavia_hiring }
+				subtract_from_variable = { root.amount_of_octavia_max_div_t2 = amount_t2_ocavia_hiring }
+				set_variable = { amount_t2_ocavia_hiring = 0 }
+				
+			}
+			
+			pmc_octavia_t3_minus_click = {
+				add_to_variable = { ROOT.amount_t3_ocavia_hiring = -1  }
+				clamp_variable = { var = ROOT.amount_t3_ocavia_hiring min = 0 }
+				set_variable = { pay_for_oct_t3 = 750 }
+				multiply_variable = { pay_for_oct_t3 = amount_t1_ocavia_hiring }
+			}
+			
+			pmc_octavia_t3_plus_click = {
+				add_to_variable = { ROOT.amount_t3_ocavia_hiring = 1  }
+				clamp_variable = { var = ROOT.amount_t3_ocavia_hiring max = ROOT.amount_of_octavia_max_div_t3 }
+				clamp_variable = { var = ROOT.amount_t3_ocavia_hiring max = global.amount_of_octavia_div_tier2 }
+				set_variable = { pay_for_oct_t3 = 750 }
+				multiply_variable = { pay_for_oct_t3 = amount_t1_ocavia_hiring }
+			}
+			
+			pmc_octavia_t3_confirm_click = {
+				if = {
+					limit = {
+						NOT = {
+							has_template = "Tank Hunters"
+						}
+					}
+					division_template = {
+						name = "Tank Hunters"
+						is_locked = yes 
+						proirity = 2
+						regiments = {
+							mechanized_infantry = { x = 0 y = 0 }
+							mechanized_infantry = { x = 0 y = 1 }
+							mechanized_infantry = { x = 0 y = 2 }
+							infantry_anti_tank_unit = { x = 1 y = 0 }
+							infantry_anti_tank_unit = { x = 1 y = 1 }
+							infantry_anti_tank_unit = { x = 1 y = 3 }
+						}
+						support = {
+							signal_company = { x = 0 y = 0 }
+							recon = { x = 0 y = 1 }
+							fast_initiative_unit = { x = 0 y = 2 }
+							infantry_anti_tank_support_unit = { x = 0 y = 3 }
+						}
+					}
+				}
+				country_event = { id = octavia.3 days = 180 }
+				for_loop_effect = {
+					end = amount_t3_ocavia_hiring
+					compare_type = less_than
+					
+					capital_scope = {
+						create_unit = {
+							division = "name = \"Tank Hunters\" division_template = \"Tank Hunters\" start_experience_factor = 1 start_equipment_factor = 1 start_manpower_factor = 1"
+							owner = ROOT 
+						}
+					}
+				}
+				subtract_from_variable = { current_country_budget = pay_for_oct_t3 }
+				set_variable = { oct_t3_have = amount_t3_ocavia_hiring }
+				subtract_from_variable = { global.amount_of_octavia_div_tier3 = amount_t3_ocavia_hiring }
+				subtract_from_variable = { root.amount_of_octavia_max_div_t3 = amount_t3_ocavia_hiring }
+				set_variable = { amount_t3_ocavia_hiring = 0 }
+				
+			}
+			
+			pmc_octavia_t4_minus_click = {
+				add_to_variable = { ROOT.amount_t4_ocavia_hiring = -1  }
+				clamp_variable = { var = ROOT.amount_t4_ocavia_hiring min = 0 }
+				set_variable = { pay_for_oct_t4 = 750 }
+				multiply_variable = { pay_for_oct_t4 = amount_t1_ocavia_hiring }
+			}
+			
+			pmc_octavia_t4_plus_click = {
+				add_to_variable = { ROOT.amount_t4_ocavia_hiring = 1  }
+				clamp_variable = { var = ROOT.amount_t4_ocavia_hiring max = ROOT.amount_of_octavia_max_div_t4 }
+				clamp_variable = { var = ROOT.amount_t4_ocavia_hiring max = global.amount_of_octavia_div_tier2 }
+				set_variable = { pay_for_oct_t4 = 750 }
+				multiply_variable = { pay_for_oct_t4 = amount_t1_ocavia_hiring }
+			}
+			
+			pmc_octavia_t4_confirm_click = {
+				if = {
+					limit = {
+						NOT = {
+							has_template = "Clear Sky"
+						}
+					}
+					division_template = {
+						name = "Clear Sky"
+						is_locked = yes 
+						proirity = 2
+						regiments = {
+							mechanized_infantry = { x = 0 y = 0 }
+							mechanized_infantry = { x = 0 y = 1 }
+							mechanized_infantry = { x = 0 y = 2 }
+							infantry_anti_air_unit = { x = 1 y = 0 }
+							infantry_anti_air_unit = { x = 1 y = 1 }
+							infantry_anti_air_unit = { x = 1 y = 3 }
+						}
+						support = {
+							signal_company = { x = 0 y = 0 }
+							recon = { x = 0 y = 1 }
+							fast_initiative_unit = { x = 0 y = 2 }
+							infantry_anti_air_support_unit = { x = 0 y = 3 }
+						}
+					}
+				}
+				country_event = { id = octavia.4 days = 180 }
+				for_loop_effect = {
+					end = amount_t4_ocavia_hiring
+					compare_type = less_than
+					
+					capital_scope = {
+						create_unit = {
+							division = "name = \"Clear Sky\" division_template = \"Clear Sky\" start_experience_factor = 1 start_equipment_factor = 1 start_manpower_factor = 1"
+							owner = ROOT 
+						}
+					}
+				}
+				subtract_from_variable = { current_country_budget = pay_for_oct_t4 }
+				set_variable = { oct_t4_have = amount_t4_ocavia_hiring }
+				subtract_from_variable = { global.amount_of_octavia_div_tier4 = amount_t4_ocavia_hiring }
+				subtract_from_variable = { root.amount_of_octavia_max_div_t4 = amount_t4_ocavia_hiring }
+				set_variable = { amount_t4_ocavia_hiring = 0 }
+				
+			}
+			
+			pmc_octavia_t5_minus_click = {
+				add_to_variable = { ROOT.amount_t5_ocavia_hiring = -1  }
+				clamp_variable = { var = ROOT.amount_t5_ocavia_hiring min = 0 }
+				set_variable = { pay_for_oct_t5 = 1500 }
+				multiply_variable = { pay_for_oct_t5 = amount_t1_ocavia_hiring }
+			}
+			
+			pmc_octavia_t5_plus_click = {
+				add_to_variable = { ROOT.amount_t5_ocavia_hiring = 1  }
+				clamp_variable = { var = ROOT.amount_t5_ocavia_hiring max = ROOT.amount_of_octavia_max_div_t5 }
+				clamp_variable = { var = ROOT.amount_t5_ocavia_hiring max = global.amount_of_octavia_div_tier2 }
+				set_variable = { pay_for_oct_t5 = 1500 }
+				multiply_variable = { pay_for_oct_t5 = amount_t1_ocavia_hiring }
+			}
+			
+			pmc_octavia_t5_confirm_click = {
+				if = {
+					limit = {
+						NOT = {
+							has_template = "The Orchestra"
+						}
+					}
+					division_template = {
+						name = "The Orchestra"
+						is_locked = yes 
+						proirity = 2
+						regiments = {
+							armored_army_special_forces = { x = 0 y = 0 }
+							armored_army_special_forces = { x = 0 y = 1 }
+							armored_army_special_forces = { x = 0 y = 2 }
+							infantry_anti_air_unit = { x = 1 y = 0 }
+							infantry_anti_tank_unit = { x = 1 y = 1 }
+							infantry_gl_unit = { x = 1 y = 2 }
+						}
+						support = {
+							signal_company = { x = 0 y = 0 }
+							recon = { x = 0 y = 1 }
+							fast_initiative_unit = { x = 0 y = 2 }
+							countermagic_unit = { x = 0 y = 3 }
+							pontone_unit = { x = 0 y = 4 }
+						}
+					}
+				}
+				country_event = { id = octavia.5 days = 180 }
+				for_loop_effect = {
+					end = amount_t5_ocavia_hiring
+					compare_type = less_than
+					
+					capital_scope = {
+						create_unit = {
+							division = "name = \"The Orchestra\" division_template = \"The Orchestra\" start_experience_factor = 1 start_equipment_factor = 1 start_manpower_factor = 1"
+							owner = ROOT 
+						}
+					}
+				}
+				
+				subtract_from_variable = { current_country_budget = pay_for_oct_t5 }
+				set_variable = { oct_t5_have = amount_t5_ocavia_hiring }
+				subtract_from_variable = { global.amount_of_octavia_div_tier5 = amount_t5_ocavia_hiring }
+				subtract_from_variable = { root.amount_of_octavia_max_div_t5 = amount_t5_ocavia_hiring }
+				set_variable = { amount_t5_ocavia_hiring = 0 }
+				
+			}
+			
+		}
+		
+		triggers = {
+			pmc_octavia_send_goods_1_click_enabled = {
+				has_equipment = { infantry_weapons > 499 }
+				has_equipment = { infantry_artillery_equipment > 499 }
+				has_equipment = { infantry_antiair_equipment > 499 }
+				has_equipment = { infantry_antitank_equipment > 499 }
+				has_equipment = { magical_weapons > 499 }
+				hidden_trigger = { 
+					NOT = { has_country_flag = pmc_octavia_recent_sent_weap }
+				}
+			}
+			pmc_octavia_send_goods_2_click_enabled = {
+				has_equipment = { infantry_carrying_armored_vehicle > 249 }
+				hidden_trigger = { 
+					NOT = { has_country_flag = pmc_octavia_recent_sent_veh }
+				}
+			}
+			pmc_octavia_send_recruits_click_enabled = {
+				has_manpower > 999
+				hidden_trigger = { 
+					NOT = { has_country_flag = pmc_octavia_recent_sent_rec }
+				}
+			}
+			pmc_octavia_hire_theorist_click_enabled = {
+				NOT = { has_idea = generic_pmc_octavia_concern }
+			}
+			
+			pmc_octavia_t1_confirm_click_enabled = {
+			
+			}
+			
+			pmc_octavia_t2_confirm_click_enabled = {
+			
+			}
+			
+			pmc_octavia_t3_confirm_click_enabled = {
+			
+			}
+			
+			pmc_octavia_t4_confirm_click_enabled = {
+			
+			}
+			
+			pmc_octavia_t5_confirm_click_enabled = {
+			
+			}
+			
+		}
+		
+		properties = {
+			pmc_octavia_acceptance_pb = {
+				frame = ROOT.pmc_octavia_acceptance
+			} 
+			pmc_legione_acceptance_pb = {
+				frame = ROOT.pmc_legione_acceptance
+			} 
+			pmc_stable_acceptance_pb = {
+				frame = ROOT.pmc_stable_acceptance
+			} 
+			pmc_whitehill_acceptance_pb = {
+				frame = ROOT.pmc_whitehill_acceptance
+			} 
+			pmc_calibre_acceptance_pb = {
+				frame = ROOT.pmc_calibre_acceptance
+			}
+			pmc_octavia_logo = {
+				frame = 1
+			}
+			pmc_legione_logo = {
+				frame = 3
+			}
+			pmc_stable_logo = {
+				frame = 5
+			}
+			pmc_whitehill_logo = {
+				frame = 2
+			}
+			pmc_calibre_logo = {
+				frame = 4
+			}
+		}
+		
+		
+	}
+}
+	

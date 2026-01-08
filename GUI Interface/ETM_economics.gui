@@ -1,0 +1,383 @@
+guiTypes = {
+
+	containerWindowType = {
+		name = "economics_window"
+		position = { x= 1000 y = 4 }
+		clipping = no
+		size = { width=56 height=30 }
+		Orientation = UPPER_LEFT
+
+		buttonType = {
+			name = "economics_btn_open_close"
+			quadTextureSprite ="GFX_etm_eco_btn_open"
+			position = { x = 0 y = 0 }
+			
+		}  
+ 
+		instantTextBoxType = { 
+			name ="economics" 
+			position = { x= 5 y = 5 }
+			font = "hoi_18mbs" 
+			text = "[?eco_current_labor|3*]"
+			format = left
+			maxWidth = 100
+			maxHeight = 24
+			fixedsize = yes
+			pdx_tooltip = "debug_total_spendings"
+			pdx_tooltip_delayed = "eco_shift_click"
+		}
+	}
+	
+	containerWindowType = {
+		name = "eco_btn_window"
+		position = { x= 540 y = 438 }
+		clipping = no
+		size = { width=56 height=30 }
+		Orientation = UPPER_LEFT
+
+		buttonType = {
+			name = "eco_open_laws_button"
+			quadTextureSprite ="GFX_ETM_eco_category_button"
+		}
+		iconType = {
+			name = "eco_open_laws_overlay"
+			quadTextureSprite ="GFX_button_eco_overlay"
+			alwaystransparent = yes 
+		}
+
+	}
+	containerWindowType = {
+		name = "economics_ideas_window"
+		position = { x = 600 y = 50 }
+		size = { width=569 height=481 } 
+		Orientation = UPPER_LEFT
+		
+		iconType = {
+			name = "economics_bg"
+			quadTextureSprite ="GFX_ETM_eco_ideas_bg"
+		}
+		
+		gridboxType = {
+			name = "economics_categories_grid"
+			position = { x = -3 y = 0 } 
+			size = { width = 150 height = 100 } 
+			slotsize = { width = 143 height = 180 }  
+			max_slots_horizontal = 4  				
+			add_horizontal = yes
+			
+		}
+		
+		buttonType = {
+			name = "eco_btn_pol_ideas"
+			position = { x = 0 y = -50 }
+			quadTextureSprite = "GFX_ETM_eco_category_button"
+		}
+		
+		buttonType = {
+			name = "eco_btn_gov_ideas"
+			position = { x = 50 y = -50 }
+			quadTextureSprite = "GFX_ETM_eco_category_button"
+		}
+		
+		buttonType = {
+			name = "eco_btn_trd_ideas"
+			position = { x = 100 y = -50 }
+			quadTextureSprite = "GFX_ETM_eco_category_button"
+		}
+		
+		buttonType = {
+			name = "eco_btn_civ_ideas"
+			position = { x = 150 y = -50 }
+			quadTextureSprite = "GFX_ETM_eco_category_button"
+		}
+		
+		buttonType = {
+			name = "eco_btn_mil_ideas"
+			position = { x = 200 y = -50 }
+			quadTextureSprite = "GFX_ETM_eco_category_button"
+		}
+		
+		buttonType = {
+			name = "eco_close_button"
+			position = { x = 520 y = -50 }
+			quadTextureSprite = "GFX_ETM_eco_category_button"
+		}
+		buttonType = {
+			name = "eco_back_button"
+			position = { x = 520 y = -50 }
+			quadTextureSprite = "GFX_ETM_eco_category_button"
+		}
+	}
+	
+	
+	containerWindowType = {
+		name = "economics_states_grid_container"  
+		position = { x = 600 y = 50 }
+		size = { width = 570 height = 476 }
+		Orientation = upper_left   
+		scroll_wheel_factor = 40
+		smooth_scrolling = yes 
+		verticalScrollbar = "right_vertical_slider" 
+	 
+		background = {
+			name = "economics_background"  
+			quadTextureSprite = "GFX_ETM_eco_ideas_bg"
+		}
+		
+		gridboxType = {
+			name = "economics_ideas_grid"
+			position = { x = -10 y = 5 } 
+			size = { width = 150 height = 550 } 
+			slotsize = { width = 120 height = 138 }  
+			max_slots_horizontal = 1 				
+			###add_horizontal = yes
+		}
+
+	}
+	
+	
+	
+	containerWindowType = {
+		name = "economics_ideas_entry"
+		position = { x = 0 y = 0 } 
+		Orientation = UPPER_LEFT
+
+		buttonType = {
+			name = "economics_idea"
+			position = { x = 0 y = 0 }
+			quadTextureSprite = GFX_ETM_eco_idea_bg
+			pdx_tooltip = "eco_idea_tooltip"
+			pdx_tooltip_delayed = "eco_idea_tooltip_delay"
+		}
+		iconType = {
+			name = "economics_idea_active"
+			position = { x = 0 y = 0 }
+			quadTextureSprite = GFX_idea_eco_overlay
+			alwaystransparent = yes 
+		}
+		 
+		instantTextBoxType = {
+			name ="economics_idea_text"
+			position = { x= 120 y = 5 }
+			font = "hoi_18mbs" 
+			text = "НАЗВАНИЕ ЗАКОНА [?idea_n.GetTokenLocalizedKey]"
+			format = center
+			maxWidth = 450
+			maxHeight = 250
+			#fixedsize = yes 
+			##pdx_tooltip = "debug_total_spendings"
+		} 
+		instantTextBoxType = {
+			name ="economics_idea_descr"
+			position = { x = 120 y = 25 }
+			font = "hoi_18mbs" 
+			text = "ОПИСАНИЕ ЗАКОНА налей сюда воды больше чем в гребаной войне и мире. Просто налей воды как будто пишешь диплом. Налей воды полностью"
+			format = center
+			maxWidth = 450
+			maxHeight = 250
+			#fixedsize = yes
+			##pdx_tooltip = "debug_total_spendings"
+		}
+		instantTextBoxType = {
+			name ="economics_idea_cost"
+			position = { x = 120 y = 105 }
+			font = "hoi_18mbs" 
+			text = "eco_cost_text"
+			format = center
+			maxWidth = 450
+			maxHeight = 250
+			#fixedsize = yes
+			##pdx_tooltip = "debug_total_spendings"
+		}
+	}
+	containerWindowType = {
+		name = "economics_categories_entry"
+		position = { x = 0 y = 0 } 
+		Orientation = UPPER_LEFT
+
+		buttonType = {
+			name = "economics_category"
+			position = { x = 0 y = 0 }
+			quadTextureSprite = GFX_ETM_eco_category_bg
+			pdx_tooltip = "eco_category_tooltip"
+		}
+		 
+		iconType = {
+			name = "economics_category_overlay"
+			position = { x = 0 y = 0 }
+			quadTextureSprite = GFX_category_overlay
+			alwaystransparent = yes 
+		}
+		
+		
+		instantTextBoxType = {
+			name ="economics_category_text"
+			position = { x= 22 y = 160 }
+			font = "hoi_18mbs" 
+			text = "КАТЕГОРИЯ"
+			format = center
+			maxWidth = 100
+			maxHeight = 24
+			fixedsize = yes
+			##pdx_tooltip = "debug_total_spendings"
+		}
+	}
+	
+	containerWindowType = {
+		name = "dev_level_toggle"
+		position = { x = 0 y = 0 }
+		
+		orientation = upper_left 
+		clipping = no 
+		
+		buttonType = {
+			name = "development_open_close"
+			position = { x = 396 y = 0 } 
+			quadTextureSprite = "GFX_economics_toggle_dev"
+		}
+	}
+	 
+	containerWindowType = { 
+		name = "dev_levels_window"
+		position = { x = -500 y = 50 }
+		show_position = { x = 0 y = 80 }
+		size = { width = 900 height = 100%% }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 300 
+		orientation = upper_left
+		moveable = no 
+		clipping = yes
+		
+		background = { 
+			name = "development_bg"
+			quadTextureSprite = "GFX_economics_dev_bg"
+		}
+		
+		gridboxtype = {  
+			name = "development_categories_grid"
+			position = { x = 0 y = 15  }
+			size = { width = 909 height = 900 }
+			slotsize = { width = 900 height = 68 } 
+			max_slots_horizontal = 1  
+    
+		} 
+		buttonType = {	
+			name = "dev_lists_close"
+			position = { x = 840 y = 0 }
+			quadTextureSprite = "GFX_ETM_eco_category_button"
+			shortcut = "ESCAPE"
+		}
+		  
+	}
+	containerWindowType = {
+		name = "economics_development_entry"
+		position = { x = 0 y = 0 } 
+		Orientation = UPPER_LEFT
+
+		iconType = { 
+			name = "dev_idea_prev"
+			position = { x = 7 y = 0 }
+			quadTextureSprite = GFX_old_idea_bg
+			pdx_tooltip = "dev_idea_prev_tooltip"
+		}
+		buttonType = {
+			name = "dev_idea_curr"
+			position = { x = 412 y = 0 }
+			quadTextureSprite = GFX_curr_idea_bg
+			pdx_tooltip = "dev_idea_curr_tooltip"
+		}
+		iconType = {
+			name = "dev_idea_next"
+			position = { x = 817 y = 0 }
+			quadTextureSprite = GFX_new_idea_bg
+			pdx_tooltip = "dev_idea_next_tooltip"
+		}
+		 
+		iconType = {
+			name = "dev_upgoing_bg"
+			position = { x = 499 y = 24 }
+			quadTextureSprite = GFX_eco_development_level_pos
+		}
+		iconType = {
+			name = "dev_downgoing_bg"
+			position = { x = 93 y = 24 }
+			quadTextureSprite = GFX_eco_development_level_neg
+		}
+		
+		iconType = {
+			name = "dev_ideas_bg"
+			position = { x = 0 y = 0 }
+			quadTextureSprite = GFX_dev_ideas_list_bg
+		}
+		
+		gridboxType = {
+			name = "development_ideas_list"
+			position = { x = -300 y = 15  }
+			size = { width = 909 height = 900 }
+			slotsize = { width = 70 height = 70  }
+			max_slots_horizontal = 10  
+		}
+		buttonType = {	
+			name = "dev_idea_close"
+			position = { x = 840 y = 0 }
+			quadTextureSprite = "GFX_ETM_eco_category_button"
+		}
+	}
+	
+	containerWindowType = {
+		name = "dev_idea_entry"
+		position = { x = 0 y = 0 } 
+		Orientation = UPPER_LEFT
+
+		iconType = {
+			name = "dev_idea"
+			position = { x = -50 y = -15 }
+			quadTextureSprite = GFX_idea_edul_middle_education
+			pdx_tooltip = "dev_idea_tooltip"
+			pdx_tooltip_delayed = "dev_idea_tooltip_delay"
+		}
+		
+	}
+	 
+	containerWindowType = {
+		name = "eco_overview_window"
+		position = { x = 290 y = 120 } 
+		orientation = upper_left
+		clipping = no 
+		moveable = yes 
+		
+		background = {
+			name = "eco_bg"
+			quadTextureSprite = "GFX_etm_eco_overview_bg" 
+		}
+		 
+		instantTextBoxType = { 
+			name = "eco_incomes_list"  
+			position = { x = 20 y = 20 }
+			font = "hoi_18mbs" 
+			text = "etm_eco_incomes_text"
+			format = left
+			maxWidth = 750 
+			maxHeight = 999
+			#fixedsize = yes
+			#pdx_tooltip = "debug_total_spendings"
+		}
+		
+		instantTextBoxType = { 
+			name = "eco_expenses_list" 
+			position = { x = 410 y = 20 }
+			font = "hoi_18mbs" 
+			text = "etm_eco_expenses_text"
+			format = left
+			maxWidth = 500
+			maxHeight = 999
+			#fixedsize = yes
+			#pdx_tooltip = "debug_total_spendings"
+		}
+		buttonType = {	
+			name = "eco_overview_close"
+			position = { x = 730 y = 2 }
+			quadTextureSprite = "GFX_ETM_eco_category_button"
+		}
+	}

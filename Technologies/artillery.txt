@@ -1,0 +1,1343 @@
+
+technologies = {
+	
+	@1030 = 0 ## Base
+	@1040 = 4 ## Tier
+	@1042 = 8 ## Up
+	@1045 = 12 ## Tier
+	@1048 = 16 ## Up
+	@1051 = 20 ## Tier 
+	@1055 = 24 ## Up 
+	@1058 = 28 ## Tier
+	
+	
+	gw_towed_howitzer_tech = {
+		
+		start_year = 1020
+		research_cost = 0
+		
+		path = {
+			leads_to_tech = howitzer_tech_0
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = spa_tech_0
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			gw_towed_howitzer_equipment
+		}
+		
+		enable_subunits = {
+			towed_artillery_unit
+			towed_artillery_support
+		}
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 0 y = @1030 }
+		}
+		
+		categories = {
+			artillery
+			RT_linear_artillery
+		}
+		
+	}
+	
+	howitzer_tech_0 = {
+		start_year = 1040
+		research_cost = 1.2
+		
+		path = {
+			leads_to_tech = howitzer_upgrade_1
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			towed_howitzer_equipment_0
+		}
+		
+		enable_equipment_modules = {
+			mbt_smoothbore_105
+			mbt_rifled_105
+			mbt_fuse_shells_0
+			mbt_heat_shells_0
+		}
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 0 y = @1040 }
+		}
+		
+		categories = {
+			artillery
+			RT_linear_artillery
+		}
+		
+	}
+	
+	howitzer_upgrade_1 = {
+		start_year = 1042
+		research_cost = 1.2
+		
+		path = {
+			leads_to_tech = howitzer_tech_1
+			research_cost_coeff = 1
+		}
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 0 y = @1042 }
+		}
+		
+		categories = {
+			artillery
+			RT_linear_artillery
+		}
+	}
+	
+	howitzer_tech_1 = {
+		start_year = 1045
+		research_cost = 1.2
+		
+		path = {
+			leads_to_tech = howitzer_upgrade_2
+			research_cost_coeff = 1
+		}
+		
+		enable_equipment_modules = {
+			mbt_smoothbore_120
+			mbt_rifled_120
+			ifv_105_rifled
+			ifv_105_smoothbore
+			mbt_kinetic_shells_0
+			mbt_aphe_shells_0
+		}
+		
+		enable_equipments = {
+			towed_howitzer_equipment_1
+		}
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 0 y = @1045 }
+		}
+		
+		categories = {
+			artillery
+			RT_linear_artillery
+		}
+	}
+	
+	howitzer_upgrade_2 = {
+		start_year = 1048
+		research_cost = 1.2
+		
+		path = {
+			leads_to_tech = howitzer_tech_2
+			research_cost_coeff = 1
+		}
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 0 y = @1048 }
+		}
+		
+		categories = {
+			artillery
+			RT_linear_artillery
+		}
+	}
+	
+	howitzer_tech_2 = {
+		start_year = 1051
+		research_cost = 1.2
+		
+		path = {
+			leads_to_tech = howitzer_upgrade_3
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			towed_howitzer_equipment_2
+		}
+		
+		enable_equipment_modules = {
+			mbt_smoothbore_125
+			mbt_rifled_125
+			mbt_fuse_shells_1
+			mbt_heat_shells_1
+		}
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 0 y = @1051 }
+		}
+		
+		categories = {
+			artillery
+			RT_linear_artillery
+		}
+	}
+	
+	howitzer_upgrade_3 = {
+		start_year = 1055
+		research_cost = 1.2
+		
+		path = {
+			leads_to_tech = howitzer_tech_3
+			research_cost_coeff = 1
+		}
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 0 y = @1055 }
+		}
+		
+		categories = {
+			artillery
+			RT_linear_artillery
+		}
+	}
+	
+	howitzer_tech_3 = {
+		start_year = 1058
+		research_cost = 1.2
+		
+		enable_equipments = {
+			towed_howitzer_equipment_3
+		}
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 0 y = @1058 }
+		}
+		
+		enable_equipment_modules = {
+			mbt_aphe_shells_1
+			mbt_kinetic_shells_1
+		}
+		
+		categories = {
+			artillery
+			RT_linear_artillery
+		}
+	}	
+	
+	spa_tech_0 = {
+		start_year = 1040
+		research_cost = 2.3
+		
+		path = {
+			leads_to_tech = spa_upgrade_1
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			spa_equipment_0
+		}
+		
+		enable_subunits = {
+			spa_artillery_unit
+			spa_artillery_support
+		}
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 2 y = @1040 }
+		}
+		
+		categories = {
+			artillery
+			RT_linear_artillery
+		}
+	}
+	
+	spa_upgrade_1 = {
+		start_year = 1042
+		research_cost = 1.2
+		
+		path = {
+			leads_to_tech = spa_tech_1
+			research_cost_coeff = 1
+		}
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 2 y = @1042 }
+		}
+		
+		categories = {
+			artillery
+			RT_linear_artillery
+		}
+	}
+	
+	spa_tech_1 = {
+		start_year = 1045
+		research_cost = 2.3
+		
+		path = {
+			leads_to_tech = spa_upgrade_2
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			spa_equipment_1
+		}
+		
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 2 y = @1045 }
+		}
+		
+		categories = {
+			artillery
+			RT_linear_artillery
+		}
+	}
+	
+	spa_upgrade_2 = {
+		start_year = 1048
+		research_cost = 1.2
+		
+		path = {
+			leads_to_tech = spa_tech_2
+			research_cost_coeff = 1
+		}
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 2 y = @1048 }
+		}
+		
+		categories = {
+			artillery
+			RT_linear_artillery
+		}
+	}
+	
+	spa_tech_2 = {
+		start_year = 1051
+		research_cost = 2.3
+		
+		path = {
+			leads_to_tech = spa_upgrade_3
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			spa_equipment_2
+		}
+		
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 2 y = @1051 }
+		}
+		
+		categories = {
+			artillery
+			RT_linear_artillery
+		}
+	}
+	
+	spa_upgrade_3 = {
+		start_year = 1055
+		research_cost = 1.2
+		
+		path = {
+			leads_to_tech = spa_tech_3
+			research_cost_coeff = 1
+		}
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 2 y = @1055 }
+		}
+		
+		categories = {
+			artillery
+			RT_linear_artillery
+		}
+	}
+	
+	spa_tech_3 = {
+		start_year = 1058
+		research_cost = 2.3
+		
+		enable_equipments = {
+			spa_equipment_3
+		}
+		
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 2 y = @1058 }
+		}
+		
+		categories = {
+			artillery
+			RT_linear_artillery
+		}
+	}
+	
+	gw_mlrs_tech = {
+		start_year = 1020
+		research_cost = 0
+		
+		path = {
+			leads_to_tech = mlrs_tech_0
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = acs_tech_0
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = hfts_tech_0
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			gw_mlrs_equipment
+		}
+		
+		enable_subunits = {
+			mlrs_unit
+			mlrs_support
+		}
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 4 y = @1030 }
+		}
+		
+		categories = {
+			artillery
+			RT_heavy_artillery
+		}
+	}
+	
+	mlrs_tech_0 = {
+		start_year = 1040
+		research_cost = 1.7
+		
+		path = {
+			leads_to_tech = mlrs_upgrade_1
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			mlrs_equipment_0
+		}
+		
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 4 y = @1040 }
+		}
+		
+		categories = {
+			artillery
+			RT_heavy_artillery
+		}
+	}
+	
+	mlrs_upgrade_1 = {
+		start_year = 1042
+		research_cost = 1.7
+		
+		path = {
+			leads_to_tech = mlrs_tech_1
+			research_cost_coeff = 1
+		}
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 4 y = @1042 }
+		}
+		
+		categories = {
+			artillery
+			RT_heavy_artillery
+		}
+	}
+	
+	mlrs_tech_1 = {
+		start_year = 1040
+		research_cost = 1.7
+		
+		path = {
+			leads_to_tech = mlrs_upgrade_2
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			mlrs_equipment_1
+		}
+		
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 4 y = @1045 }
+		}
+		
+		categories = {
+			artillery
+			RT_heavy_artillery
+		}
+	}
+	
+	mlrs_upgrade_2 = {
+		start_year = 1048
+		research_cost = 1.7
+		
+		path = {
+			leads_to_tech = mlrs_tech_2
+			research_cost_coeff = 1
+		}
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 4 y = @1048 }
+		}
+		
+		categories = {
+			artillery
+			RT_heavy_artillery
+		}
+	}
+	
+	mlrs_tech_2 = {
+		start_year = 1051
+		research_cost = 1.7
+		
+		path = {
+			leads_to_tech = mlrs_upgrade_3
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			mlrs_equipment_2
+		}
+		
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 4 y = @1051 }
+		}
+		
+		categories = {
+			artillery
+			RT_heavy_artillery
+		}
+	}
+	
+	mlrs_upgrade_3 = {
+		start_year = 1055
+		research_cost = 1.7
+		
+		path = {
+			leads_to_tech = mlrs_tech_3
+			research_cost_coeff = 1
+		}
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 4 y = @1055 }
+		}
+		
+		categories = {
+			artillery
+			RT_heavy_artillery
+		}
+	}
+	
+	mlrs_tech_3 = {
+		start_year = 1058
+		research_cost = 1.7
+		
+		enable_equipments = {
+			mlrs_equipment_3
+		}
+		
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 4 y = @1058 }
+		}
+		
+		categories = {
+			artillery
+			RT_heavy_artillery
+		}
+	}
+	
+	acs_tech_0 = {
+		start_year = 1040
+		research_cost = 1.8
+		
+		path = {
+			leads_to_tech = acs_upgrade_1
+			research_cost_coeff = 1
+		}
+		enable_equipments = {
+			acs_equipment_0
+		}
+		
+		enable_subunits = {
+			acs_unit
+			acs_support
+		}
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 6 y = @1040 }
+		}
+		
+		categories = {
+			artillery
+			RT_heavy_artillery
+		}
+	}
+	
+	acs_upgrade_1 = {
+		start_year = 1042
+		research_cost = 1.7
+		
+		path = {
+			leads_to_tech = acs_tech_1
+			research_cost_coeff = 1
+		}
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 6 y = @1042 }
+		}
+		
+		categories = {
+			artillery
+			RT_heavy_artillery
+		}
+	}
+	
+	acs_tech_1 = {
+		start_year = 1045
+		research_cost = 1.8
+		
+		path = {
+			leads_to_tech = acs_upgrade_2
+			research_cost_coeff = 1
+		}
+		enable_equipments = {
+			acs_equipment_1
+		}
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 6 y = @1045 }
+		}
+		
+		categories = {
+			artillery
+			RT_heavy_artillery
+		}
+	}
+	
+	acs_upgrade_2 = {
+		start_year = 1048
+		research_cost = 1.7
+		
+		path = {
+			leads_to_tech = acs_tech_2
+			research_cost_coeff = 1
+		}
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 6 y = @1048 }
+		}
+		
+		categories = {
+			artillery
+			RT_heavy_artillery
+		}
+	}
+	
+	acs_tech_2 = {
+		start_year = 1051
+		research_cost = 1.8
+		
+		path = {
+			leads_to_tech = acs_upgrade_3
+			research_cost_coeff = 1
+		}
+		enable_equipments = {
+			acs_equipment_2
+		}
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 6 y = @1051 }
+		}
+		
+		categories = {
+			artillery
+			RT_heavy_artillery
+		}
+	}
+	
+	acs_upgrade_3 = {
+		start_year = 1055
+		research_cost = 1.7
+		
+		path = {
+			leads_to_tech = acs_tech_3
+			research_cost_coeff = 1
+		}
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 6 y = @1055 }
+		}
+		
+		categories = {
+			artillery
+			RT_heavy_artillery
+		}
+	}
+	
+	acs_tech_3 = {
+		start_year = 1058
+		research_cost = 1.8
+		
+		enable_equipments = {
+			acs_equipment_3
+		}
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 6 y = @1058 }
+		}
+		
+		categories = {
+			artillery
+			RT_heavy_artillery
+		}
+	}
+	
+	hfts_tech_0 = {
+		start_year = 1040
+		research_cost = 1.8
+		
+		path = {
+			leads_to_tech = hfts_upgrade_1
+			research_cost_coeff = 1
+		}
+		enable_equipments = {
+			hfts_equipment_0
+		}
+		
+		enable_subunits = {
+			hfts_unit
+			hfts_support
+		}
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 8 y = @1040 }
+		}
+		
+		categories = {
+			artillery
+			RT_heavy_artillery
+		}
+	}
+	
+	hfts_upgrade_1 = {
+		start_year = 1042
+		research_cost = 1.7
+		
+		path = {
+			leads_to_tech = hfts_tech_1
+			research_cost_coeff = 1
+		}
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 8 y = @1042 }
+		}
+		
+		categories = {
+			artillery
+			RT_heavy_artillery
+		}
+	}
+	
+	hfts_tech_1 = {
+		start_year = 1045
+		research_cost = 1.8
+		
+		path = {
+			leads_to_tech = hfts_upgrade_2
+			research_cost_coeff = 1
+		}
+		enable_equipments = {
+			hfts_equipment_1
+		}
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 8 y = @1045 }
+		}
+		
+		categories = {
+			artillery
+			RT_heavy_artillery
+		}
+	}
+	
+	hfts_upgrade_2 = {
+		start_year = 1048
+		research_cost = 1.7
+		
+		path = {
+			leads_to_tech = hfts_tech_2
+			research_cost_coeff = 1
+		}
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 8 y = @1048 }
+		}
+		
+		categories = {
+			artillery
+			RT_heavy_artillery
+		}
+	}
+	
+	hfts_tech_2 = {
+		start_year = 1051
+		research_cost = 1.8
+		
+		path = {
+			leads_to_tech = hfts_upgrade_3
+			research_cost_coeff = 1
+		}
+		enable_equipments = {
+			hfts_equipment_2
+		}
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 8 y = @1051 }
+		}
+		
+		categories = {
+			artillery
+			RT_heavy_artillery
+		}
+	}
+	
+	hfts_upgrade_3 = {
+		start_year = 1055
+		research_cost = 1.7
+		
+		path = {
+			leads_to_tech = hfts_tech_3
+			research_cost_coeff = 1
+		}
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 8 y = @1055 }
+		}
+		
+		categories = {
+			artillery
+			RT_heavy_artillery
+		}
+	}
+	
+	hfts_tech_3 = {
+		start_year = 1058
+		research_cost = 1.8
+		
+		enable_equipments = {
+			hfts_equipment_3
+		}
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 8 y = @1058 }
+		}
+		
+		categories = {
+			artillery
+			RT_heavy_artillery
+		}
+	}	
+	
+	gw_cannon_aa_tech = {
+		start_year = 1020
+		research_cost = 0
+		
+		path = {
+			leads_to_tech = cannon_aa_tech_0
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = sam_complex_tech_0
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			gw_aa_cannon_equipment
+		}
+		
+		enable_subunits = {
+			anti_air_cannon_unit
+			anti_air_cannon_support
+		}
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 10 y = @1030 }
+		}
+		
+		categories = {
+			artillery
+			RT_antiair_rocket
+		}
+	}
+	
+	cannon_aa_tech_0 = {
+		start_year = 1040
+		research_cost = 1.8
+		
+		path = {
+			leads_to_tech = cannon_aa_upgrade_1
+			research_cost_coeff = 1
+		}
+		enable_equipments = {
+			cannon_aa_equipment_0
+		}
+		
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 10 y = @1040 }
+		}
+		
+		categories = {
+			artillery
+			RT_antiair_rocket
+		}
+	}
+	
+	cannon_aa_upgrade_1 = {
+		start_year = 1042
+		research_cost = 1.7
+		
+		path = {
+			leads_to_tech = cannon_aa_tech_1
+			research_cost_coeff = 1
+		}
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 10 y = @1042 }
+		}
+		
+		categories = {
+			artillery
+			RT_antiair_rocket
+		}
+	}
+	
+	cannon_aa_tech_1 = {
+		start_year = 1045
+		research_cost = 1.8
+		
+		path = {
+			leads_to_tech = cannon_aa_upgrade_2
+			research_cost_coeff = 1
+		}
+		enable_equipments = {
+			cannon_aa_equipment_1
+		}
+		
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 10 y = @1045 }
+		}
+		
+		categories = {
+			artillery
+			RT_antiair_rocket
+		}
+	}
+	
+	cannon_aa_upgrade_2 = {
+		start_year = 1048
+		research_cost = 1.7
+		
+		path = {
+			leads_to_tech = cannon_aa_tech_2
+			research_cost_coeff = 1
+		}
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 10 y = @1048 }
+		}
+		
+		categories = {
+			artillery
+			RT_antiair_rocket
+		}
+	}
+	
+	cannon_aa_tech_2 = {
+		start_year = 1051
+		research_cost = 1.8
+		
+		path = {
+			leads_to_tech = cannon_aa_upgrade_3
+			research_cost_coeff = 1
+		}
+		enable_equipments = {
+			cannon_aa_equipment_2
+		}
+		
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 10 y = @1051 }
+		}
+		
+		categories = {
+			artillery
+			RT_antiair_rocket
+		}
+	}
+	
+	cannon_aa_upgrade_3 = {
+		start_year = 1055
+		research_cost = 1.7
+		
+		path = {
+			leads_to_tech = cannon_aa_tech_3
+			research_cost_coeff = 1
+		}
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 10 y = @1055 }
+		}
+		
+		categories = {
+			artillery
+			RT_antiair_rocket
+		}
+	}
+	
+	cannon_aa_tech_3 = {
+		start_year = 1058
+		research_cost = 1.8
+		
+		enable_equipments = {
+			cannon_aa_equipment_3
+		}
+		
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 10 y = @1058 }
+		}
+		
+		categories = {
+			artillery
+			RT_antiair_rocket
+		}
+	}
+	
+	sam_complex_tech_0 = {
+		start_year = 1040
+		research_cost = 1.8
+		
+		path = {
+			leads_to_tech = sam_complex_upgrade_1
+			research_cost_coeff = 1
+		}
+		enable_equipments = {
+			sam_equipment_0
+		}
+		
+		enable_subunits = {
+			sam_support
+		}
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 12 y = @1040 }
+		}
+		
+		categories = {
+			artillery
+			RT_antiair_rocket
+		}
+	}
+	
+	sam_complex_upgrade_1 = {
+		start_year = 1042
+		research_cost = 1.7
+		
+		path = {
+			leads_to_tech = sam_complex_tech_1
+			research_cost_coeff = 1
+		}
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 12 y = @1042 }
+		}
+		
+		categories = {
+			artillery
+			RT_antiair_rocket
+		}
+	}
+	
+	sam_complex_tech_1 = {
+		start_year = 1040
+		research_cost = 1.8
+		
+		path = {
+			leads_to_tech = sam_complex_upgrade_2
+			research_cost_coeff = 1
+		}
+		enable_equipments = {
+			sam_equipment_1
+		}
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 12 y = @1045 }
+		}
+		
+		categories = {
+			artillery
+			RT_heavy_artillery
+		}
+	}
+	
+	sam_complex_upgrade_2 = {
+		start_year = 1048
+		research_cost = 1.7
+		
+		path = {
+			leads_to_tech = sam_complex_tech_2
+			research_cost_coeff = 1
+		}
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 12 y = @1048 }
+		}
+		
+		categories = {
+			artillery
+			RT_antiair_rocket
+		}
+	}
+	
+	sam_complex_tech_2 = {
+		start_year = 1040
+		research_cost = 1.8
+		
+		path = {
+			leads_to_tech = sam_complex_upgrade_3
+			research_cost_coeff = 1
+		}
+		enable_equipments = {
+			sam_equipment_2
+		}
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 12 y = @1051 }
+		}
+		
+		categories = {
+			artillery
+			RT_heavy_artillery
+		}
+	}
+	
+	sam_complex_upgrade_3 = {
+		start_year = 1055
+		research_cost = 1.7
+		
+		path = {
+			leads_to_tech = sam_complex_tech_3
+			research_cost_coeff = 1
+		}
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 12 y = @1055 }
+		}
+		
+		categories = {
+			artillery
+			RT_antiair_rocket
+		}
+	}
+	
+	sam_complex_tech_3 = {
+		start_year = 1058
+		research_cost = 1.8
+		
+		enable_equipments = {
+			sam_equipment_3
+		}
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 12 y = @1058 }
+		}
+		
+		categories = {
+			artillery
+			RT_heavy_artillery
+		}
+	}
+	
+	early_ballistic_missile_tech = {
+		start_year = 1042
+		research_cost = 5
+		
+		path = {
+			leads_to_tech = ballistic_missile_tech_0
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = rw_ballistic_missile_tech_0
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			early_ballistic_missile_complex
+		}
+		
+		enable_subunits = {
+			otms_support
+		}
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 14 y = @1030 }
+		}
+		
+		categories = {
+			artillery
+			CTM_ballistic_missiles
+		}
+	}
+	
+	ballistic_missile_tech_0 = {
+		start_year = 1048
+		research_cost = 7
+		
+		path = {
+			leads_to_tech = ballistic_missile_tech_1
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			ballistic_missile_complex_0
+		}
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 14 y = @1048 }
+		}
+		
+		categories = {
+			artillery
+			CTM_ballistic_missiles
+		}
+	}
+	
+	ballistic_missile_tech_1 = {
+		start_year = 1058
+		research_cost = 9
+		
+		enable_equipments = {
+			ballistic_missile_complex_1
+		}
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 14 y = @1058 }
+		}
+		
+		categories = {
+			artillery
+			CTM_ballistic_missiles
+		}
+	}
+	
+	rw_ballistic_missile_tech_0 = {
+		start_year = 1048
+		research_cost = 7
+		
+		path = {
+			leads_to_tech = rw_ballistic_missile_tech_1
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			rw_ballistic_missile_complex_0
+		}
+		
+		enable_subunits = {
+			rw_otms_unit
+		}
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 16 y = @1048 }
+		}
+		
+		categories = {
+			artillery
+			CTM_ballistic_missiles
+		}
+	}
+	
+	rw_ballistic_missile_tech_1 = {
+		start_year = 1058
+		research_cost = 9
+		
+		enable_equipments = {
+			rw_ballistic_missile_complex_1
+		}
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 16 y = @1058 }
+		}
+		
+		categories = {
+			artillery
+			CTM_ballistic_missiles
+		}
+	}

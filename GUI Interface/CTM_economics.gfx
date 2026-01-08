@@ -1,0 +1,96 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_ECO_eco_overview_bg"
+		texturefile = "gfx/interface/economica/eco_overview_bg.dds"
+	}
+	spriteType = {
+		name = "GFX_ECO_eco_trading_bg"
+		texturefile = "gfx/interface/economica/eco_trading_bg.dds"
+	}
+	spriteType = {
+		name = "GFX_ECO_eco_state_overview_bg"
+		texturefile = "gfx/interface/economica/eco_statelist_bg.dds"
+	} 
+	spriteType = {
+		name = "GFX_ECO_resource_entry_bg"
+		texturefile = "gfx/interface/economica/eco_trade_resource_bg.dds"
+	}
+	spriteType = { 
+		name = "GFX_ECO_progressbar_piece" 
+		texturefile = "gfx/interface/economica/eco_pb_piece.dds"
+	}
+	spriteType = {
+		name = "GFX_ECO_progressbar_plus"
+		texturefile = "gfx/interface/economica/eco_scb_plus.dds"
+	}
+	spriteType = {
+		name = "GFX_ECO_progressbar_minus"
+		texturefile = "gfx/interface/economica/eco_scb_minus.dds"
+	}
+	spriteType = {
+		name = "GFX_ECO_progressbar_marker"
+		texturefile = "gfx/interface/economica/eco_scb_marker.dds"
+	}
+	spriteType = {
+		name = "GFX_ECO_eco_contracts_bg"
+		texturefile = "gfx/interface/economica/eco_contracts_bg.dds" 
+	}
+	spriteType = {
+		name = "GFX_ECO_eco_contracts_header"
+		texturefile = "gfx/interface/economica/eco_contracts_header.dds"
+	}
+	spriteType = {
+		name = "GFX_ECO_eco_buildings_bg"
+		texturefile = "gfx/interface/economica/building_overview_bg.dds"
+	}
+	spriteType = {
+		name = "GFX_ECO_eco_state_entry_bg"
+		texturefile = "gfx/interface/economica/state_display_bg.dds"
+	}
+	spriteType = {
+		name = "GFX_ECO_eco_state_list_bg"
+		texturefile = "gfx/interface/economica/statelist_bg.dds"
+	}
+	spriteType = {
+		name = "GFX_ECO_eco_state_list_overlay"
+		texturefile = "gfx/interface/economica/statelist_overlay.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ECO_eco_contracts_entry"
+		texturefile = "gfx/interface/economica/eqs_contract_entry_bg.dds"
+	}
+	spriteType = {
+		name = "GFX_ECO_eco_switch_button"
+		texturefile = "gfx/interface/economica/ECO_button_switch.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ECO_eco_dip_act_trade_resource_entry_bg"
+		texturefile = "gfx/interface/economica/eco_trade_entry_bg.dds"
+	}
+	spriteType = {
+		name = "GFX_ECO_eco_dip_act_trade_bg"
+		texturefile = "gfx/interface/economica/diplo_action_trade_acess_bg.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ECO_contr_plus"
+		texturefile = "gfx/interface/economica/small_eco_plus.dds"
+	}
+	spriteType = {
+		name = "GFX_ECO_contr_minus"
+		texturefile = "gfx/interface/economica/small_eco_minus.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ECO_contr_expimpptr_e"
+		texturefile = "gfx/texticons/eco_exp.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_ECO_contr_expimpptr_i"
+		texturefile = "gfx/texticons/eco_imp.dds"
+		legacy_lazy_load = no
+	}

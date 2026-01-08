@@ -1,0 +1,1165 @@
+
+technologies = {
+	
+	@TIER0 = 4
+	@TIER1 = 8
+	@TIER2 = 12
+	@TIER3 = 16
+	@TIER4 = 20
+	
+	support_equipment_tech = {
+		
+		research_cost = 2.8
+		
+		path = {
+			leads_to_tech = hospital_tech_0
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = maintenance_tech_0
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = engineer_tech_0
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = logistics_tech_0
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = military_police_tech_0
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = signal_company_tech_0
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = targeting_company_tech_0
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = pontones_company_tech_0
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = suav_operators_tech_0
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = basic_train_tech_0
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			support_equipment_1
+		}
+		
+		folder = {
+			name = support_folder
+			position = { x = 0 y = 0 }
+		}
+		
+		on_research_complete = {
+			hidden_effect = {
+				set_technology = { support_equipment_tech_magitech = 1 popup = no }
+			}
+		}
+		
+		start_year = 1025
+		
+		categories = {
+			support_tech
+		}
+	}
+	
+	hospital_tech_0 = {
+		research_cost = 1.5
+		
+		path = {
+			leads_to_tech = hospital_tech_1
+			research_cost_coeff = 1
+		}
+		
+		enable_subunits = {
+			field_hospital
+		}
+		
+		folder = {
+			name = support_folder
+			position = { x = 0 y = @TIER0 }
+		}
+		
+		start_year = 1036
+		
+		categories = {
+			support_tech
+			hospital_tech
+		}
+		
+	}
+	
+	hospital_tech_1 = {
+		research_cost = 1.5
+		
+		path = {
+			leads_to_tech = hospital_tech_2
+			research_cost_coeff = 1
+		}
+		
+		folder = {
+			name = support_folder
+			position = { x = 0 y = @TIER1 }
+		}
+		
+		start_year = 1041
+		
+		categories = {
+			support_tech
+			hospital_tech
+		}
+		
+	}
+	
+	hospital_tech_2 = {
+		research_cost = 1.5
+		
+		path = {
+			leads_to_tech = hospital_tech_3
+			research_cost_coeff = 1
+		}
+		
+		
+		folder = {
+			name = support_folder
+			position = { x = 0 y = @TIER2 }
+		}
+		
+		start_year = 1045
+		
+		categories = {
+			support_tech
+			hospital_tech
+		}
+		
+	}
+	
+	hospital_tech_3 = {
+		research_cost = 1.5
+		
+		path = {
+			leads_to_tech = hospital_tech_4
+			research_cost_coeff = 1
+		}
+		
+		
+		folder = {
+			name = support_folder
+			position = { x = 0 y = @TIER3 }
+		}
+		
+		start_year = 1049
+		
+		categories = {
+			support_tech
+			hospital_tech
+		}
+		
+	}
+	
+	hospital_tech_4 = {
+		research_cost = 1.5
+		
+		
+		folder = {
+			name = support_folder
+			position = { x = 0 y = @TIER4 }
+		}
+		
+		start_year = 1054
+		
+		categories = {
+			support_tech
+			hospital_tech
+		}
+		
+	}
+	
+	
+	maintenance_tech_0 = {
+		research_cost = 1.5
+		
+		path = {
+			leads_to_tech = maintenance_tech_1
+			research_cost_coeff = 1
+		}
+		
+		enable_subunits = {
+			maintenance_company
+		}
+		
+		folder = {
+			name = support_folder
+			position = { x = 2 y = @TIER0 }
+		}
+		
+		start_year = 1036
+		
+		categories = {
+			support_tech
+			maintenance_company_tech
+		}
+		
+	}
+	
+	maintenance_tech_1 = {
+		research_cost = 1.5
+		
+		path = {
+			leads_to_tech = maintenance_tech_2
+			research_cost_coeff = 1
+		}
+		
+		folder = {
+			name = support_folder
+			position = { x = 2 y = @TIER1 }
+		}
+		
+		start_year = 1041
+		
+		categories = {
+			support_tech
+			maintenance_company_tech
+		}
+		
+	}
+	
+	maintenance_tech_2 = {
+		research_cost = 1.5
+		
+		path = {
+			leads_to_tech = maintenance_tech_3
+			research_cost_coeff = 1
+		}
+		
+		
+		folder = {
+			name = support_folder
+			position = { x = 2 y = @TIER2 }
+		}
+		
+		start_year = 1045
+		
+		categories = {
+			support_tech
+			maintenance_company_tech
+		}
+		
+	}
+	
+	maintenance_tech_3 = {
+		research_cost = 1.5
+		
+		path = {
+			leads_to_tech = maintenance_tech_4
+			research_cost_coeff = 1
+		}
+		
+		
+		folder = {
+			name = support_folder
+			position = { x = 2 y = @TIER3 }
+		}
+		
+		start_year = 1049
+		
+		categories = {
+			support_tech
+			maintenance_company_tech
+		}
+		
+	}
+	
+	maintenance_tech_4 = {
+		research_cost = 1.5
+		
+		
+		folder = {
+			name = support_folder
+			position = { x = 2 y = @TIER4 }
+		}
+		
+		start_year = 1054
+		
+		categories = {
+			support_tech
+			maintenance_company_tech
+		}
+		
+	}
+	
+	
+	engineer_tech_0 = {
+		research_cost = 1.5
+		
+		path = {
+			leads_to_tech = engineer_tech_1
+			research_cost_coeff = 1
+		}
+		
+		enable_subunits = {
+			engineer
+		}
+		
+		folder = {
+			name = support_folder
+			position = { x = 4 y = @TIER0 }
+		}
+		
+		start_year = 1036
+		
+		categories = {
+			support_tech
+			engineers_tech
+		}
+		
+	}
+	
+	engineer_tech_1 = {
+		research_cost = 1.5
+		
+		path = {
+			leads_to_tech = engineer_tech_2
+			research_cost_coeff = 1
+		}
+		
+		folder = {
+			name = support_folder
+			position = { x = 4 y = @TIER1 }
+		}
+		
+		start_year = 1041
+		
+		categories = {
+			support_tech
+			engineers_tech
+		}
+		
+	}
+	
+	engineer_tech_2 = {
+		research_cost = 1.5
+		
+		path = {
+			leads_to_tech = engineer_tech_3
+			research_cost_coeff = 1
+		}
+		
+		
+		folder = {
+			name = support_folder
+			position = { x = 4 y = @TIER2 }
+		}
+		
+		start_year = 1045
+		
+		categories = {
+			support_tech
+			engineers_tech
+		}
+		
+	}
+	
+	engineer_tech_3 = {
+		research_cost = 1.5
+		
+		path = {
+			leads_to_tech = engineer_tech_4
+			research_cost_coeff = 1
+		}
+		
+		
+		folder = {
+			name = support_folder
+			position = { x = 4 y = @TIER3 }
+		}
+		
+		start_year = 1049
+		
+		categories = {
+			support_tech
+			engineers_tech
+		}
+		
+	}
+	
+	engineer_tech_4 = {
+		research_cost = 1.5
+		
+		
+		folder = {
+			name = support_folder
+			position = { x = 4 y = @TIER4 }
+		}
+		
+		start_year = 1054
+		
+		categories = {
+			support_tech
+			engineers_tech
+		}
+		
+	}
+	
+	
+	logistics_tech_0 = {
+		research_cost = 1.5
+		
+		path = {
+			leads_to_tech = logistics_tech_1
+			research_cost_coeff = 1
+		}
+		
+		enable_subunits = {
+			logistics_company
+		}
+		
+		folder = {
+			name = support_folder
+			position = { x = 6 y = @TIER0 }
+		}
+		
+		start_year = 1036
+		
+		categories = {
+			support_tech
+			logistics_tech
+		}
+		
+	}
+	
+	logistics_tech_1 = {
+		research_cost = 1.5
+		
+		path = {
+			leads_to_tech = logistics_tech_2
+			research_cost_coeff = 1
+		}
+		
+		folder = {
+			name = support_folder
+			position = { x = 6 y = @TIER1 }
+		}
+		
+		start_year = 1041
+		
+		categories = {
+			support_tech
+			logistics_tech
+		}
+		
+	}
+	
+	logistics_tech_2 = {
+		research_cost = 1.5
+		
+		path = {
+			leads_to_tech = logistics_tech_3
+			research_cost_coeff = 1
+		}
+		
+		
+		folder = {
+			name = support_folder
+			position = { x = 6 y = @TIER2 }
+		}
+		
+		start_year = 1045
+		
+		categories = {
+			support_tech
+			logistics_tech
+		}
+		
+	}
+	
+	logistics_tech_3 = {
+		research_cost = 1.5
+		
+		path = {
+			leads_to_tech = logistics_tech_4
+			research_cost_coeff = 1
+		}
+		
+		
+		folder = {
+			name = support_folder
+			position = { x = 6 y = @TIER3 }
+		}
+		
+		start_year = 1049
+		
+		categories = {
+			support_tech
+			logistics_tech
+		}
+		
+	}
+	
+	logistics_tech_4 = {
+		research_cost = 1.5
+		
+		
+		folder = {
+			name = support_folder
+			position = { x = 6 y = @TIER4 }
+		}
+		
+		start_year = 1054
+		
+		categories = {
+			support_tech
+			logistics_tech
+		}
+		
+	}
+	
+	
+	military_police_tech_0 = {
+		research_cost = 1.5
+		
+		path = {
+			leads_to_tech = military_police_tech_1
+			research_cost_coeff = 1
+		}
+		
+		enable_subunits = {
+			military_police
+		}
+		
+		folder = {
+			name = support_folder
+			position = { x = 8 y = @TIER0 }
+		}
+		
+		start_year = 1036
+		
+		categories = {
+			support_tech
+			military_police_tech
+		}
+		
+	}
+	
+	military_police_tech_1 = {
+		research_cost = 1.5
+		
+		path = {
+			leads_to_tech = military_police_tech_2
+			research_cost_coeff = 1
+		}
+		
+		folder = {
+			name = support_folder
+			position = { x = 8 y = @TIER1 }
+		}
+		
+		start_year = 1041
+		
+		categories = {
+			support_tech
+			military_police_tech
+		}
+		
+	}
+	
+	military_police_tech_2 = {
+		research_cost = 1.5
+		
+		path = {
+			leads_to_tech = military_police_tech_3
+			research_cost_coeff = 1
+		}
+		
+		
+		folder = {
+			name = support_folder
+			position = { x = 8 y = @TIER2 }
+		}
+		
+		start_year = 1045
+		
+		categories = {
+			support_tech
+			military_police_tech
+		}
+		
+	}
+	
+	military_police_tech_3 = {
+		research_cost = 1.5
+		
+		path = {
+			leads_to_tech = military_police_tech_4
+			research_cost_coeff = 1
+		}
+		
+		
+		folder = {
+			name = support_folder
+			position = { x = 8 y = @TIER3 }
+		}
+		
+		start_year = 1049
+		
+		categories = {
+			support_tech
+			military_police_tech
+		}
+		
+	}
+	
+	military_police_tech_4 = {
+		research_cost = 1.5
+		
+		
+		folder = {
+			name = support_folder
+			position = { x = 8 y = @TIER4 }
+		}
+		
+		start_year = 1054
+		
+		categories = {
+			support_tech
+			military_police_tech
+		}
+		
+	}
+	
+	
+	signal_company_tech_0 = {
+		research_cost = 1.5
+		
+		path = {
+			leads_to_tech = signal_company_tech_1
+			research_cost_coeff = 1
+		}
+		
+		enable_subunits = {
+			signal_company
+		}
+		
+		folder = {
+			name = support_folder
+			position = { x = 10 y = @TIER0 }
+		}
+		
+		start_year = 1036
+		
+		categories = {
+			support_tech
+			signal_company_tech
+		}
+		
+	}
+	
+	signal_company_tech_1 = {
+		research_cost = 1.5
+		
+		path = {
+			leads_to_tech = signal_company_tech_2
+			research_cost_coeff = 1
+		}
+		
+		folder = {
+			name = support_folder
+			position = { x = 10 y = @TIER1 }
+		}
+		
+		start_year = 1041
+		
+		categories = {
+			support_tech
+			signal_company_tech
+		}
+		
+	}
+	
+	signal_company_tech_2 = {
+		research_cost = 1.5
+		
+		path = {
+			leads_to_tech = signal_company_tech_3
+			research_cost_coeff = 1
+		}
+		
+		
+		folder = {
+			name = support_folder
+			position = { x = 10 y = @TIER2 }
+		}
+		
+		start_year = 1045
+		
+		categories = {
+			support_tech
+			signal_company_tech
+		}
+		
+	}
+	
+	signal_company_tech_3 = {
+		research_cost = 1.5
+		
+		path = {
+			leads_to_tech = signal_company_tech_4
+			research_cost_coeff = 1
+		}
+		
+		
+		folder = {
+			name = support_folder
+			position = { x = 10 y = @TIER3 }
+		}
+		
+		start_year = 1049
+		
+		categories = {
+			support_tech
+			signal_company_tech
+		}
+		
+	}
+	
+	signal_company_tech_4 = {
+		research_cost = 1.5
+		
+		
+		folder = {
+			name = support_folder
+			position = { x = 10 y = @TIER4 }
+		}
+		
+		start_year = 1054
+		
+		categories = {
+			support_tech
+			signal_company_tech
+		}
+		
+	}
+	
+	
+	targeting_company_tech_0 = {
+		research_cost = 1.5
+		
+		path = {
+			leads_to_tech = targeting_company_tech_1
+			research_cost_coeff = 1
+		}
+		
+		enable_subunits = {
+			guiding_unit
+		}
+		
+		folder = {
+			name = support_folder
+			position = { x = 12 y = @TIER0 }
+		}
+		
+		start_year = 1036
+		
+		categories = {
+			support_tech
+			guiding_support_tech
+		}
+		
+	}
+	
+	targeting_company_tech_1 = {
+		research_cost = 1.5
+		
+		path = {
+			leads_to_tech = targeting_company_tech_2
+			research_cost_coeff = 1
+		}
+		
+		folder = {
+			name = support_folder
+			position = { x = 12 y = @TIER1 }
+		}
+		
+		start_year = 1041
+		
+		categories = {
+			support_tech
+			guiding_support_tech
+		}
+		
+	}
+	
+	targeting_company_tech_2 = {
+		research_cost = 1.5
+		
+		path = {
+			leads_to_tech = targeting_company_tech_3
+			research_cost_coeff = 1
+		}
+		
+		
+		folder = {
+			name = support_folder
+			position = { x = 12 y = @TIER2 }
+		}
+		
+		start_year = 1045
+		
+		categories = {
+			support_tech
+			guiding_support_tech
+		}
+		
+	}
+	
+	targeting_company_tech_3 = {
+		research_cost = 1.5
+		
+		path = {
+			leads_to_tech = targeting_company_tech_4
+			research_cost_coeff = 1
+		}
+		
+		
+		folder = {
+			name = support_folder
+			position = { x = 12 y = @TIER3 }
+		}
+		
+		start_year = 1049
+		
+		categories = {
+			support_tech
+			guiding_support_tech
+		}
+		
+	}
+	
+	targeting_company_tech_4 = {
+		research_cost = 1.5
+		
+		
+		folder = {
+			name = support_folder
+			position = { x = 12 y = @TIER4 }
+		}
+		
+		start_year = 1054
+		
+		categories = {
+			support_tech
+			guiding_support_tech
+		}
+		
+	}
+	
+	
+	pontones_company_tech_0 = {
+		research_cost = 1.5
+		
+		path = {
+			leads_to_tech = pontones_company_tech_1
+			research_cost_coeff = 1
+		}
+		
+		enable_subunits = {
+			pontone_unit
+		}
+		
+		folder = {
+			name = support_folder
+			position = { x = 14 y = @TIER0 }
+		}
+		
+		start_year = 1036
+		
+		categories = {
+			support_tech
+			pontone_support_tech
+		}
+		
+	}
+	
+	pontones_company_tech_1 = {
+		research_cost = 1.5
+		
+		path = {
+			leads_to_tech = pontones_company_tech_2
+			research_cost_coeff = 1
+		}
+		
+		folder = {
+			name = support_folder
+			position = { x = 14 y = @TIER1 }
+		}
+		
+		start_year = 1041
+		
+		categories = {
+			support_tech
+			pontone_support_tech
+		}
+		
+	}
+	
+	pontones_company_tech_2 = {
+		research_cost = 1.5
+		
+		path = {
+			leads_to_tech = pontones_company_tech_3
+			research_cost_coeff = 1
+		}
+		
+		
+		folder = {
+			name = support_folder
+			position = { x = 14 y = @TIER2 }
+		}
+		
+		start_year = 1045
+		
+		categories = {
+			support_tech
+			pontone_support_tech
+		}
+		
+	}
+	
+	pontones_company_tech_3 = {
+		research_cost = 1.5
+		
+		path = {
+			leads_to_tech = pontones_company_tech_4
+			research_cost_coeff = 1
+		}
+		
+		
+		folder = {
+			name = support_folder
+			position = { x = 14 y = @TIER3 }
+		}
+		
+		start_year = 1049
+		
+		categories = {
+			support_tech
+			pontone_support_tech
+		}
+		
+	}
+	
+	pontones_company_tech_4 = {
+		research_cost = 1.5
+		
+		
+		folder = {
+			name = support_folder
+			position = { x = 14 y = @TIER4 }
+		}
+		
+		start_year = 1054
+		
+		categories = {
+			support_tech
+			pontone_support_tech
+		}
+		
+	}
+	
+	
+	suav_operators_tech_0 = {
+		research_cost = 1.5
+		
+		path = {
+			leads_to_tech = suav_operators_tech_1
+			research_cost_coeff = 1
+		}
+		
+		enable_subunits = {
+			attack_suav_unit
+		}
+		
+		folder = {
+			name = support_folder
+			position = { x = 16 y = @TIER0 }
+		}
+		
+		start_year = 1036
+		
+		categories = {
+			support_tech
+			attack_suav_support_tech
+		}
+		
+	}
+	
+	suav_operators_tech_1 = {
+		research_cost = 1.5
+		
+		path = {
+			leads_to_tech = suav_operators_tech_2
+			research_cost_coeff = 1
+		}
+		
+		folder = {
+			name = support_folder
+			position = { x = 16 y = @TIER1 }
+		}
+		
+		start_year = 1041
+		
+		categories = {
+			support_tech
+			attack_suav_support_tech
+		}
+		
+	}
+	
+	suav_operators_tech_2 = {
+		research_cost = 1.5
+		
+		path = {
+			leads_to_tech = suav_operators_tech_3
+			research_cost_coeff = 1
+		}
+		
+		
+		folder = {
+			name = support_folder
+			position = { x = 16 y = @TIER2 }
+		}
+		
+		start_year = 1045
+		
+		categories = {
+			support_tech
+			attack_suav_support_tech
+		}
+		
+	}
+	
+	suav_operators_tech_3 = {
+		research_cost = 1.5
+		
+		path = {
+			leads_to_tech = suav_operators_tech_4
+			research_cost_coeff = 1
+		}
+		
+		
+		folder = {
+			name = support_folder
+			position = { x = 16 y = @TIER3 }
+		}
+		
+		start_year = 1049
+		
+		categories = {
+			support_tech
+			attack_suav_support_tech
+		}
+		
+	}
+	
+	suav_operators_tech_4 = {
+		research_cost = 1.5
+		
+		
+		folder = {
+			name = support_folder
+			position = { x = 16 y = @TIER4 }
+		}
+		
+		start_year = 1054
+		
+		categories = {
+			support_tech
+			attack_suav_support_tech
+		}
+		
+	}
+	
+	
+	basic_train_tech_0 = {
+		research_cost = 2.5
+		
+		path = {
+			leads_to_tech = basic_train_tech_1
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			train_equipment_1
+		}
+		
+		folder = {
+			name = support_folder
+			position = { x = 18 y = @TIER0 }
+		}
+		
+		start_year = 1036
+		
+		categories = {
+			support_tech
+			train_tech
+		}
+		
+	}
+	
+	basic_train_tech_1 = {
+		research_cost = 2.5
+		
+		path = {
+			leads_to_tech = basic_train_tech_2
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			train_equipment_2
+		}
+		
+		folder = {
+			name = support_folder
+			position = { x = 18 y = @TIER2 }
+		}
+		
+		start_year = 1041
+		
+		categories = {
+			support_tech
+			train_tech
+		}
+		
+	}
+	
+	basic_train_tech_2 = {
+		research_cost = 2.5
+		
+		folder = {
+			name = support_folder
+			position = { x = 18 y = @TIER4 }
+		}
+		
+		enable_equipments = {
+			train_equipment_3
+		}
+		
+		start_year = 1045
+		
+		categories = {
+			support_tech
+			train_tech
+		}
+		
+	}

@@ -1,0 +1,255 @@
+SpriteTypes = {
+	spriteType = {
+		name = "GFX_ETM_eco_idea_1"
+		texturefile = "gfx/interface/economics/mobilization_partly.dds"
+	}
+	spriteType = {
+		name = "GFX_ETM_eco_idea_2"
+		texturefile = "gfx/interface/economics/more_nukes.dds"
+	}
+	spriteType = {
+		name = "GFX_ETM_eco_idea_3"
+		texturefile = "gfx/interface/economics/no_metal2.dds"
+	}
+	spriteType = {
+		name = "GFX_ETM_eco_idea_4"
+		texturefile = "gfx/interface/economics/RT_allowed_nukes.dds"
+	}
+	spriteType = {
+		name = "GFX_ETM_eco_idea_5"
+		texturefile = "gfx/interface/economics/RT_quallified_prepods.dds"
+	}
+	spriteType = {
+		name = "GFX_ETM_eco_idea_6"
+		texturefile = "gfx/interface/economics/tax_high.dds"
+	}
+	spriteType = {
+		name = "GFX_ETM_eco_idea_7"
+		texturefile = "gfx/interface/economics/tax_low.dds"
+	}
+	spriteType = {
+		name = "GFX_ETM_eco_idea_8"
+		texturefile = "gfx/interface/economics/tax_mid.dds"
+	}
+	spriteType = {
+		name = "GFX_ETM_eco_idea_9"
+		texturefile = "gfx/interface/economics/tax_reallylow.dds"
+	}
+	spriteType = {
+		name = "GFX_ETM_eco_ideas_bg"
+		texturefile = "gfx/interface/economics/eco_contracts_bg.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ETM_eco_category_bg"
+		texturefile = "gfx/interface/economics/eco_law_preset.dds"
+	}
+	spriteType = {
+		name = "GFX_ETM_eco_idea_bg"
+		texturefile = "gfx/interface/economics/eco_idea_preset.dds"
+	}
+	spriteType = {
+		name = "GFX_ETM_eco_category_button"
+		texturefile = "gfx/interface/economics/pollution_close.dds"
+	}
+	
+	#### Фреймворк категорий и идей: 
+	#	 Категории (Строка 2 на 8) - до 8 штук на группу (5 вкладок)
+	#	 GFX_ECO_category_Y_N
+	#	 Y = Номер группы (1 - 5) N = Номер категории (1 - 8)
+	#	 Идеи (Столбик в N) 
+	#	 GFX_ECO_idea_Y_N
+	#	 Y = Номер категории(1 - 8) N = Номер идеи  
+	####
+	
+	spriteType = {
+		name = "GFX_ECO_category_1_1"
+		texturefile = "gfx/interface/economics/idea_category_4.dds"
+	}
+	spriteType = {
+		name = "GFX_ECO_category_1_2"
+		texturefile = "gfx/interface/economics/idea_category_3.dds"
+	}
+	spriteType = {
+		name = "GFX_ECO_category_1_3"
+		texturefile = "gfx/interface/economics/idea_category_5.dds"
+	}
+	spriteType = {
+		name = "GFX_ECO_category_1_4"
+		texturefile = "gfx/interface/economics/idea_category_2.dds"
+	}
+	spriteType = {
+		name = "GFX_ECO_category_1_5"
+		texturefile = "gfx/interface/economics/idea_category_7.dds"
+	}
+	spriteType = {
+		name = "GFX_ECO_category_1_6"
+		texturefile = "gfx/interface/economics/idea_category_8.dds"
+	}
+	spriteType = {
+		name = "GFX_ECO_category_1_7"
+		texturefile = "gfx/interface/economics/idea_category_1.dds"
+	}
+	spriteType = {
+		name = "GFX_ECO_category_1_8"
+		texturefile = "gfx/interface/economics/idea_category_6.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ECO_category_2_1"
+		texturefile = "gfx/interface/economics/idea_category_3.dds"
+	}
+	spriteType = {
+		name = "GFX_ECO_category_2_2"
+		texturefile = "gfx/interface/economics/idea_category_4.dds"
+	}
+	spriteType = {
+		name = "GFX_ECO_category_2_3"
+		texturefile = "gfx/interface/economics/idea_category_7.dds"
+	}
+	spriteType = {
+		name = "GFX_ECO_category_2_4"
+		texturefile = "gfx/interface/economics/idea_category_8.dds"
+	}
+	spriteType = {
+		name = "GFX_ECO_category_2_5"
+		texturefile = "gfx/interface/economics/idea_category_5.dds"
+	}
+	spriteType = {
+		name = "GFX_ECO_category_2_6"
+		texturefile = "gfx/interface/economics/idea_category_2.dds"
+	}
+	spriteType = {
+		name = "GFX_ECO_category_2_7"
+		texturefile = "gfx/interface/economics/idea_category_6.dds"
+	}
+	spriteType = {
+		name = "GFX_ECO_category_2_8"
+		texturefile = "gfx/interface/economics/idea_category_1.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_test_politics_idea_0"
+		texturefile = "gfx/interface/economics/idea_type_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_test_politics_idea_0_1"
+		texturefile = "gfx/interface/economics/idea_type_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_test_politics_idea_0_2"
+		texturefile = "gfx/interface/economics/idea_type_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_test_politics_idea_1"
+		texturefile = "gfx/interface/economics/idea_type_4.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_test_politics_idea_2"
+		texturefile = "gfx/interface/economics/idea_type_5.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_category_overlay"
+		texturefile = "gfx/interface/economics/eco_cat_overlay.dds"
+	}
+	spriteType = {
+		name = "GFX_button_eco_overlay"
+		texturefile = "gfx/interface/economics/btn_open_overlay.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_eco_overlay"
+		texturefile = "gfx/interface/economics/btn_active_overlay.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_economics_toggle_dev"
+		texturefile = "gfx/interface/economics/btn_open_development.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_economics_dev_bg"
+		texturefile = "gfx/interface/economics/development_bg.dds"
+	}
+	spriteType = {
+		name = "GFX_dev_ideas_list_bg"
+		texturefile = "gfx/interface/economics/dev_ideas_list_bg.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_etm_eco_overview_bg"
+		texturefile = "gfx/interface/economics/eco_overview_bg.dds"
+	}
+	spriteType = {
+		name = "GFX_etm_eco_btn_open"
+		texturefile = "gfx/interface/economics/eco_open_bg.dds"
+		effectFile = "gfx/FX/buttonstate_nodownordisableeffect.lua"
+	}
+	
+	progressBarType = {
+		name = "GFX_eco_development_level_pos"
+		color = { 0.0 0.5 0.0 }
+		colortwo = { 1.0 0.0 0.0 }
+		textureFile1 = "gfx/interface/economics/progressbar_full_up.dds"
+		textureFile2 = "gfx/interface/economics/progressbar_bg.dds"
+		size = { x = 300 y = 20 }
+		effectFile = "gfx/FX/progress_startend.lua"
+		steps = 300
+	}
+	
+	progressBarType = {
+		name = "GFX_eco_development_level_neg"
+		colortwo = { 0.0 0.5 0.0 }
+		color = { 1.0 0.0 0.0 }
+		textureFile1 = "gfx/interface/economics/progressbar_full_down.dds"
+		textureFile2 = "gfx/interface/economics/progressbar_bg.dds"
+		size = { x = 300 y = 20 }
+		effectFile = "gfx/FX/progress_reverse.lua"
+		steps = 300
+	}
+	
+	spriteType = {
+		name = "GFX_old_idea_bg"
+		texturefile = "gfx/interface/economics/RT_quallified_prepods.dds"
+	}
+	spriteType = {
+		name = "GFX_curr_idea_bg"
+		texturefile = "gfx/interface/economics/RT_allowed_nukes.dds"
+	}
+	spriteType = {
+		name = "GFX_new_idea_bg"
+		texturefile = "gfx/interface/economics/more_nukes.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_edul_illiteracy_0"
+		texturefile = "gfx/interface/economics/tax_mid.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_edul_illiteracy_1"
+		texturefile = "gfx/interface/economics/tax_high.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_edul_illiteracy_2"
+		texturefile = "gfx/interface/economics/tax_low.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_edul_illiteracy_3"
+		texturefile = "gfx/interface/economics/tax_mid.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_edul_illiteracy_4"
+		texturefile = "gfx/interface/economics/tax_high.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_edul_illiteracy_5"
+		texturefile = "gfx/interface/economics/tax_low.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_edul_illiteracy_6"
+		texturefile = "gfx/interface/economics/tax_high.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_edul_illiteracy_7"
+		texturefile = "gfx/interface/economics/tax_low.dds"
+	}

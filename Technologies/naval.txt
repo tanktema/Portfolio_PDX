@@ -1,0 +1,1824 @@
+technologies = {
+	
+	@1025 = 0
+	@1040 = 6
+	@1045 = 12
+	@1050 = 18
+	@1055 = 24
+	
+	
+	corvette_tech_0 = {
+		research_cost = 8
+		start_year = 1025
+		
+		path = {
+			leads_to_tech = corvette_tech_1
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			ship_hull_corvette_0
+		}
+		
+		folder = {
+			name = naval_folder
+			position = { x = 0 y = @1025 }
+		}
+		
+		categories = {
+			RT_corvettes			
+		}
+	}
+	corvette_tech_1 = {
+		research_cost = 8
+		start_year = 1040
+		
+		path = {
+			leads_to_tech = corvette_tech_2
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			ship_hull_corvette_1
+		}
+		
+		folder = {
+			name = naval_folder
+			position = { x = 0 y = @1040 }
+		}
+		
+		categories = {
+			RT_corvettes			
+		}
+	}
+	corvette_tech_2 = {
+		research_cost = 8
+		start_year = 1045
+		
+		path = {
+			leads_to_tech = corvette_tech_3
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			ship_hull_corvette_2
+		}
+		
+		folder = {
+			name = naval_folder
+			position = { x = 0 y = @1045 }
+		}
+		
+		categories = {
+			RT_corvettes			
+		}
+	}
+	corvette_tech_3 = {
+		research_cost = 8
+		start_year = 1050
+		
+		path = {
+			leads_to_tech = corvette_tech_4
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			ship_hull_corvette_3
+		}
+		
+		folder = {
+			name = naval_folder
+			position = { x = 0 y = @1050 }
+		}
+		
+		categories = {
+			RT_corvettes			
+		}
+	}
+	corvette_tech_4 = {
+		research_cost = 8
+		start_year = 1055
+		
+		enable_equipments = {
+			ship_hull_corvette_4
+		}
+		
+		folder = {
+			name = naval_folder
+			position = { x = 0 y = @1055 }
+		}
+		
+		categories = {
+			RT_corvettes			
+		}
+	}
+	
+	frigate_tech_0 = {
+		research_cost = 8
+		start_year = 1025
+		
+		path = {
+			leads_to_tech = frigate_tech_1
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			ship_hull_frigate_0
+		}
+		
+		folder = {
+			name = naval_folder
+			position = { x = 2 y = @1025 }
+		}
+		
+		categories = {
+			RT_fregates			
+		}
+	}
+	frigate_tech_1 = {
+		research_cost = 8
+		start_year = 1040
+		
+		path = {
+			leads_to_tech = frigate_tech_2
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			ship_hull_frigate_1
+		}
+		
+		folder = {
+			name = naval_folder
+			position = { x = 2 y = @1040 }
+		}
+		
+		categories = {
+			RT_fregates			
+		}
+	}
+	frigate_tech_2 = {
+		research_cost = 8
+		start_year = 1045
+		
+		path = {
+			leads_to_tech = frigate_tech_3
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			ship_hull_frigate_2
+		}
+		
+		folder = {
+			name = naval_folder
+			position = { x = 2 y = @1045 }
+		}
+		
+		categories = {
+			RT_fregates			
+		}
+	}
+	frigate_tech_3 = {
+		research_cost = 8
+		start_year = 1050
+		
+		path = {
+			leads_to_tech = frigate_tech_4
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			ship_hull_frigate_3
+		}
+		
+		folder = {
+			name = naval_folder
+			position = { x = 2 y = @1050 }
+		}
+		
+		categories = {
+			RT_fregates			
+		}
+	}
+	frigate_tech_4 = {
+		research_cost = 8
+		start_year = 1055
+		
+		enable_equipments = {
+			ship_hull_frigate_4
+		}
+		
+		folder = {
+			name = naval_folder
+			position = { x = 2 y = @1055 }
+		}
+		
+		categories = {
+			RT_fregates			
+		}
+	}
+	
+	destroyer_tech_0 = {
+		research_cost = 8
+		start_year = 1025
+		
+		path = {
+			leads_to_tech = destroyer_tech_1
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			ship_hull_destroyer_0
+		}
+		
+		folder = {
+			name = naval_folder
+			position = { x = 4 y = @1025 }
+		}
+		
+		categories = {
+			RT_destroyers			
+		}
+	}
+	destroyer_tech_1 = {
+		research_cost = 8
+		start_year = 1040
+		
+		path = {
+			leads_to_tech = destroyer_tech_2
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			ship_hull_destroyer_1
+		}
+		
+		folder = {
+			name = naval_folder
+			position = { x = 4 y = @1040 }
+		}
+		
+		categories = {
+			RT_destroyers			
+		}
+	}
+	destroyer_tech_2 = {
+		research_cost = 8
+		start_year = 1045
+		
+		path = {
+			leads_to_tech = destroyer_tech_3
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			ship_hull_destroyer_2
+		}
+		
+		folder = {
+			name = naval_folder
+			position = { x = 4 y = @1045 }
+		}
+		
+		categories = {
+			RT_destroyers			
+		}
+	}
+	destroyer_tech_3 = {
+		research_cost = 8
+		start_year = 1050
+		
+		path = {
+			leads_to_tech = destroyer_tech_4
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			ship_hull_destroyer_3
+		}
+		
+		folder = {
+			name = naval_folder
+			position = { x = 4 y = @1050 }
+		}
+		
+		categories = {
+			RT_destroyers			
+		}
+	}
+	destroyer_tech_4 = {
+		research_cost = 8
+		start_year = 1055
+			
+		enable_equipments = {
+			ship_hull_destroyer_4
+		}
+		
+		folder = {
+			name = naval_folder
+			position = { x = 4 y = @1055 }
+		}
+		
+		categories = {
+			RT_destroyers			
+		}
+	}
+	
+	cruiser_tech_0 = {
+		research_cost = 8
+		start_year = 1025
+		
+		path = {
+			leads_to_tech = cruiser_tech_1
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			ship_hull_cruiser_0
+		}
+		
+		folder = {
+			name = naval_folder
+			position = { x = 6 y = @1025 }
+		}
+		
+		categories = {
+			RT_line_cruisers			
+		}
+	}
+	cruiser_tech_1 = {
+		research_cost = 8
+		start_year = 1040
+		
+		path = {
+			leads_to_tech = cruiser_tech_2
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			ship_hull_cruiser_1
+		}
+		
+		folder = {
+			name = naval_folder
+			position = { x = 6 y = @1040 }
+		}
+		
+		categories = {
+			RT_line_cruisers			
+		}
+	}
+	cruiser_tech_2 = {
+		research_cost = 8
+		start_year = 1045
+		
+		path = {
+			leads_to_tech = cruiser_tech_3
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			ship_hull_cruiser_2
+		}
+		
+		folder = {
+			name = naval_folder
+			position = { x = 6 y = @1045 }
+		}
+		
+		categories = {
+			RT_line_cruisers			
+		}
+	}
+	cruiser_tech_3 = {
+		research_cost = 8
+		start_year = 1050
+		
+		path = {
+			leads_to_tech = cruiser_tech_4
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			ship_hull_cruiser_3
+		}
+		
+		folder = {
+			name = naval_folder
+			position = { x = 6 y = @1050 }
+		}
+		
+		categories = {
+			RT_line_cruisers			
+		}
+	}
+	cruiser_tech_4 = {
+		research_cost = 8
+		start_year = 1055
+		
+		enable_equipments = {
+			ship_hull_cruiser_4
+		}
+		
+		folder = {
+			name = naval_folder
+			position = { x = 6 y = @1055 }
+		}
+		
+		categories = {
+			RT_line_cruisers			
+		}
+	}
+	
+	carrier_tech_0 = {
+		research_cost = 8
+		start_year = 1025
+		
+		path = {
+			leads_to_tech = carrier_tech_1
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			ship_hull_carrier_0
+		}
+		
+		folder = {
+			name = naval_folder
+			position = { x = 8 y = @1025 }
+		}
+		
+		categories = {
+			RT_carriers			
+		}
+	}
+	carrier_tech_1 = {
+		research_cost = 8
+		start_year = 1040
+		
+		path = {
+			leads_to_tech = carrier_tech_2
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			ship_hull_carrier_1
+		}
+		
+		folder = {
+			name = naval_folder
+			position = { x = 8 y = @1040 }
+		}
+		
+		categories = {
+			RT_carriers			
+		}
+	}
+	carrier_tech_2 = {
+		research_cost = 8
+		start_year = 1045
+		
+		path = {
+			leads_to_tech = carrier_tech_3
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			ship_hull_carrier_2
+		}
+		
+		folder = {
+			name = naval_folder
+			position = { x = 8 y = @1045 }
+		}
+		
+		categories = {
+			RT_carriers			
+		}
+	}
+	carrier_tech_3 = {
+		research_cost = 8
+		start_year = 1050
+		
+		path = {
+			leads_to_tech = carrier_tech_4
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			ship_hull_carrier_3
+		}
+		
+		folder = {
+			name = naval_folder
+			position = { x = 8 y = @1050 }
+		}
+		
+		categories = {
+			RT_carriers			
+		}
+	}
+	carrier_tech_4 = {
+		research_cost = 8
+		start_year = 1055
+		
+		enable_equipments = {
+			ship_hull_carrier_4
+		}
+		
+		folder = {
+			name = naval_folder
+			position = { x = 8 y = @1055 }
+		}
+		
+		categories = {
+			RT_carriers			
+		}
+	}
+	
+	submarine_tech_0 = {
+		research_cost = 8
+		start_year = 1025
+		
+		path = {
+			leads_to_tech = submarine_tech_1
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			ship_hull_submarine_0
+		}
+		
+		folder = {
+			name = naval_folder
+			position = { x = 10 y = @1025 }
+		}
+		
+		categories = {
+			RT_submarines			
+		}
+	}
+	submarine_tech_1 = {
+		research_cost = 8
+		start_year = 1040
+		
+		path = {
+			leads_to_tech = submarine_tech_2
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			ship_hull_submarine_1
+		}
+		
+		folder = {
+			name = naval_folder
+			position = { x = 10 y = @1040 }
+		}
+		
+		categories = {
+			RT_submarines			
+		}
+	}
+	submarine_tech_2 = {
+		research_cost = 8
+		start_year = 1045
+		
+		path = {
+			leads_to_tech = submarine_tech_3
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			ship_hull_submarine_2
+		}
+		
+		folder = {
+			name = naval_folder
+			position = { x = 10 y = @1045 }
+		}
+		
+		categories = {
+			RT_submarines			
+		}
+	}
+	submarine_tech_3 = {
+		research_cost = 8
+		start_year = 1050
+		
+		path = {
+			leads_to_tech = submarine_tech_4
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			ship_hull_submarine_3
+		}
+		
+		folder = {
+			name = naval_folder
+			position = { x = 10 y = @1050 }
+		}
+		
+		categories = {
+			RT_submarines			
+		}
+	}
+	submarine_tech_4 = {
+		research_cost = 8
+		start_year = 1055
+		
+		enable_equipments = {
+			ship_hull_submarine_4
+		}
+		
+		folder = {
+			name = naval_folder
+			position = { x = 10 y = @1055 }
+		}
+		
+		categories = {
+			RT_submarines			
+		}
+	}
+	
+	naval_transport_tech_0 = {
+		research_cost = 8
+		start_year = 1025
+		
+		path = {
+			leads_to_tech = naval_transport_tech_1
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			convoy_1
+		}
+		
+		folder = {
+			name = naval_folder
+			position = { x = 12 y = @1025 }
+		}
+		
+		categories = {
+			RT_transport_ships			
+		}
+	}
+	naval_transport_tech_1 = {
+		research_cost = 8
+		start_year = 1045
+		
+		path = {
+			leads_to_tech = naval_transport_tech_2
+			research_cost_coeff = 1
+		}
+		
+		folder = {
+			name = naval_folder
+			position = { x = 12 y = @1045 }
+		}
+		
+		categories = {
+			RT_transport_ships			
+		}
+	}
+	naval_transport_tech_2 = {
+		research_cost = 8
+		start_year = 1055
+		
+		folder = {
+			name = naval_folder
+			position = { x = 12 y = @1055 }
+		}
+		
+		categories = {
+			RT_transport_ships			
+		}
+	}
+	
+	naval_engine_tech_0 = {
+		start_year = 1025
+		research_cost = 3
+		path = {
+			leads_to_tech = naval_engine_tech_1
+			research_cost_coeff = 1
+		}
+		enable_equipment_modules = {
+			light_ship_engine_1
+			capital_ship_diesel_engine
+			sub_ship_diesel_engine
+		}
+		
+		folder = {
+			name = naval_folder
+			position = { x = 14 y = @1025 }
+		}
+		
+		categories = {
+			RT_ship_engines
+		}
+	}
+	naval_engine_tech_1 = {
+		start_year = 1045
+		research_cost = 3
+		path = {
+			leads_to_tech = naval_engine_tech_2
+			research_cost_coeff = 1
+		}
+		enable_equipment_modules = {
+			light_ship_engine_2
+			capital_ship_atomic_engine
+			sub_ship_atomic_engine
+		}
+		
+		folder = {
+			name = naval_folder
+			position = { x = 14 y = @1045 }
+		}
+		
+		categories = {
+			RT_ship_engines
+		}
+	}
+	naval_engine_tech_2 = {
+		start_year = 1055
+		research_cost = 3
+		
+		enable_equipment_modules = {
+			light_ship_engine_3
+			capital_ship_crystal_engine
+			sub_ship_crystal_engine
+		}
+		
+		folder = {
+			name = naval_folder
+			position = { x = 14 y = @1055 }
+		}
+		
+		categories = {
+			RT_ship_engines
+		}
+	}
+	
+	naval_armor_tech_0 = {
+		start_year = 1025
+		research_cost = 3
+		
+		path = {
+			leads_to_tech = naval_armor_tech_1
+			research_cost_coeff = 1
+		}
+		enable_equipment_modules = {
+			ship_armor_capital_1
+			ship_armor_small_1
+		}
+		
+		folder = {
+			name = naval_folder
+			position = { x = 16 y = @1025 }
+		}
+		
+		categories = {
+			RT_ship_armor
+		}
+	}
+	naval_armor_tech_1 = {
+		start_year = 1045
+		research_cost = 3
+		
+		path = {
+			leads_to_tech = naval_armor_tech_2
+			research_cost_coeff = 1
+		}
+		enable_equipment_modules = {
+			ship_armor_capital_2
+			ship_armor_small_2
+		}
+		
+		folder = {
+			name = naval_folder
+			position = { x = 16 y = @1045 }
+		}
+		
+		categories = {
+			RT_ship_armor
+		}
+	}
+	naval_armor_tech_2 = {
+		start_year = 1055
+		research_cost = 3
+		
+		enable_equipment_modules = {
+			ship_armor_capital_3
+			ship_armor_small_3
+		}
+		
+		folder = {
+			name = naval_folder
+			position = { x = 16 y = @1055 }
+		}
+		
+		categories = {
+			RT_ship_armor
+		}
+	}
+	
+	naval_light_cannons_0 = {
+		start_year = 1025
+		research_cost = 3
+		
+		path = {
+			leads_to_tech = naval_light_cannons_1
+			research_cost_coeff = 1
+		}
+		enable_equipment_modules = {
+			ship_light_battery_1
+		}
+		
+		folder = {
+			name = naval_folder
+			position = { x = 18 y = @1025 }
+		}
+		
+		categories = {
+			RT_ship_cannons
+			CTM_light_naval_cannons
+		}
+	}
+	naval_light_cannons_1 = {
+		start_year = 1040
+		research_cost = 3
+		
+		path = {
+			leads_to_tech = naval_light_cannons_2
+			research_cost_coeff = 1
+		}
+		enable_equipment_modules = {
+			ship_light_battery_2
+		}
+		
+		folder = {
+			name = naval_folder
+			position = { x = 18 y = @1040 }
+		}
+		
+		categories = {
+			RT_ship_cannons
+			CTM_light_naval_cannons
+		}
+	}
+	naval_light_cannons_2 = {
+		start_year = 1045
+		research_cost = 3
+		
+		path = {
+			leads_to_tech = naval_light_cannons_3
+			research_cost_coeff = 1
+		}
+		enable_equipment_modules = {
+			ship_light_battery_3
+		}
+		
+		folder = {
+			name = naval_folder
+			position = { x = 18 y = @1045 }
+		}
+		
+		categories = {
+			RT_ship_cannons
+			CTM_light_naval_cannons
+		}
+	}
+	naval_light_cannons_3 = {
+		start_year = 1050
+		research_cost = 3
+		
+		path = {
+			leads_to_tech = naval_light_cannons_4
+			research_cost_coeff = 1
+		}
+		enable_equipment_modules = {
+			ship_light_battery_4
+		}
+		
+		folder = {
+			name = naval_folder
+			position = { x = 18 y = @1050 }
+		}
+		
+		categories = {
+			RT_ship_cannons
+			CTM_light_naval_cannons
+		}
+	}
+	naval_light_cannons_4 = {
+		start_year = 1055
+		research_cost = 3
+		
+		enable_equipment_modules = {
+			ship_light_battery_5
+		}
+		
+		folder = {
+			name = naval_folder
+			position = { x = 18 y = @1055 }
+		}
+		
+		categories = {
+			RT_ship_cannons
+			CTM_light_naval_cannons
+		}
+	}
+	
+	naval_heavy_cannons_0 = {
+		start_year = 1025
+		research_cost = 3
+		
+		path = {
+			leads_to_tech = naval_heavy_cannons_1
+			research_cost_coeff = 1
+		}
+		enable_equipment_modules = {
+			ship_heavy_battery_1
+		}
+		
+		folder = {
+			name = naval_folder
+			position = { x = 20 y = @1025 }
+		}
+		
+		categories = {
+			RT_ship_cannons
+			CTM_heavy_naval_cannons
+		}
+	}
+	naval_heavy_cannons_1 = {
+		start_year = 1040
+		research_cost = 3
+		
+		path = {
+			leads_to_tech = naval_heavy_cannons_2
+			research_cost_coeff = 1
+		}
+		enable_equipment_modules = {
+			ship_heavy_battery_2
+		}
+		
+		folder = {
+			name = naval_folder
+			position = { x = 20 y = @1040 }
+		}
+		
+		categories = {
+			RT_ship_cannons
+			CTM_heavy_naval_cannons
+		}
+	}
+	naval_heavy_cannons_2 = {
+		start_year = 1045
+		research_cost = 3
+		
+		path = {
+			leads_to_tech = naval_heavy_cannons_3
+			research_cost_coeff = 1
+		}
+		enable_equipment_modules = {
+			ship_heavy_battery_3
+		}
+		
+		folder = {
+			name = naval_folder
+			position = { x = 20 y = @1045 }
+		}
+		
+		categories = {
+			RT_ship_cannons
+			CTM_heavy_naval_cannons
+		}
+	}
+	naval_heavy_cannons_3 = {
+		start_year = 1050
+		research_cost = 3
+		
+		path = {
+			leads_to_tech = naval_heavy_cannons_4
+			research_cost_coeff = 1
+		}
+		enable_equipment_modules = {
+			ship_heavy_battery_4
+		}
+		
+		folder = {
+			name = naval_folder
+			position = { x = 20 y = @1050 }
+		}
+		
+		categories = {
+			RT_ship_cannons
+			CTM_heavy_naval_cannons
+		}
+	}
+	naval_heavy_cannons_4 = {
+		start_year = 1055
+		research_cost = 3
+		
+		enable_equipment_modules = {
+			ship_heavy_battery_5
+		}
+		
+		folder = {
+			name = naval_folder
+			position = { x = 20 y = @1055 }
+		}
+		
+		categories = {
+			RT_ship_cannons
+			CTM_heavy_naval_cannons
+		}
+	}
+	
+	naval_aa_tech_0 = {
+		start_year = 1025
+		research_cost = 3
+		
+		path = {
+			leads_to_tech = naval_aa_tech_1
+			research_cost_coeff = 1
+		}
+		enable_equipment_modules = {
+			ship_early_anti_air_cannon
+		}
+		
+		folder = {
+			name = naval_folder
+			position = { x = 22 y = @1025 }
+		}
+		
+		categories = {
+			RT_ship_cannons
+			RT_ship_rocket_aa
+		}
+	}
+	naval_aa_tech_1 = {
+		start_year = 1040
+		research_cost = 3
+		
+		path = {
+			leads_to_tech = naval_aa_tech_2
+			research_cost_coeff = 1
+		}
+		enable_equipment_modules = {
+			ship_anti_air_cannon_1
+			ship_anti_air_rocket_systems_1
+		}
+		
+		folder = {
+			name = naval_folder
+			position = { x = 22 y = @1040 }
+		}
+		
+		categories = {
+			RT_ship_cannons
+			RT_ship_rocket_aa
+		}
+	}
+	naval_aa_tech_2 = {
+		start_year = 1045
+		research_cost = 3
+		
+		path = {
+			leads_to_tech = naval_aa_tech_3
+			research_cost_coeff = 1
+		}
+		enable_equipment_modules = {
+			ship_anti_air_cannon_2
+			ship_anti_air_rocket_systems_2
+		}
+		
+		folder = {
+			name = naval_folder
+			position = { x = 22 y = @1045 }
+		}
+		
+		categories = {
+			RT_ship_cannons
+			RT_ship_rocket_aa
+		}
+	}
+	naval_aa_tech_3 = {
+		start_year = 1050
+		research_cost = 3
+		
+		path = {
+			leads_to_tech = naval_aa_tech_4
+			research_cost_coeff = 1
+		}
+		enable_equipment_modules = {
+			ship_anti_air_cannon_3
+			ship_anti_air_rocket_systems_3
+		}
+		
+		folder = {
+			name = naval_folder
+			position = { x = 22 y = @1050 }
+		}
+		
+		categories = {
+			RT_ship_cannons
+			RT_ship_rocket_aa
+		}
+	}
+	naval_aa_tech_4 = {
+		start_year = 1055
+		research_cost = 3
+		
+		enable_equipment_modules = {
+			ship_anti_air_cannon_4
+			ship_anti_air_rocket_systems_4
+		}
+		
+		folder = {
+			name = naval_folder
+			position = { x = 22 y = @1055 }
+		}
+		
+		categories = {
+			RT_ship_cannons
+			RT_ship_rocket_aa
+		}
+	}
+	
+	naval_weapon_docking_0 = {
+		start_year = 1025
+		research_cost = 3
+		
+		path = {
+			leads_to_tech = naval_weapon_docking_1
+			research_cost_coeff = 1
+		}
+		enable_equipment_modules = {
+			
+		}
+		
+		folder = {
+			name = naval_folder
+			position = { x = 24 y = @1025 }
+		}
+		
+		categories = {
+			CTM_ship_platforms
+		}
+	}
+	naval_weapon_docking_1 = {
+		start_year = 1045
+		research_cost = 3
+		
+		path = {
+			leads_to_tech = naval_weapon_docking_2
+			research_cost_coeff = 1
+		}
+		enable_equipment_modules = {
+		
+		}
+		
+		folder = {
+			name = naval_folder
+			position = { x = 24 y = @1045 }
+		}
+		
+		categories = {
+			CTM_ship_platforms
+		}
+	}
+	naval_weapon_docking_2 = {
+		start_year = 1055
+		research_cost = 3
+		
+		enable_equipment_modules = {
+		
+		}
+		
+		folder = {
+			name = naval_folder
+			position = { x = 24 y = @1055 }
+		}
+		
+		categories = {
+			CTM_ship_platforms
+		}
+	}
+	
+	naval_aircraft_hangars_0 = {
+		start_year = 1025
+		research_cost = 3
+		
+		path = {
+			leads_to_tech = naval_aircraft_hangars_1
+			research_cost_coeff = 1
+		}
+		enable_equipment_modules = {
+			ship_ondesk_plane_hangar
+			helicopter_hangar
+		}
+		
+		folder = {
+			name = naval_folder
+			position = { x = 26 y = @1025 }
+		}
+		
+		categories = {
+			CTM_ship_platforms
+		}
+	}
+	naval_aircraft_hangars_1 = {
+		start_year = 1045
+		research_cost = 3
+		
+		path = {
+			leads_to_tech = naval_aircraft_hangars_2
+			research_cost_coeff = 1
+		}
+		enable_equipment_modules = {
+			ship_two_level_hangar
+		}
+		
+		folder = {
+			name = naval_folder
+			position = { x = 26 y = @1045 }
+		}
+		
+		categories = {
+			CTM_ship_platforms
+		}
+	}
+	naval_aircraft_hangars_2 = {
+		start_year = 1055
+		research_cost = 3
+		
+		enable_equipment_modules = {
+			ship_folded_wing_plains_hangar
+		}
+		
+		folder = {
+			name = naval_folder
+			position = { x = 26 y = @1055 }
+		}
+		
+		categories = {
+			CTM_ship_platforms
+		}
+	}
+	
+	naval_wm_shafts_0 = {
+		start_year = 1025
+		research_cost = 3
+		
+		path = {
+			leads_to_tech = naval_wm_shafts_1
+			research_cost_coeff = 1
+		}
+		enable_equipment_modules = {
+		
+		}
+		
+		folder = {
+			name = naval_folder
+			position = { x = 28 y = @1025 }
+		}
+		
+		categories = {
+			CTM_ship_platforms
+		}
+	}
+	naval_wm_shafts_1 = {
+		start_year = 1045
+		research_cost = 3
+		
+		path = {
+			leads_to_tech = naval_wm_shafts_2
+			research_cost_coeff = 1
+		}
+		enable_equipment_modules = {
+		
+		}
+		
+		folder = {
+			name = naval_folder
+			position = { x = 28 y = @1045 }
+		}
+		
+		categories = {
+			CTM_ship_platforms
+		}
+	}
+	naval_wm_shafts_2 = {
+		start_year = 1055
+		research_cost = 3
+		
+		enable_equipment_modules = {
+		
+		}
+		
+		folder = {
+			name = naval_folder
+			position = { x = 28 y = @1055 }
+		}
+		
+		categories = {
+			CTM_ship_platforms
+		}
+	}
+	
+	naval_electronics_0 = {
+		start_year = 1025
+		research_cost = 3
+		
+		path = {
+			leads_to_tech = naval_electronics_1
+			research_cost_coeff = 1
+		}
+		enable_equipment_modules = {
+			ship_radar_1
+			fire_control_system_1
+			ship_sonar_1
+		}
+		
+		folder = {
+			name = naval_folder
+			position = { x = 30 y = @1025 }
+		}
+		
+		categories = {
+			RT_ship_electronics
+		}
+	}
+	naval_electronics_1 = {
+		start_year = 1045
+		research_cost = 3
+		
+		path = {
+			leads_to_tech = naval_electronics_2
+			research_cost_coeff = 1
+		}
+		enable_equipment_modules = {
+			ship_radar_2
+			fire_control_system_2
+			ship_sonar_2
+		}
+		
+		folder = {
+			name = naval_folder
+			position = { x = 30 y = @1045 }
+		}
+		
+		categories = {
+			RT_ship_electronics
+		}
+	}
+	naval_electronics_2 = {
+		start_year = 1055
+		research_cost = 3
+		
+		enable_equipment_modules = {
+			ship_radar_3
+			fire_control_system_3
+			ship_sonar_3
+		}
+		
+		folder = {
+			name = naval_folder
+			position = { x = 30 y = @1055 }
+		}
+		
+		categories = {
+			RT_ship_electronics
+		}
+	}
+	
+	bomb_throwers_0 = {
+		start_year = 1025
+		research_cost = 3
+		
+		path = {
+			leads_to_tech = bomb_throwers_1
+			research_cost_coeff = 1
+		}
+		enable_equipment_modules = {
+			ship_depth_charge_1
+			ship_mine_layer_1
+			ship_mine_sweeper_1
+		}	
+		
+		folder = {
+			name = naval_folder
+			position = { x = 32 y = @1025 }
+		}
+		
+		categories = {
+			RT_ship_bomb_layers
+		}
+	}
+	bomb_throwers_1 = {
+		start_year = 1045
+		research_cost = 3
+		
+		path = {
+			leads_to_tech = bomb_throwers_2
+			research_cost_coeff = 1
+		}
+		enable_equipment_modules = {
+			ship_depth_charge_2
+		}
+		
+		folder = {
+			name = naval_folder
+			position = { x = 32 y = @1045 }
+		}
+		
+		categories = {
+			RT_ship_bomb_layers
+		}
+	}
+	bomb_throwers_2 = {
+		start_year = 1055
+		research_cost = 3
+		
+		enable_equipment_modules = {
+			ship_depth_charge_3
+		}
+		
+		folder = {
+			name = naval_folder
+			position = { x = 32 y = @1055 }
+		}
+		
+		categories = {
+			RT_ship_bomb_layers
+		}
+	}
+	
+	torpedos_tech_0 = {
+		start_year = 1025
+		research_cost = 3
+		
+		path = {
+			leads_to_tech = torpedos_tech_1
+			research_cost_coeff = 1
+		}
+		enable_equipment_modules = {
+			ship_torpedo_1
+			ship_torpedo_sub_1
+		}
+		
+		folder = {
+			name = naval_folder
+			position = { x = 34 y = @1025 }
+		}
+		
+		categories = {
+			RT_ship_torpedoes
+		}
+	}
+	torpedos_tech_1 = {
+		start_year = 1040
+		research_cost = 3
+		
+		path = {
+			leads_to_tech = torpedos_tech_2
+			research_cost_coeff = 1
+		}
+		enable_equipment_modules = {
+			ship_torpedo_2
+			ship_torpedo_sub_2
+		}
+		
+		folder = {
+			name = naval_folder
+			position = { x = 34 y = @1040 }
+		}
+		
+		categories = {
+			RT_ship_torpedoes
+		}
+	}
+	torpedos_tech_2 = {
+		start_year = 1045
+		research_cost = 3
+		
+		path = {
+			leads_to_tech = torpedos_tech_3
+			research_cost_coeff = 1
+		}
+		enable_equipment_modules = {
+			ship_torpedo_3
+			ship_torpedo_sub_3
+		}
+		
+		folder = {
+			name = naval_folder
+			position = { x = 34 y = @1045 }
+		}
+		
+		categories = {
+			RT_ship_torpedoes
+		}
+	}
+	torpedos_tech_3 = {
+		start_year = 1050
+		research_cost = 3
+		
+		path = {
+			leads_to_tech = torpedos_tech_4
+			research_cost_coeff = 1
+		}
+		enable_equipment_modules = {
+			ship_torpedo_4
+			ship_torpedo_sub_4
+		}
+		
+		folder = {
+			name = naval_folder
+			position = { x = 34 y = @1050 }
+		}
+		
+		categories = {
+			RT_ship_torpedoes
+		}
+	}
+	torpedos_tech_4 = {
+		start_year = 1055
+		research_cost = 3
+		
+		enable_equipment_modules = {
+			ship_torpedo_5
+			ship_torpedo_sub_5
+		}
+		
+		folder = {
+			name = naval_folder
+			position = { x = 34 y = @1055 }
+		}
+		
+		categories = {
+			RT_ship_torpedoes
+		}
+	}
+	
+	proto_naval_winged_rockets = {
+		start_year = 1025
+		research_cost = 3
+		
+		path = {
+			leads_to_tech = naval_antiship_rockets_0
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = naval_winged_rockets_0
+			research_cost_coeff = 1
+		}
+		
+		enable_equipment_modules = {
+		
+		}
+		
+		folder = {
+			name = naval_folder
+			position = { x = 36 y = @1025 }
+		}
+		
+		categories = {
+			RT_ship_based_wr
+		}
+	}
+	
+	naval_antiship_rockets_0 = {
+		start_year = 1040
+		research_cost = 3
+		
+		path = {
+			leads_to_tech = naval_antiship_rockets_1
+			research_cost_coeff = 1
+		}
+		
+		enable_equipment_modules = {
+			ship_antiship_missile_1
+		}
+		
+		folder = {
+			name = naval_folder
+			position = { x = 36 y = @1040 }
+		}
+		
+		categories = {
+			RT_ship_based_wr
+		}
+	}
+	naval_antiship_rockets_1 = {
+		start_year = 1045
+		research_cost = 3
+		
+		path = {
+			leads_to_tech = naval_antiship_rockets_2
+			research_cost_coeff = 1
+		}
+		
+		enable_equipment_modules = {
+			ship_antiship_missile_2
+		}
+		
+		folder = {
+			name = naval_folder
+			position = { x = 36 y = @1045 }
+		}
+		
+		categories = {
+			RT_ship_based_wr
+		}
+	}
+	naval_antiship_rockets_2 = {
+		start_year = 1050
+		research_cost = 3
+		
+		path = {
+			leads_to_tech = naval_antiship_rockets_3
+			research_cost_coeff = 1
+		}
+		
+		enable_equipment_modules = {
+			ship_antiship_missile_3
+		}
+		
+		folder = {
+			name = naval_folder
+			position = { x = 36 y = @1050 }
+		}
+		
+		categories = {
+			RT_ship_based_wr
+		}
+	}
+	naval_antiship_rockets_3 = {
+		start_year = 1055
+		research_cost = 3
+		
+		enable_equipment_modules = {
+			ship_antiship_missile_4
+		}
+		
+		folder = {
+			name = naval_folder
+			position = { x = 36 y = @1055 }
+		}
+		
+		categories = {
+			RT_ship_based_wr
+		}
+	}
+	
+	naval_winged_rockets_0 = {
+		start_year = 1040
+		research_cost = 3
+		
+		path = {
+			leads_to_tech = naval_winged_rockets_1
+			research_cost_coeff = 1
+		}
+		
+		enable_equipment_modules = {
+			ship_winged_rocket_1
+		}
+		
+		folder = {
+			name = naval_folder
+			position = { x = 38 y = @1040 }
+		}
+		
+		categories = {
+			RT_ship_based_wr
+		}
+	}
+	naval_winged_rockets_1 = {
+		start_year = 1045
+		research_cost = 3
+		
+		path = {
+			leads_to_tech = naval_winged_rockets_2
+			research_cost_coeff = 1
+		}
+		
+		enable_equipment_modules = {
+			ship_winged_rocket_2
+		}
+		
+		folder = {
+			name = naval_folder
+			position = { x = 38 y = @1045 }
+		}
+		
+		categories = {
+			RT_ship_based_wr
+		}
+	}
+	naval_winged_rockets_2 = {
+		start_year = 1050
+		research_cost = 3
+		
+		path = {
+			leads_to_tech = naval_winged_rockets_3
+			research_cost_coeff = 1
+		}
+		
+		enable_equipment_modules = {
+			ship_winged_rocket_3
+		}
+		
+		folder = {
+			name = naval_folder
+			position = { x = 38 y = @1050 }
+		}
+		
+		categories = {
+			RT_ship_based_wr
+		}
+	}
+	naval_winged_rockets_3 = {
+		start_year = 1055
+		research_cost = 3
+		
+		enable_equipment_modules = {
+			ship_winged_rocket_4
+		}
+		
+		folder = {
+			name = naval_folder
+			position = { x = 38 y = @1055 }
+		}
+		
+		categories = {
+			RT_ship_based_wr
+		}
+	}
+	
+	naval_modules_0 = {
+		start_year = 1025
+		research_cost = 3
+		
+		path = {
+			leads_to_tech = naval_modules_1
+			research_cost_coeff = 1
+		}
+		enable_equipment_modules = {
+		
+		}
+		
+		folder = {
+			name = naval_folder
+			position = { x = 40 y = @1025 }
+		}
+		
+		categories = {
+			CTM_ship_modules
+		}
+	}
+	naval_modules_1 = {
+		start_year = 1045
+		research_cost = 3
+		
+		path = {
+			leads_to_tech = naval_modules_2
+			research_cost_coeff = 1
+		}
+		enable_equipment_modules = {
+		
+		}
+		
+		folder = {
+			name = naval_folder
+			position = { x = 40 y = @1045 }
+		}
+		
+		categories = {
+			CTM_ship_modules
+		}
+	}
+	naval_modules_2 = {
+		start_year = 1055
+		research_cost = 3
+		
+		enable_equipment_modules = {
+		
+		}
+		
+		folder = {
+			name = naval_folder
+			position = { x = 40 y = @1055 }
+		}
+		
+		categories = {
+			CTM_ship_modules
+		}
+	}
+	
+	
+	

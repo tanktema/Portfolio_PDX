@@ -1,0 +1,1690 @@
+technologies = {
+	
+	@1025 = 0
+	@1040 = 4
+	@1045 = 8
+	@1050 = 12
+	@1055 = 16
+	
+	light_plane_tech_0 = {
+		research_cost = 7
+		start_year = 1025
+		
+		path = {
+			leads_to_tech = light_plane_tech_1
+			research_cost_coeff = 1
+		}
+		
+		enable_equipment_modules = {
+			apc_autocannon_0
+			tank_paired_ac
+			tank_course_ac
+			light_pylons_0
+			base_air_mg
+			
+		}
+		
+		enable_equipments = {
+			light_plane_airframe_0
+			cv_light_plane_airframe_0
+		}
+		
+		folder = {
+			name = air_techs_folder
+			position = { x = 0 y = @1025 }
+		}
+		
+		categories = {
+			RT_jet_fighters
+			light_air
+		}
+	}
+	
+	light_plane_tech_1 = {
+		research_cost = 7
+		start_year = 1040
+		
+		path = {
+			leads_to_tech = light_plane_tech_2
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			light_plane_airframe_1
+			cv_light_plane_airframe_1
+		}
+		
+		enable_equipment_modules = {
+			light_pylons_1
+		}
+		
+		folder = {
+			name = air_techs_folder
+			position = { x = 0 y = @1040 }
+		}
+		
+		categories = {
+			RT_jet_fighters
+			light_air
+		}
+	}
+	
+	light_plane_tech_2 = {
+		research_cost = 7
+		start_year = 1045
+		
+		path = {
+			leads_to_tech = light_plane_tech_3
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			light_plane_airframe_2
+			cv_light_plane_airframe_2
+		}
+		
+		folder = {
+			name = air_techs_folder
+			position = { x = 0 y = @1045 }
+		}
+		
+		categories = {
+			RT_jet_fighters
+			light_air
+		}
+	}
+	
+	light_plane_tech_3 = {
+		research_cost = 7
+		start_year = 1050
+		
+		path = {
+			leads_to_tech = light_plane_tech_4
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			light_plane_airframe_3
+			cv_light_plane_airframe_3
+		}
+		
+		folder = {
+			name = air_techs_folder
+			position = { x = 0 y = @1050 }
+		}
+		
+		categories = {
+			RT_jet_fighters
+			light_air
+		}
+	}
+	
+	light_plane_tech_4 = {
+		research_cost = 7
+		start_year = 1055
+		
+		enable_equipments = {
+			light_plane_airframe_4
+			cv_light_plane_airframe_4
+		}
+		
+		folder = {
+			name = air_techs_folder
+			position = { x = 0 y = @1055 }
+		}
+		
+		enable_equipment_modules = {
+			light_pylons_2
+		}
+		
+		categories = {
+			RT_jet_fighters
+			light_air
+		}
+	}
+	
+	medium_plane_tech_0 = {
+		research_cost = 7
+		start_year = 1025
+		
+		path = {
+			leads_to_tech = medium_plane_tech_1
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			assault_plane_airframe_0
+			cv_assault_plane_airframe_0
+		}
+		
+		enable_equipment_modules = {
+			medium_pylons_0
+			light_bombbays_0
+			advanced_gw_autocannon
+		}
+		
+		folder = {
+			name = air_techs_folder
+			position = { x = 2 y = @1025 }
+		}
+		
+		categories = {
+			RT_jet_cas
+			medium_air
+		}
+	}
+	
+	medium_plane_tech_1 = {
+		research_cost = 7
+		start_year = 1040
+		
+		path = {
+			leads_to_tech = medium_plane_tech_2
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			assault_plane_airframe_1
+			cv_assault_plane_airframe_1
+		}
+		
+		enable_equipment_modules = {
+			medium_pylons_1
+			light_bombbays_1
+		}
+		
+		folder = {
+			name = air_techs_folder
+			position = { x = 2 y = @1040 }
+		}
+		
+		categories = {
+			RT_jet_cas
+			medium_air
+		}
+	}
+	
+	medium_plane_tech_2 = {
+		research_cost = 7
+		start_year = 1045
+		
+		path = {
+			leads_to_tech = medium_plane_tech_3
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			assault_plane_airframe_2
+			cv_assault_plane_airframe_2
+		}
+		
+		folder = {
+			name = air_techs_folder
+			position = { x = 2 y = @1045 }
+		}
+		
+		categories = {
+			RT_jet_cas
+			medium_air
+		}
+	}
+	
+	medium_plane_tech_3 = {
+		research_cost = 7
+		start_year = 1050
+		
+		path = {
+			leads_to_tech = medium_plane_tech_4
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			assault_plane_airframe_3
+			cv_assault_plane_airframe_3
+		}
+		
+		folder = {
+			name = air_techs_folder
+			position = { x = 2 y = @1050 }
+		}
+		
+		categories = {
+			RT_jet_cas
+			medium_air
+		}
+	}
+	
+	medium_plane_tech_4 = {
+		research_cost = 7
+		start_year = 1055
+		
+		enable_equipments = {
+			assault_plane_airframe_4
+			cv_assault_plane_airframe_4
+		}
+		
+		enable_equipment_modules = {
+			medium_pylons_3
+			light_bombbays_3
+		}
+		
+		folder = {
+			name = air_techs_folder
+			position = { x = 2 y = @1055 }
+		}
+		
+		categories = {
+			RT_jet_cas
+			medium_air
+		}
+	}
+	
+	large_plane_tech_0 = {
+		research_cost = 10
+		start_year = 1025
+		
+		path = {
+			leads_to_tech = large_plane_tech_1
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			strategic_plane_airframe_0
+		}
+		
+		enable_equipment_modules = {
+			heavy_pylons_0
+			heavy_bombbays_0
+		}
+		
+		folder = {
+			name = air_techs_folder
+			position = { x = 4 y = @1025 }
+		}
+		
+		categories = {
+			RT_jet_strats
+			heavy_air
+		}
+	}
+	
+	large_plane_tech_1 = {
+		research_cost = 10
+		start_year = 1040
+		
+		path = {
+			leads_to_tech = large_plane_tech_2
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			strategic_plane_airframe_1
+		}
+		
+		enable_equipment_modules = {
+			heavy_pylons_1
+			heavy_bombbays_1
+		}
+		
+		folder = {
+			name = air_techs_folder
+			position = { x = 4 y = @1040 }
+		}
+		
+		categories = {
+			RT_jet_strats
+			heavy_air
+		}
+	}
+	
+	large_plane_tech_2 = {
+		research_cost = 10
+		start_year = 1045
+		
+		path = {
+			leads_to_tech = large_plane_tech_3
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			strategic_plane_airframe_2
+		}
+		
+		folder = {
+			name = air_techs_folder
+			position = { x = 4 y = @1045 }
+		}
+		
+		categories = {
+			RT_jet_strats
+			heavy_air
+		}
+	}
+	
+	large_plane_tech_3 = {
+		research_cost = 10
+		start_year = 1050
+		
+		path = {
+			leads_to_tech = large_plane_tech_4
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			strategic_plane_airframe_3
+		}
+		
+		folder = {
+			name = air_techs_folder
+			position = { x = 4 y = @1050 }
+		}
+		
+		categories = {
+			RT_jet_strats
+			heavy_air
+		}
+	}
+	
+	large_plane_tech_4 = {
+		research_cost = 10
+		start_year = 1055
+		
+		enable_equipments = {
+			strategic_plane_airframe_4
+		}
+		
+		enable_equipment_modules = {
+			heavy_pylons_2
+			heavy_bombbays_2
+		}
+		
+		folder = {
+			name = air_techs_folder
+			position = { x = 4 y = @1055 }
+		}
+		
+		categories = {
+			RT_jet_strats
+			heavy_air
+		}
+	}
+	
+	helicopter_tech_0 = {
+		research_cost = 5
+		start_year = 1025
+		
+		path = {
+			leads_to_tech = helicopter_tech_1
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			helicopter_airframe_0
+		}
+		
+		enable_equipment_modules = {
+			helicopter_pylons_0
+		}
+		
+		folder = {
+			name = air_techs_folder
+			position = { x = 6 y = @1025 }
+		}
+		
+		categories = {
+			RT_multiporpouse_helicopters
+			medium_air
+		}
+	}
+	
+	helicopter_tech_1 = {
+		research_cost = 5
+		start_year = 1040
+		
+		path = {
+			leads_to_tech = helicopter_tech_2
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			helicopter_airframe_1
+		}
+		
+		enable_equipment_modules = {
+			helicopter_pylons_1
+		}
+		
+		folder = {
+			name = air_techs_folder
+			position = { x = 6 y = @1040 }
+		}
+		
+		categories = {
+			RT_multiporpouse_helicopters
+			medium_air
+		}
+	}
+	
+	helicopter_tech_2 = {
+		research_cost = 5
+		start_year = 1045
+		
+		path = {
+			leads_to_tech = helicopter_tech_3
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			helicopter_airframe_2
+		}
+		
+		folder = {
+			name = air_techs_folder
+			position = { x = 6 y = @1045 }
+		}
+		
+		categories = {
+			RT_multiporpouse_helicopters
+			medium_air
+		}
+	}
+	
+	helicopter_tech_3 = {
+		research_cost = 5
+		start_year = 1055
+		
+		
+		enable_equipments = {
+			helicopter_airframe_3
+		}
+		
+		folder = {
+			name = air_techs_folder
+			position = { x = 6 y = @1055 }
+		}
+		
+		categories = {
+			RT_multiporpouse_helicopters
+			medium_air
+		}
+	}
+	
+	suav_tech_0 = {
+		research_cost = 5
+		start_year = 1045
+		
+		path = {
+			leads_to_tech = suav_tech_1
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			suav_airframe_0
+		}
+		
+		folder = {
+			name = air_techs_folder
+			position = { x = 8 y = @1045 }
+		}
+		
+		categories = {
+			RT_suavs
+			light_air
+		}
+	}
+	
+	suav_tech_1 = {
+		research_cost = 5
+		start_year = 1050
+		
+		path = {
+			leads_to_tech = suav_tech_2
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			suav_airframe_1
+		}
+		
+		folder = {
+			name = air_techs_folder
+			position = { x = 8 y = @1050 }
+		}
+		
+		categories = {
+			RT_suavs
+			light_air
+		}
+	}
+	
+	suav_tech_2 = {
+		research_cost = 5
+		start_year = 1055
+		
+		enable_equipments = {
+			suav_airframe_2
+		}
+		
+		folder = {
+			name = air_techs_folder
+			position = { x = 8 y = @1055 }
+		}
+		
+		categories = {
+			RT_suavs
+			light_air
+		}
+	}
+	
+	aircraft_rockets_tech_0 = {
+		start_year = 1020
+		research_cost = 3
+		path = {
+			leads_to_tech = air_atos_rockets_0
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = air_at_rockets_0
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = air_atoa_rockets_0
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = air_ator_rockets_0
+			research_cost_coeff = 1
+		}
+		
+		enable_equipment_modules = {
+		
+		}
+		
+		folder = {
+			name = air_techs_folder
+			position = { x = 10 y = @1025 }
+		}
+		
+		categories = {
+			RT_aircraft_rockets
+			RT_air_upgrades
+		}
+		
+	}
+	
+	air_atos_rockets_0 = {
+		start_year = 1040
+		research_cost = 3
+		path = {
+			leads_to_tech = air_atos_rockets_1
+			research_cost_coeff = 1
+		}
+		
+		enable_equipment_modules = {
+			air_to_surface_rockets_1
+		}
+		
+		folder = {
+			name = air_techs_folder
+			position = { x = 10 y = @1040 }
+		}
+		
+		categories = {
+			RT_aircraft_rockets
+			RT_air_upgrades
+		}
+	}
+	
+	air_atos_rockets_1 = {
+		start_year = 1045
+		research_cost = 3
+		path = {
+			leads_to_tech = air_atos_rockets_2
+			research_cost_coeff = 1
+		}
+		
+		enable_equipment_modules = {
+			air_to_surface_rockets_2
+		}
+		
+		folder = {
+			name = air_techs_folder
+			position = { x = 10 y = @1045 }
+		}
+		
+		categories = {
+			RT_aircraft_rockets
+			RT_air_upgrades
+		}
+	}
+	
+	air_atos_rockets_2 = {
+		start_year = 1050
+		research_cost = 3
+		path = {
+			leads_to_tech = air_atos_rockets_3
+			research_cost_coeff = 1
+		}
+		
+		enable_equipment_modules = {
+			air_to_surface_rockets_3
+		}
+		
+		folder = {
+			name = air_techs_folder
+			position = { x = 10 y = @1050 }
+		}
+		
+		categories = {
+			RT_aircraft_rockets
+			RT_air_upgrades
+		}
+	}
+	
+	air_atos_rockets_3 = {
+		start_year = 1055
+		research_cost = 3
+		
+		enable_equipment_modules = {
+			air_to_surface_rockets_4
+		}
+		
+		folder = {
+			name = air_techs_folder
+			position = { x = 10 y = @1055 }
+		}
+		
+		categories = {
+			RT_aircraft_rockets
+			RT_air_upgrades
+		}
+	}
+	
+	air_at_rockets_0 = {
+		start_year = 1040
+		research_cost = 3
+		path = {
+			leads_to_tech = air_at_rockets_1
+			research_cost_coeff = 1
+		}
+		
+		enable_equipment_modules = {
+			antitank_guided_missiles_1
+		}
+		
+		folder = {
+			name = air_techs_folder
+			position = { x = 12 y = @1040 }
+		}
+		
+		categories = {
+			RT_aircraft_rockets
+			RT_air_upgrades
+		}
+	}
+	
+	air_at_rockets_1 = {
+		start_year = 1045
+		research_cost = 3
+		path = {
+			leads_to_tech = air_at_rockets_2
+			research_cost_coeff = 1
+		}
+		
+		enable_equipment_modules = {
+			antitank_guided_missiles_2
+		}
+		
+		folder = {
+			name = air_techs_folder
+			position = { x = 12 y = @1045 }
+		}
+		
+		categories = {
+			RT_aircraft_rockets
+			RT_air_upgrades
+		}
+	}
+	
+	air_at_rockets_2 = {
+		start_year = 1050
+		research_cost = 3
+		path = {
+			leads_to_tech = air_at_rockets_3
+			research_cost_coeff = 1
+		}
+		
+		enable_equipment_modules = {
+			antitank_guided_missiles_3
+		}
+		
+		folder = {
+			name = air_techs_folder
+			position = { x = 12 y = @1050 }
+		}
+		
+		categories = {
+			RT_aircraft_rockets
+			RT_air_upgrades
+		}
+	}
+	
+	air_at_rockets_3 = {
+		start_year = 1055
+		research_cost = 3
+		
+		enable_equipment_modules = {
+			antitank_guided_missiles_4
+		}
+		
+		folder = {
+			name = air_techs_folder
+			position = { x = 12 y = @1055 }
+		}
+		
+		categories = {
+			RT_aircraft_rockets
+			RT_air_upgrades
+		}
+	}
+	
+	air_atoa_rockets_0 = {
+		start_year = 1040
+		research_cost = 3
+		path = {
+			leads_to_tech = air_atoa_rockets_1
+			research_cost_coeff = 1
+		}
+		
+		enable_equipment_modules = {
+			air_to_air_rockets_1
+		}
+		
+		folder = {
+			name = air_techs_folder
+			position = { x = 14 y = @1040 }
+		}
+		
+		categories = {
+			RT_aircraft_rockets
+			RT_air_upgrades
+		}
+	}
+	
+	air_atoa_rockets_1 = {
+		start_year = 1045
+		research_cost = 3
+		path = {
+			leads_to_tech = air_atoa_rockets_2
+			research_cost_coeff = 1
+		}
+		
+		enable_equipment_modules = {
+			air_to_air_rockets_2
+		}	
+		
+		folder = {
+			name = air_techs_folder
+			position = { x = 14 y = @1045 }
+		}
+		
+		categories = {
+			RT_aircraft_rockets
+			RT_air_upgrades
+		}
+	}
+	
+	air_atoa_rockets_2 = {
+		start_year = 1050
+		research_cost = 3
+		path = {
+			leads_to_tech = air_atoa_rockets_3
+			research_cost_coeff = 1
+		}
+		
+		enable_equipment_modules = {
+			air_to_air_rockets_3
+		}
+		
+		folder = {
+			name = air_techs_folder
+			position = { x = 14 y = @1050 }
+		}
+		
+		categories = {
+			RT_aircraft_rockets
+			RT_air_upgrades
+		}
+	}
+	
+	air_atoa_rockets_3 = {
+		start_year = 1055
+		research_cost = 3
+		
+		enable_equipment_modules = {
+			air_to_air_rockets_4
+		}
+		
+		folder = {
+			name = air_techs_folder
+			position = { x = 14 y = @1055 }
+		}
+		
+		categories = {
+			RT_aircraft_rockets
+			RT_air_upgrades
+		}
+	}
+	
+	air_ator_rockets_0 = {
+		start_year = 1040
+		research_cost = 3
+		path = {
+			leads_to_tech = air_ator_rockets_1
+			research_cost_coeff = 1
+		}
+		
+		enable_equipment_modules = {
+			air_radar_rockets_1
+		}
+		
+		folder = {
+			name = air_techs_folder
+			position = { x = 16 y = @1040 }
+		}
+		
+		categories = {
+			RT_aircraft_rockets
+			RT_air_upgrades
+		}
+	}
+	
+	air_ator_rockets_1 = {
+		start_year = 1045
+		research_cost = 3
+		path = {
+			leads_to_tech = air_ator_rockets_2
+			research_cost_coeff = 1
+		}
+		
+		enable_equipment_modules = {
+			air_radar_rockets_2
+		}
+		
+		folder = {
+			name = air_techs_folder
+			position = { x = 16 y = @1045 }
+		}
+		
+		categories = {
+			RT_aircraft_rockets
+			RT_air_upgrades
+		}
+	}
+	
+	air_ator_rockets_2 = {
+		start_year = 1050
+		research_cost = 3
+		path = {
+			leads_to_tech = air_ator_rockets_3
+			research_cost_coeff = 1
+		}
+		
+		enable_equipment_modules = {
+			air_radar_rockets_3
+		}	
+		
+		folder = {
+			name = air_techs_folder
+			position = { x = 16 y = @1050 }
+		}
+		
+		categories = {
+			RT_aircraft_rockets
+			RT_air_upgrades
+		}
+	}
+	
+	air_ator_rockets_3 = {
+		start_year = 1055
+		research_cost = 3
+		
+		enable_equipment_modules = {
+			air_radar_rockets_4
+		}
+		
+		folder = {
+			name = air_techs_folder
+			position = { x = 16 y = @1055 }
+		}
+		
+		categories = {
+			RT_aircraft_rockets
+			RT_air_upgrades
+		}
+	}
+	
+	aircraft_missiles_tech_0 = {
+		start_year = 1020
+		research_cost = 3
+		path = {
+			leads_to_tech = air_winged_missiles_0
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = air_antiship_missiles_0
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = air_antiradar_missiles_0
+			research_cost_coeff = 1
+		}
+		
+		enable_equipment_modules = {
+			early_winged_rockets
+		}
+		
+		folder = {
+			name = air_techs_folder
+			position = { x = 18 y = @1025 }
+		}
+		
+		categories = {
+			CTM_winged_missiles
+			RT_air_upgrades
+		}
+	}
+	
+	air_winged_missiles_0 = {
+		start_year = 1040
+		research_cost = 3
+		path = {
+			leads_to_tech = air_winged_missiles_1
+			research_cost_coeff = 1
+		}
+		enable_equipment_modules = {
+			winged_rockets_1
+		}
+		
+		folder = {
+			name = air_techs_folder
+			position = { x = 18 y = @1040 }
+		}
+		
+		categories = {
+			CTM_winged_missiles
+			RT_air_upgrades
+		}
+	}
+	
+	air_winged_missiles_1 = {
+		start_year = 1045
+		research_cost = 3
+		path = {
+			leads_to_tech = air_winged_missiles_2
+			research_cost_coeff = 1
+		}
+		enable_equipment_modules = {
+			winged_rockets_2
+		}
+		
+		folder = {
+			name = air_techs_folder
+			position = { x = 18 y = @1045 }
+		}
+		
+		categories = {
+			CTM_winged_missiles
+			RT_air_upgrades
+		}
+	}
+	
+	air_winged_missiles_2 = {
+		start_year = 1050
+		research_cost = 3
+		path = {
+			leads_to_tech = air_winged_missiles_3
+			research_cost_coeff = 1
+		}
+		enable_equipment_modules = {
+			winged_rockets_3
+		}
+		
+		folder = {
+			name = air_techs_folder
+			position = { x = 18 y = @1050 }
+		}
+		
+		categories = {
+			CTM_winged_missiles
+			RT_air_upgrades
+		}
+	}
+	
+	air_winged_missiles_3 = {
+		start_year = 1055
+		research_cost = 3
+		
+		enable_equipment_modules = {
+			winged_rockets_4
+		}
+		
+		folder = {
+			name = air_techs_folder
+			position = { x = 18 y = @1055 }
+		}
+		
+		categories = {
+			CTM_winged_missiles
+			RT_air_upgrades
+		}
+	}
+	
+	air_antiship_missiles_0 = {
+		start_year = 1040
+		research_cost = 3
+		path = {
+			leads_to_tech = air_antiship_missiles_1
+			research_cost_coeff = 1
+		}
+		enable_equipment_modules = {
+			early_anti_ship_rocket
+		}	
+		
+		folder = {
+			name = air_techs_folder
+			position = { x = 20 y = @1040 }
+		}
+		
+		categories = {
+			CTM_winged_missiles
+			RT_air_upgrades
+		}
+	}
+	
+	air_antiship_missiles_1 = {
+		start_year = 1045
+		research_cost = 3
+		path = {
+			leads_to_tech = air_antiship_missiles_2
+			research_cost_coeff = 1
+		}
+		enable_equipment_modules = {
+			anti_ship_rocket_1
+		}
+		
+		folder = {
+			name = air_techs_folder
+			position = { x = 20 y = @1045 }
+		}
+		
+		categories = {
+			CTM_winged_missiles
+			RT_air_upgrades
+		}
+	}
+	
+	air_antiship_missiles_2 = {
+		start_year = 1050
+		research_cost = 3
+		path = {
+			leads_to_tech = air_antiship_missiles_3
+			research_cost_coeff = 1
+		}
+		enable_equipment_modules = {
+			anti_ship_rocket_2
+		}
+		
+		folder = {
+			name = air_techs_folder
+			position = { x = 20 y = @1050 }
+		}
+		
+		categories = {
+			CTM_winged_missiles
+			RT_air_upgrades
+		}
+	}
+	
+	air_antiship_missiles_3 = {
+		start_year = 1055
+		research_cost = 3
+		
+		enable_equipment_modules = {
+			anti_ship_rocket_3
+		}
+		
+		folder = {
+			name = air_techs_folder
+			position = { x = 20 y = @1055 }
+		}	
+		
+		categories = {
+			CTM_winged_missiles
+			RT_air_upgrades
+		}
+	}
+	
+	air_antiradar_missiles_0 = {
+		start_year = 1040
+		research_cost = 3
+		path = {
+			leads_to_tech = air_antiradar_missiles_1
+			research_cost_coeff = 1
+		}
+		enable_equipment_modules = {
+			early_anti_radar_rocket
+		}
+		
+		folder = {
+			name = air_techs_folder
+			position = { x = 22 y = @1040 }
+		}
+		
+		categories = {
+			CTM_winged_missiles
+			RT_air_upgrades
+		}
+	}
+	
+	air_antiradar_missiles_1 = {
+		start_year = 1045
+		research_cost = 3
+		path = {
+			leads_to_tech = air_antiradar_missiles_2
+			research_cost_coeff = 1
+		}
+		enable_equipment_modules = {
+			winged_rockets_1
+		}
+		
+		folder = {
+			name = air_techs_folder
+			position = { x = 22 y = @1045 }
+		}
+		
+		categories = {
+			CTM_winged_missiles
+			RT_air_upgrades
+		}
+	}
+	
+	air_antiradar_missiles_2 = {
+		start_year = 1050
+		research_cost = 3
+		path = {
+			leads_to_tech = air_antiradar_missiles_3
+			research_cost_coeff = 1
+		}
+		enable_equipment_modules = {
+			winged_rockets_2
+		}
+		
+		folder = {
+			name = air_techs_folder
+			position = { x = 22 y = @1050 }
+		}
+		
+		categories = {
+			CTM_winged_missiles
+			RT_air_upgrades
+		}
+	}
+	
+	air_antiradar_missiles_3 = {
+		start_year = 1055
+		research_cost = 3
+		
+		enable_equipment_modules = {
+			winged_rockets_3
+		}
+		
+		folder = {
+			name = air_techs_folder
+			position = { x = 22 y = @1055 }
+		}
+		
+		categories = {
+			CTM_winged_missiles
+			RT_air_upgrades
+		}
+	}
+	
+	aircraft_radar_tech_0 = {
+		start_year = 1025
+		research_cost = 3
+		path = {
+			leads_to_tech = aircraft_radar_tech_1
+			research_cost_coeff = 1
+		}
+		enable_equipment_modules = {
+			great_war_air_radar
+		}
+		
+		folder = {
+			name = air_techs_folder
+			position = { x = 24 y = @1025 }
+		}
+		
+		categories = {
+			CTM_air_radars
+			RT_air_upgrades
+		}
+	}
+	
+	aircraft_radar_tech_1 = {
+		start_year = 1040
+		research_cost = 3
+		path = {
+			leads_to_tech = aircraft_radar_tech_2
+			research_cost_coeff = 1
+		}
+		enable_equipment_modules = {
+			air_radar_1
+		}
+		
+		folder = {
+			name = air_techs_folder
+			position = { x = 24 y = @1040 }
+		}
+		
+		categories = {
+			CTM_air_radars
+			RT_air_upgrades
+		}
+	}
+	
+	aircraft_radar_tech_2 = {
+		start_year = 1045
+		research_cost = 3
+		path = {
+			leads_to_tech = aircraft_radar_tech_3
+			research_cost_coeff = 1
+		}
+		enable_equipment_modules = {
+			air_radar_2
+		}
+		
+		folder = {
+			name = air_techs_folder
+			position = { x = 24 y = @1045 }
+		}
+		
+		categories = {
+			CTM_air_radars
+			RT_air_upgrades
+		}
+	}
+	
+	aircraft_radar_tech_3 = {
+		start_year = 1055
+		research_cost = 3
+		
+		enable_equipment_modules = {
+			air_radar_3
+		}
+		
+		folder = {
+			name = air_techs_folder
+			position = { x = 24 y = @1055 }
+		}
+		
+		categories = {
+			CTM_air_radars
+			RT_air_upgrades
+		}
+	}
+	
+	aircraft_engine_tech_0 = {
+		start_year = 1025
+		research_cost = 3
+		path = {
+			leads_to_tech = aircraft_engine_tech_1
+			research_cost_coeff = 1
+		}
+		enable_equipment_modules = {
+			basic_jet_engine
+			piston_engine_1
+			turbofan_engine_1
+		}
+		
+		folder = {
+			name = air_techs_folder
+			position = { x = 26 y = @1025 }
+		}
+		
+		categories = {
+			RT_jet_engines
+			RT_air_upgrades
+		}
+	}
+	
+	aircraft_engine_tech_1 = {
+		start_year = 1040
+		research_cost = 3
+		path = {
+			leads_to_tech = aircraft_engine_tech_2
+			research_cost_coeff = 1
+		}
+		enable_equipment_modules = {
+			turbojet_engine_1
+			turbowie_engine_1
+			turboval_engine_1
+			
+		}
+		
+		folder = {
+			name = air_techs_folder
+			position = { x = 26 y = @1040 }
+		}
+		
+		categories = {
+			RT_jet_engines
+			RT_air_upgrades
+		}
+	}
+	
+	aircraft_engine_tech_2 = {
+		start_year = 1045
+		research_cost = 3
+		path = {
+			leads_to_tech = aircraft_engine_tech_3
+			research_cost_coeff = 1
+		}
+		enable_equipment_modules = {
+			turbojet_engine_2
+			turbowie_engine_2
+			
+		}
+		folder = {
+			name = air_techs_folder
+			position = { x = 26 y = @1045 }
+		}
+		
+		categories = {
+			RT_jet_engines
+			RT_air_upgrades
+		}
+	}
+	
+	aircraft_engine_tech_3 = {
+		start_year = 1055
+		research_cost = 3
+	
+		enable_equipment_modules = {
+			turbofan_engine_2
+			turboval_engine_2
+		}
+		
+		folder = {
+			name = air_techs_folder
+			position = { x = 26 y = @1055 }
+		}
+		
+		categories = {
+			RT_jet_engines
+			RT_air_upgrades
+		}
+	}
+	
+	aircraft_modules_tech_0 = {
+		start_year = 1025
+		research_cost = 7
+		path = {
+			leads_to_tech = aircraft_modules_tech_1
+			research_cost_coeff = 1
+		}
+		enable_equipment_modules = {
+			heatseeker_module
+		}
+		
+		folder = {
+			name = air_techs_folder
+			position = { x = 28 y = @1025 }
+		}
+		
+		categories = {
+			RT_air_upgrades
+		}
+	}
+	
+	aircraft_modules_tech_1 = {
+		start_year = 1045
+		research_cost = 7
+		path = {
+			leads_to_tech = aircraft_modules_tech_2
+			research_cost_coeff = 1
+		}
+		enable_equipment_modules = {
+		
+		}
+		
+		folder = {
+			name = air_techs_folder
+			position = { x = 28 y = @1045 }
+		}
+		
+		categories = {
+			RT_air_upgrades
+		}
+	}
+	
+	aircraft_modules_tech_2 = {
+		start_year = 1055
+		research_cost = 7
+		
+		enable_equipment_modules = {
+		
+		}
+		
+		folder = {
+			name = air_techs_folder
+			position = { x = 28 y = @1055 }
+		}
+		
+		categories = {
+			RT_air_upgrades
+		}
+	}
+	
+	aircraft_bombs_tech_0 = {
+		start_year = 1020
+		research_cost = 3
+		path = {
+			leads_to_tech = air_small_fuse_bombs_0
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = air_large_fuse_bombs_0
+			research_cost_coeff = 1
+		}
+		enable_equipment_modules = {
+		
+		}
+		
+		folder = {
+			name = air_techs_folder
+			position = { x = 30 y = @1025 }
+		}
+		
+		categories = {
+			RT_attached_weapons_bombers
+		}
+		
+	}
+	air_small_fuse_bombs_0 = {
+		start_year = 1040
+		research_cost = 3
+		path = {
+			leads_to_tech = air_small_fuse_bombs_1
+			research_cost_coeff = 1
+		}
+		
+		enable_equipment_modules = {
+			fuse_bombs_100
+			fuse_bombs_250
+		}
+		
+		folder = {
+			name = air_techs_folder
+			position = { x = 30 y = @1040 }
+		}
+		
+		categories = {
+			RT_attached_weapons_bombers
+		}
+	}
+	
+	air_small_fuse_bombs_1 = {
+		start_year = 1045
+		research_cost = 3
+		path = {
+			leads_to_tech = air_small_fuse_bombs_2
+			research_cost_coeff = 1
+		}
+		
+		enable_equipment_modules = {
+			magical_fuse_bombs_100
+			magical_fuse_bombs_250
+		}
+		
+		folder = {
+			name = air_techs_folder
+			position = { x = 30 y = @1045 }
+		}
+		
+		categories = {
+			RT_attached_weapons_bombers
+		}
+	}
+	
+	air_small_fuse_bombs_2 = {
+		start_year = 1050
+		research_cost = 3
+		path = {
+			leads_to_tech = air_small_fuse_bombs_3
+			research_cost_coeff = 1
+		}
+		
+		enable_equipment_modules = {
+			guided_fuse_bombs_100
+			guided_fuse_bombs_250
+		}
+		
+		folder = {
+			name = air_techs_folder
+			position = { x = 30 y = @1050 }
+		}
+		
+		categories = {
+			RT_attached_weapons_bombers
+		}
+	}
+	
+	air_small_fuse_bombs_3 = {
+		start_year = 1055
+		research_cost = 3
+		
+		enable_equipment_modules = {
+			guided_magical_fuse_bombs_100
+			guided_magical_fuse_bombs_250
+		}
+		
+		folder = {
+			name = air_techs_folder
+			position = { x = 30 y = @1055 }
+		}
+		
+		categories = {
+			RT_attached_weapons_bombers
+		}
+	}
+	
+	air_large_fuse_bombs_0 = {
+		start_year = 1040
+		research_cost = 3
+		path = {
+			leads_to_tech = air_large_fuse_bombs_1
+			research_cost_coeff = 1
+		}
+		
+		enable_equipment_modules = {
+			fuse_bombs_500
+			fuse_bombs_1000
+		}
+		
+		folder = {
+			name = air_techs_folder
+			position = { x = 32 y = @1040 }
+		}
+		
+		categories = {
+			RT_attached_weapons_bombers
+		}
+	}
+	
+	air_large_fuse_bombs_1 = {
+		start_year = 1045
+		research_cost = 3
+		path = {
+			leads_to_tech = air_large_fuse_bombs_2
+			research_cost_coeff = 1
+		}
+		
+		enable_equipment_modules = {
+			magical_fuse_bombs_500
+			magical_fuse_bombs_1000
+		}
+		
+		folder = {
+			name = air_techs_folder
+			position = { x = 32 y = @1045 }
+		}
+		
+		categories = {
+			RT_attached_weapons_bombers
+		}
+	}
+	
+	air_large_fuse_bombs_2 = {
+		start_year = 1050
+		research_cost = 3
+		path = {
+			leads_to_tech = air_large_fuse_bombs_3
+			research_cost_coeff = 1
+		}
+		
+		enable_equipment_modules = {
+			guided_fuse_bombs_500
+			guided_fuse_bombs_1000
+		}
+		
+		folder = {
+			name = air_techs_folder
+			position = { x = 32 y = @1050 }
+		}
+		
+		categories = {
+			RT_attached_weapons_bombers
+		}
+	}
+	
+	air_large_fuse_bombs_3 = {
+		start_year = 1055
+		research_cost = 3
+		
+		enable_equipment_modules = {
+			guided_magical_fuse_bombs_500
+			guided_magical_fuse_bombs_1000
+		}	
+		
+		folder = {
+			name = air_techs_folder
+			position = { x = 32 y = @1055 }
+		}
+		
+		categories = {
+			RT_attached_weapons_bombers
+		}
+	}
+	

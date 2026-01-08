@@ -1,0 +1,1061 @@
+
+technologies = {
+	
+	@1025 = 0
+	@1035 = 4
+	@1039 = 8
+	@1042 = 12
+	@1045 = 16
+	@1048 = 20
+	@1051 = 24
+	@1054 = 28
+	
+	infantry_weapons_tech_0 = {
+		research_cost = 0 ### Everyone has one at start
+		path = {
+			leads_to_tech = infantry_weapons_tech_1
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = sniper_weapons_tech_0
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			infantry_weapons_0
+		}
+		
+		enable_subunits = {
+			light_infantry
+		}
+		
+		
+		folder = {
+			name = infantry_folder
+			position = { x = -2 y = @1025 }
+		}
+		start_year = 1025
+		
+		categories = {
+			cat_infantry_weapons
+			infantry_tech
+		}
+	}
+	
+	infantry_weapons_tech_1 = {
+		research_cost = 2
+		path = {
+			leads_to_tech = infantry_weapons_tech_2
+			research_cost_coeff = 1
+		}
+	
+		folder = {
+			name = infantry_folder
+			position = { x = -2 y = @1035 }
+		}
+		start_year = 1035
+		
+		categories = {
+			cat_infantry_weapons
+			infantry_tech
+		}
+	}
+	
+	infantry_weapons_tech_2 = {
+		research_cost = 2
+		path = {
+			leads_to_tech = infantry_weapons_tech_3
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			infantry_weapons_1
+		}
+		
+		
+		folder = {
+			name = infantry_folder
+			position = { x = -2 y = @1039 }
+		}
+		start_year = 1040
+		
+		categories = {
+			cat_infantry_weapons
+			infantry_tech
+		}
+	}
+	
+	infantry_weapons_tech_3 = {
+		research_cost = 2
+		path = {
+			leads_to_tech = infantry_weapons_tech_4
+			research_cost_coeff = 1
+		}
+		
+		
+		folder = {
+			name = infantry_folder
+			position = { x = -2 y = @1042 }
+		}
+		start_year = 1042
+		
+		categories = {
+			cat_infantry_weapons
+			infantry_tech
+		}
+	}
+	
+	infantry_weapons_tech_4 = {
+		research_cost = 2
+		path = {
+			leads_to_tech = infantry_weapons_tech_5
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			infantry_weapons_2
+		}
+		
+		
+		folder = {
+			name = infantry_folder
+			position = { x = -2 y = @1045 }
+		}
+		start_year = 1045
+		
+		categories = {
+			cat_infantry_weapons
+			infantry_tech
+		}
+	}
+	
+	infantry_weapons_tech_5 = {
+		research_cost = 2
+		path = {
+			leads_to_tech = infantry_weapons_tech_6
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			infantry_weapons_3
+		}
+		
+		
+		folder = {
+			name = infantry_folder
+			position = { x = -2 y = @1048 }
+		}
+		start_year = 1048
+		
+		categories = {
+			cat_infantry_weapons
+			infantry_tech
+		}
+	}
+	
+	infantry_weapons_tech_6 = {
+		research_cost = 2
+		path = {
+			leads_to_tech = infantry_weapons_tech_7
+			research_cost_coeff = 1
+		}
+		enable_equipments = {
+			infantry_weapons_4
+		}
+		
+		folder = {
+			name = infantry_folder
+			position = { x = -2 y = @1051 }
+		}
+		start_year = 1051
+		
+		categories = {
+			cat_infantry_weapons
+			infantry_tech
+		}
+	}
+	
+	infantry_weapons_tech_7 = {
+		research_cost = 2
+	
+		
+		enable_equipments = {
+			infantry_weapons_5
+		}
+		
+		folder = {
+			name = infantry_folder
+			position = { x = -2 y = @1054 }
+		}
+		
+		start_year = 1054
+		
+		categories = {
+			cat_infantry_weapons
+			infantry_tech
+		}
+	}
+	
+	sniper_weapons_tech_0 = {
+		research_cost = 2
+	
+		path = {
+			leads_to_tech = sniper_weapons_tech_1
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			sniper_rifle_equipment_0
+		}
+		
+		enable_subunits = {
+			snipers_support
+		}
+		
+		folder = {
+			name = infantry_folder
+			position = { x = 0 y = @1035 }
+		}
+		
+		start_year = 1035
+		
+		categories = {
+			cat_infantry_weapons
+			infantry_tech
+			cat_snipers_tech
+		}
+	}
+	
+	sniper_weapons_tech_1 = {
+		research_cost = 2
+	
+		path = {
+			leads_to_tech = sniper_weapons_tech_2
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			sniper_rifle_equipment_1
+		}
+		
+		folder = {
+			name = infantry_folder
+			position = { x = 0 y = @1045 }
+		}
+		
+		start_year = 1045
+		
+		categories = {
+			cat_infantry_weapons
+			infantry_tech
+			cat_snipers_tech
+		}
+	}
+	
+	sniper_weapons_tech_2 = {
+		research_cost = 2
+	
+		enable_equipments = {
+			sniper_rifle_equipment_2
+		}
+	
+		
+		folder = {
+			name = infantry_folder
+			position = { x = 0 y = @1054 }
+		}
+		
+		start_year = 1054
+		
+		categories = {
+			cat_infantry_weapons
+			infantry_tech
+			cat_snipers_tech
+		}
+	}
+	
+	machinegun_weapons_tech_0 = {
+		research_cost = 2
+		path = {
+			leads_to_tech = machinegun_weapons_tech_1
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = manpads_weapons_tech_0
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			machinegun_equipment_0
+		}
+		
+		enable_equipment_modules = {
+			apc_hmg_0
+			apc_lmg_0
+			turret_hmg_0
+			tank_paired_hmg
+			tank_course_hmg
+		}
+		
+		enable_subunits = {
+			mg_support_company
+		}
+		
+		
+		folder = {
+			name = infantry_folder
+			position = { x = 4 y = @1025 }
+		}
+		start_year = 1025
+		
+		categories = {
+			cat_infantry_weapons
+			infantry_tech
+			cat_mg_weapons
+		}
+	}
+	
+	machinegun_weapons_tech_1 = {
+		research_cost = 2
+		path = {
+			leads_to_tech = machinegun_weapons_tech_2
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			machinegun_equipment_1
+		}
+		
+		folder = {
+			name = infantry_folder
+			position = { x = 4 y = @1035 }
+		}
+		start_year = 1035
+		
+		categories = {
+			cat_infantry_weapons
+			infantry_tech
+			cat_mg_weapons
+		}
+	}
+	
+	machinegun_weapons_tech_2 = {
+		research_cost = 2
+		path = {
+			leads_to_tech = machinegun_weapons_tech_3
+			research_cost_coeff = 1
+		}
+		
+		enable_equipment_modules = {
+			apc_hmg_1
+			apc_lmg_1
+			turret_hmg_1
+		}		
+		
+		folder = {
+			name = infantry_folder
+			position = { x = 4 y = @1042 }
+		}
+		start_year = 1042
+		
+		categories = {
+			cat_infantry_weapons
+			infantry_tech
+			cat_mg_weapons
+		}
+	}
+	
+	machinegun_weapons_tech_3 = {
+		research_cost = 2
+		path = {
+			leads_to_tech = machinegun_weapons_tech_4
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			machinegun_equipment_2
+		}
+		
+		folder = {
+			name = infantry_folder
+			position = { x = 4 y = @1045 }
+		}
+		start_year = 1045
+		
+		categories = {
+			cat_infantry_weapons
+			infantry_tech
+			cat_mg_weapons
+		}
+	}
+	
+	machinegun_weapons_tech_4 = {
+		research_cost = 2
+		path = {
+			leads_to_tech = machinegun_weapons_tech_5
+			research_cost_coeff = 1
+		}
+		
+		
+		folder = {
+			name = infantry_folder
+			position = { x = 4 y = @1048 }
+		}
+		start_year = 1048
+		
+		categories = {
+			cat_infantry_weapons
+			infantry_tech
+			cat_mg_weapons
+		}
+	}
+	
+	machinegun_weapons_tech_5 = {
+		research_cost = 2
+		
+		
+		enable_equipments = {
+			machinegun_equipment_3
+		}
+		
+		
+		folder = {
+			name = infantry_folder
+			position = { x = 4 y = @1054 }
+		}
+		start_year = 1054
+		
+		categories = {
+			cat_infantry_weapons
+			infantry_tech
+			cat_mg_weapons
+		}
+	}
+	
+	manpads_weapons_tech_0 = {
+		research_cost = 2
+		path = {
+			leads_to_tech = manpads_weapons_tech_1
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			manpads_equipment_0
+		}
+		
+		enable_subunits = {
+			manpads_support_company
+			manpads_supplies
+		}
+		
+		enable_equipment_modules = {
+			turret_sam_0
+			ifv_sam_0
+		}	
+		
+		folder = {
+			name = infantry_folder
+			position = { x = 6 y = @1035 }
+		}
+		start_year = 1035
+		
+		categories = {
+			cat_infantry_weapons
+			infantry_tech
+			cat_manpads_weapons
+		}
+	}
+	
+	manpads_weapons_tech_1 = {
+		research_cost = 2
+		path = {
+			leads_to_tech = manpads_weapons_tech_2
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			manpads_equipment_1
+		}
+		
+		
+		folder = {
+			name = infantry_folder
+			position = { x = 6 y = @1045 }
+		}
+		start_year = 1045
+		
+		categories = {
+			cat_infantry_weapons
+			infantry_tech
+			cat_manpads_weapons
+		}
+	}
+	
+	manpads_weapons_tech_2 = {
+		research_cost = 2
+		
+		enable_equipments = {
+			manpads_equipment_2
+		}
+		
+		enable_equipment_modules = {
+			turret_sam_1
+			ifv_sam_1
+		}	
+		
+		folder = {
+			name = infantry_folder
+			position = { x = 6 y = @1054 }
+		}
+		start_year = 1054
+		
+		categories = {
+			cat_infantry_weapons
+			infantry_tech
+			cat_manpads_weapons
+		}
+	}
+	
+	mine_thrower_tech_0 = {
+		research_cost = 2
+		path = {
+			leads_to_tech = mine_thrower_tech_1
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = grenade_launchers_tech_0
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			mine_thrower_equipment_0
+		}
+		
+		enable_subunits = {
+			mine_thrower_supplies
+		}
+		
+		enable_equipment_modules = {
+			ifv_mortar_0
+			turret_mortar_0
+		}			
+		
+		folder = {
+			name = infantry_folder
+			position = { x = 8 y = @1025 }
+		}
+		start_year = 1025
+		
+		categories = {
+			cat_infantry_weapons
+			infantry_tech
+			cat_mine_thrower_weapons
+		}
+	}
+	
+	mine_thrower_tech_1 = {
+		research_cost = 2
+		path = {
+			leads_to_tech = mine_thrower_tech_2
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			mine_thrower_equipment_1
+		}
+		
+		
+		folder = {
+			name = infantry_folder
+			position = { x = 8 y = @1045 }
+		}
+		start_year = 1045
+		
+		categories = {
+			cat_infantry_weapons
+			infantry_tech
+			cat_mine_thrower_weapons
+		}
+	}
+	
+	mine_thrower_tech_2 = {
+		research_cost = 2
+	
+		
+		enable_equipments = {
+			mine_thrower_equipment_2
+		}
+		
+		enable_equipment_modules = {
+			ifv_mortar_1
+			turret_mortar_1
+		}	
+		
+		folder = {
+			name = infantry_folder
+			position = { x = 8 y = @1054 }
+		}
+		start_year = 1054
+		
+		categories = {
+			cat_infantry_weapons
+			infantry_tech
+			cat_mine_thrower_weapons
+		}
+	}
+	
+	grenade_launchers_tech_0 = {
+		research_cost = 2
+		path = {
+			leads_to_tech = grenade_launchers_tech_1
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			grenade_launcher_equipment_0
+		}
+		
+		enable_subunits = {
+			gl_support_company
+		}
+		
+		
+		folder = {
+			name = infantry_folder
+			position = { x = 10 y = @1025 }
+		}
+		start_year = 1025
+		
+		categories = {
+			cat_infantry_weapons
+			infantry_tech
+			cat_grenade_launcher_weapons
+		}
+	}
+	
+	grenade_launchers_tech_1 = {
+		research_cost = 2
+		path = {
+			leads_to_tech = grenade_launchers_tech_2
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			grenade_launcher_equipment_1
+		}
+		
+		
+		folder = {
+			name = infantry_folder
+			position = { x = 10 y = @1035 }
+		}
+		start_year = 1035
+		
+		categories = {
+			cat_infantry_weapons
+			infantry_tech
+			cat_grenade_launcher_weapons
+		}
+	}
+	
+	grenade_launchers_tech_2 = {
+		research_cost = 2
+		path = {
+			leads_to_tech = grenade_launchers_tech_3
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			grenade_launcher_equipment_2
+		}
+		
+		
+		folder = {
+			name = infantry_folder
+			position = { x = 10 y = @1045 }
+		}
+		start_year = 1045
+		
+		categories = {
+			cat_infantry_weapons
+			infantry_tech
+			cat_grenade_launcher_weapons
+		}
+	}
+	
+	grenade_launchers_tech_3 = {
+		research_cost = 2
+		enable_equipments = {
+			grenade_launcher_equipment_3
+		}
+		
+		
+		folder = {
+			name = infantry_folder
+			position = { x = 10 y = @1054 }
+		}
+		start_year = 1054
+		
+		categories = {
+			cat_infantry_weapons
+			infantry_tech
+			cat_grenade_launcher_weapons
+		}
+	}
+	
+	at_rocket_launchers_tech_0 = {
+		research_cost = 2
+		path = {
+			leads_to_tech = at_rocket_launchers_tech_1
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = atgm_launcher_tech_0
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			rocket_launcher_equipment_0
+		}
+		
+		enable_subunits = {
+			rocket_launcher_supplies
+		}
+		
+		
+		folder = {
+			name = infantry_folder
+			position = { x = 12 y = @1025 }
+		}
+		start_year = 1025
+		
+		categories = {
+			cat_infantry_weapons
+			infantry_tech
+			cat_at_rockets_weapons
+		}
+	}
+	
+	at_rocket_launchers_tech_1 = {
+		research_cost = 2
+		path = {
+			leads_to_tech = at_rocket_launchers_tech_2
+			research_cost_coeff = 1
+		}
+		enable_equipments = {
+			rocket_launcher_equipment_1
+		}
+		
+		
+		folder = {
+			name = infantry_folder
+			position = { x = 12 y = @1042 }
+		}
+		start_year = 1042
+		
+		categories = {
+			cat_infantry_weapons
+			infantry_tech
+			cat_at_rockets_weapons
+		}
+	}
+	
+	at_rocket_launchers_tech_2 = {
+		research_cost = 2
+
+		enable_equipments = {
+			rocket_launcher_equipment_2
+		}
+		
+		
+		folder = {
+			name = infantry_folder
+			position = { x = 12 y = @1051 }
+		}
+		start_year = 1051
+		
+		categories = {
+			cat_infantry_weapons
+			infantry_tech
+			cat_at_rockets_weapons
+		}
+	}
+	
+	atgm_launcher_tech_0 = {
+		research_cost = 2
+		path = {
+			leads_to_tech = atgm_launcher_tech_1
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			anti_tank_launcher_equipment_0
+		}
+		
+		enable_subunits = {
+			atgm_support_unit
+		}
+		
+		enable_equipment_modules = {
+			ifv_atgm_0
+			turret_atgm_0
+			mbt_atgm_shells_0
+		}	
+		
+		folder = {
+			name = infantry_folder
+			position = { x = 14 y = @1039 }
+		}
+		start_year = 1039
+		
+		categories = {
+			cat_infantry_weapons
+			infantry_tech
+			cat_atgm_weapons
+		}
+	}
+	
+	atgm_launcher_tech_1 = {
+		research_cost = 2
+		path = {
+			leads_to_tech = atgm_launcher_tech_2
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			anti_tank_launcher_equipment_1
+		}
+		
+		folder = {
+			name = infantry_folder
+			position = { x = 14 y = @1048 }
+		}
+		start_year = 1048
+		
+		categories = {
+			cat_infantry_weapons
+			infantry_tech
+			cat_atgm_weapons
+		}
+	}
+	
+	atgm_launcher_tech_2 = {
+		research_cost = 2
+		
+		enable_equipments = {
+			anti_tank_launcher_equipment_2
+		}
+		
+		enable_equipment_modules = {
+			ifv_atgm_1
+			turret_atgm_1
+			mbt_atgm_shells_1
+		}	
+		
+		folder = {
+			name = infantry_folder
+			position = { x = 14 y = @1054 }
+		}
+		start_year = 1054
+		
+		categories = {
+			cat_infantry_weapons
+			infantry_tech
+			cat_atgm_weapons
+		}
+	}
+	
+	infantry_uniforms_tech_0 = {
+		research_cost = 2
+		path = {
+			leads_to_tech = infantry_uniforms_tech_1
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = infantry_folder
+			position = { x = 16 y = @1025 }
+		}
+		
+		start_year = 1025
+		
+		categories = {
+			cat_infantry_weapons
+			infantry_tech
+			cat_uniforms
+		}
+	}
+	
+	infantry_uniforms_tech_1 = {
+		research_cost = 2
+		path = {
+			leads_to_tech = infantry_uniforms_tech_2
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = infantry_folder
+			position = { x = 16 y = @1039 }
+		}
+		
+		start_year = 1040
+		
+		categories = {
+			cat_infantry_weapons
+			infantry_tech
+			cat_uniforms
+		}
+	}
+	
+	infantry_uniforms_tech_2 = {
+		research_cost = 2
+		path = {
+			leads_to_tech = infantry_uniforms_tech_3
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = infantry_folder
+			position = { x = 16 y = @1042 }
+		}
+		
+		start_year = 1042
+		
+		categories = {
+			cat_infantry_weapons
+			infantry_tech
+			cat_uniforms
+		}
+	}
+	
+	infantry_uniforms_tech_3 = {
+		research_cost = 2
+		path = {
+			leads_to_tech = infantry_uniforms_tech_4
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = infantry_folder
+			position = { x = 16 y = @1048 }
+		}
+		
+		start_year = 1048
+		
+		categories = {
+			cat_infantry_weapons
+			infantry_tech
+			cat_uniforms
+		}
+	}
+	
+	infantry_uniforms_tech_4 = {
+		research_cost = 2
+		folder = {
+			name = infantry_folder
+			position = { x = 16 y = @1054 }
+		}
+		
+		start_year = 1054
+		
+		categories = {
+			cat_infantry_weapons
+			infantry_tech
+			cat_infantry_armor
+		}
+	}
+	
+	
+	infantry_armor_tech_0 = {
+		research_cost = 2
+		path = {
+			leads_to_tech = infantry_armor_tech_1
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = infantry_folder
+			position = { x = 18 y = @1025 }
+		}
+		
+		start_year = 1025
+		
+		categories = {
+			cat_infantry_weapons
+			infantry_tech
+			cat_infantry_armor
+		}
+	}
+	
+	infantry_armor_tech_1 = {
+		research_cost = 2
+		path = {
+			leads_to_tech = infantry_armor_tech_2
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = infantry_folder
+			position = { x = 18 y = @1039 }
+		}
+		
+		start_year = 1040
+		
+		categories = {
+			cat_infantry_weapons
+			infantry_tech
+			cat_infantry_armor
+		}
+	}
+	
+	infantry_armor_tech_2 = {
+		research_cost = 2
+		path = {
+			leads_to_tech = infantry_armor_tech_3
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = infantry_folder
+			position = { x = 18 y = @1042 }
+		}
+		
+		start_year = 1042
+		
+		categories = {
+			cat_infantry_weapons
+			infantry_tech
+			cat_infantry_armor
+		}
+	}
+	
+	infantry_armor_tech_3 = {
+		research_cost = 2
+		path = {
+			leads_to_tech = infantry_armor_tech_4
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = infantry_folder
+			position = { x = 18 y = @1048 }
+		}
+		
+		start_year = 1048
+		
+		categories = {
+			cat_infantry_weapons
+			infantry_tech
+			cat_infantry_armor
+		}
+	}
+	
+	infantry_armor_tech_4 = {
+		research_cost = 2
+		folder = {
+			name = infantry_folder
+			position = { x = 18 y = @1054 }
+		}
+		
+		start_year = 1054
+		
+		categories = {
+			cat_infantry_weapons
+			infantry_tech
+			cat_uniforms
+		}
+	}
+	
+}

@@ -1,0 +1,104 @@
+spriteTypes = {
+	
+	spriteType = {
+		name = "GFX_sevents_bg"
+		texturefile = "gfx/interface/sevents/ctm_sevent_bg.dds"
+	}
+	spriteType = {
+		name = "GFX_sevents_overlay"
+		texturefile = "gfx/interface/sevents/ctm_sevent_overlay.dds"
+	}
+	spriteType = {
+		name = "GFX_sevents_next_slide"
+		texturefile = "gfx/interface/sevents/ctm_sevents_pageplus.dds"
+	}
+	spriteType = {
+		name = "GFX_sevents_prev_slide"
+		texturefile = "gfx/interface/sevents/ctm_sevents_pageminus.dds"
+	}
+	spriteType = {
+		name = "GFX_sevents_close"
+		texturefile = "gfx/interface/sevents/nuclear_state_close_btn.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_sevent_riverwar_p1"
+		texturefile = "gfx/interface/sevents/sevent_river_war/pic_1.dds"
+	}
+	spriteType = {
+		name = "GFX_sevent_riverwar_p2"
+		texturefile = "gfx/interface/sevents/sevent_river_war/pic_2.dds"
+	}
+	spriteType = {
+		name = "GFX_sevent_riverwar_p3"
+		texturefile = "gfx/interface/sevents/sevent_river_war/pic_3.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_sevent_death_of_harmony_p1"
+		texturefile = "gfx/interface/sevents/sevent_river_war/sevent_doh_1.dds"
+	}
+	spriteType = {
+		name = "GFX_sevent_death_of_harmony_p2"
+		texturefile = "gfx/interface/sevents/sevent_river_war/sevent_doh_2.dds"
+	}
+	spriteType = {
+		name = "GFX_sevent_death_of_harmony_p3"
+		texturefile = "gfx/interface/sevents/sevent_river_war/sevent_doh_3.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_sevent_second_gw_p1"
+		texturefile = "gfx/interface/sevents/sevent_river_war/sevent_pic_sgw_1.dds"
+	}
+	spriteType = {
+		name = "GFX_sevent_second_gw_p2"
+		texturefile = "gfx/interface/sevents/sevent_river_war/sevent_pic_sgw_2.dds"
+	}
+	spriteType = {
+		name = "GFX_sevent_second_gw_p3"
+		texturefile = "gfx/interface/sevents/sevent_river_war/sevent_pic_sgw_3.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_sevent_vraks_unification_p1"
+		texturefile = "gfx/interface/sevents/sevent_river_war/sevent_unif_1.dds"
+	}
+	spriteType = {
+		name = "GFX_sevent_vraks_unification_p2"
+		texturefile = "gfx/interface/sevents/sevent_river_war/sevent_unif_2.dds"
+	}
+	spriteType = {
+		name = "GFX_sevent_vraks_unification_p3"
+		texturefile = "gfx/interface/sevents/sevent_river_war/sevent_unif_3.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_sevent_the_last_war_p1"
+		texturefile = "gfx/interface/sevents/sevent_river_war/sevent_lastwar_1.dds"
+	}
+	spriteType = {
+		name = "GFX_sevent_the_last_war_p2"
+		texturefile = "gfx/interface/sevents/sevent_river_war/sevent_lastwar_2.dds"
+	}
+	spriteType = {
+		name = "GFX_sevent_the_last_war_p3"
+		texturefile = "gfx/interface/sevents/sevent_river_war/sevent_lastwar_3.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_sevent_rise_of_evil_p1"
+		texturefile = "gfx/interface/sevents/sevent_river_war/sevent_rise_1.dds"
+	}
+	spriteType = {
+		name = "GFX_sevent_rise_of_evil_p2"
+		texturefile = "gfx/interface/sevents/sevent_river_war/sevent_rise_2.dds"
+	}
+	spriteType = {
+		name = "GFX_sevent_rise_of_evil_p3"
+		texturefile = "gfx/interface/sevents/sevent_river_war/sevent_rise_3.dds"
+	}
+	
+	
+	
+}

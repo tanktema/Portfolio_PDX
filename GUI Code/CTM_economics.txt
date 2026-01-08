@@ -1,0 +1,351 @@
+scripted_gui = {
+	economics_overview_sgui = {
+		
+		context_type = player_context
+		parent_window_token = trade_tab
+		window_name = "economics_overview_window"
+		
+		visible = { check_variable = { eco_window_ptr = 1 } }
+		
+		dynamic_lists = {
+			economics_taxes_grid = {
+				array = global.scrollbar_pieces_array  
+				entry_container = scrollbar_taxes_entry				
+			}
+			economics_army_grid = {
+				array = global.scrollbar_pieces_array  
+				entry_container = scrollbar_army_entry				
+			}
+			economics_air_grid = {
+				array = global.scrollbar_pieces_array  
+				entry_container = scrollbar_air_entry				
+			}
+			economics_navy_grid = {
+				array = global.scrollbar_pieces_array  
+				entry_container = scrollbar_navy_entry				
+			}
+			economics_social_grid = {
+				array = global.scrollbar_pieces_array  
+				entry_container = scrollbar_social_entry				
+			}
+			economics_admin_grid = {
+				array = global.scrollbar_pieces_array  
+				entry_container = scrollbar_admin_entry				
+			}
+			economics_science_grid = {
+				array = global.scrollbar_pieces_array  
+				entry_container = scrollbar_science_entry				
+			}
+			economics_debt_grid = {
+				array = global.scrollbar_pieces_array  
+				entry_container = scrollbar_debt_entry				
+			}
+			economics_wmd_grid = {
+				array = global.scrollbar_pieces_array  
+				entry_container = scrollbar_wmd_entry				
+			}
+			economics_total_budget_grid = {
+				array = global.scrollbar_pieces_array  
+				entry_container = scrollbar_total_budget_entry				
+			}
+		}
+		properties = {
+			
+			 
+			economics_taxes_pointer = {
+				x = taxes_marker_pos_x
+			}
+			economics_army_pointer = {
+				x = army_marker_pos_x
+			}
+			economics_air_pointer = {
+				x = air_marker_pos_x
+			}
+			economics_navy_pointer = {
+				x = navy_marker_pos_x
+			}
+			economics_social_pointer = {
+				x = social_marker_pos_x
+			}
+			economics_admin_pointer = {
+				x = admin_marker_pos_x 
+			}
+			economics_science_pointer = {
+				x = science_marker_pos_x
+			}
+			economics_debt_pointer = {
+				x = debt_marker_pos_x
+			}
+			economics_wmd_pointer = {
+				x = wmd_marker_pos_x
+			}
+			economics_budget_pointer_icon = {
+				x = income_marker_pos_x
+			}
+		}
+		effects = {
+			eco_switch_ecoover_click = {
+				set_variable = { eco_window_ptr = 1 }
+			}
+			eco_switch_trade_click = {
+				set_variable = { eco_window_ptr = 2 }
+				CTM_calculate_resources_produced = yes
+			}
+			eco_switch_overview_click = {
+				CTM_eco_calculate_building = yes 
+				set_variable = { eco_window_ptr = 0 }
+			}
+			
+			scb_taxes_btn_click = {
+				CTM_change_taxes_axis = yes 
+			}
+			economics_taxes_minus_btn_click = {
+				CTM_minus_axis_tax = yes 
+			}
+			economics_taxes_plus_btn_click = {
+				CTM_plus_axis_tax = yes 
+			}
+			
+			scb_army_btn_click = {
+				CTM_change_army_axis = yes 
+			}
+			economics_army_minus_btn_click = {
+				CTM_minus_axis_army = yes 
+			}
+			economics_army_plus_btn_click = {
+				CTM_plus_axis_army = yes 
+			}
+			
+			scb_air_btn_click = {
+				CTM_change_air_axis = yes 
+			}
+			economics_air_minus_btn_click = {
+				CTM_minus_axis_air = yes 
+			}
+			economics_air_plus_btn_click = {
+				CTM_plus_axis_air = yes 
+			}
+			
+			scb_navy_btn_click = {
+				CTM_change_navy_axis = yes  
+			}
+			economics_navy_minus_btn_click = {
+				CTM_minus_axis_navy = yes 
+			}
+			economics_navy_plus_btn_click = {
+				CTM_plus_axis_navy = yes 
+			}
+			
+			scb_social_btn_click = {
+				CTM_change_social_axis = yes 
+			}
+			economics_social_minus_btn_click = {
+				CTM_minus_axis_social = yes 
+			}
+			economics_social_plus_btn_click = {
+				CTM_plus_axis_social = yes 
+			}
+			
+			scb_admin_btn_click = {
+				CTM_change_admin_axis = yes 
+			}
+			economics_admin_minus_btn_click = {
+				CTM_minus_axis_admin = yes 
+			}
+			economics_admin_plus_btn_click = {
+				CTM_plus_axis_admin = yes 
+			}
+			
+			scb_science_btn_click = {
+				CTM_change_science_axis = yes 
+			}
+			economics_science_minus_btn_click = {
+				CTM_minus_axis_science = yes 
+			}
+			economics_science_plus_btn_click = {
+				CTM_plus_axis_science = yes 
+			}
+			
+			scb_debt_btn_click = {
+				CTM_change_debt_axis = yes 
+			}
+			economics_debt_minus_btn_click = {
+				CTM_minus_axis_debt = yes 
+			}
+			economics_debt_plus_btn_click = {
+				CTM_plus_axis_debt = yes 
+			}
+			
+			scb_wmd_btn_click = {
+				CTM_change_wmd_axis = yes 
+			}
+			economics_wmd_minus_btn_click = {
+				CTM_minus_axis_wmd = yes 
+			}
+			economics_wmd_plus_btn_click = {
+				CTM_plus_axis_wmd = yes 
+			}
+		}
+	}
+	
+	economics_trading_sgui = {
+		context_type = player_context
+		parent_window_token = trade_tab
+		window_name = "economics_resource_trading_overview"
+		
+		visible = { check_variable = { eco_window_ptr = 2 } }
+		
+		dynamic_lists = {
+			economics_resources_list_grid = {
+				array = global.resource_array
+				entry_container = economics_resources_list_entry
+				index = res_i
+				value = res_v
+			}
+			economics_contracts_gridbox = {
+				array = resource_contracts_array
+				entry_container = economics_contract_entry
+				index = cnt_i
+				value = cnt_v
+			}
+		}
+		triggers = {
+		
+			contract_owner_name_visible = {
+				set_temp_variable = {
+					state = cnt_v
+				}
+				var:state = {
+					meta_trigger = {
+						text = {
+							set_temp_variable = {
+								tvo = contract_by_[C]^3
+							}
+							set_temp_variable = {
+								tvt = contract_by_[C]^4
+							}
+							set_temp_variable = {
+								amt = contract_by_[C]^1
+							}
+							set_temp_variable = {
+								prc = contract_by_[C]^2
+							}
+							set_temp_variable = {
+								icnptr = contract_by_[C]^0
+							}
+							set_temp_variable = {
+								impexpptr = contract_by_[C]^5
+							}
+						}
+						C = "[ROOT.GetTag]"
+					}
+				}
+			}
+		}
+		
+		effects = {
+			
+			eco_switch_ecoover_click = {
+				set_variable = { eco_window_ptr = 1 } 
+			}
+			eco_switch_trade_click = {
+				set_variable = { eco_window_ptr = 2 }
+				CTM_calculate_resources_produced = yes
+			}
+			eco_switch_overview_click = {
+				CTM_eco_calculate_building = yes 
+				set_variable = { eco_window_ptr = 0 }
+			}
+			
+			contract_cancel_btn_click = {
+				CTM_remove_trading_contract = yes 
+			}
+		}
+		
+		properties = {
+			resources_icon = {
+				frame = res_v
+			}
+			contract_resource_icon = {
+				frame = icnptr
+			} 
+		}
+	}
+	
+	
+	CTM_eco_states_overview = {
+		
+		context_type = player_context
+		parent_window_token = trade_tab
+		window_name = "economics_state_stats_window"
+		
+		visible = { check_variable = { eco_window_ptr = 0 } }
+		
+		dynamic_lists = {
+			economics_buildings_list_grid = {
+				array = global.buildings_array
+				entry_container = CTM_eco_buildlist_entry
+				value = build_v
+				index = build_i
+			}
+			
+			economics_states_gridbox = {
+				array = ROOT.owned_controlled_states
+				entry_container = CTM_eco_state_overview_entry
+				value = state_v
+				index = state_i
+			}
+		}
+		
+		effects = {	
+			eco_switch_ecoover_click = {
+				set_variable = { eco_window_ptr = 1 } 
+			}
+			eco_switch_trade_click = {
+				set_variable = { eco_window_ptr = 2 }
+				CTM_calculate_resources_produced = yes
+			}
+			eco_switch_overview_click = {
+				CTM_eco_calculate_building = yes 
+				set_variable = { eco_window_ptr = 0 }
+			}
+		}
+		
+		properties = {
+			CTM_eco_building_icon = {
+				frame = build_v
+			}
+		}
+	}
+	CTM_eco_resource_trade_gui = {
+		
+		context_type = diplomatic_action
+		window_name = "CTM_eco_trade_popup_window"
+		
+		dynamic_lists = {
+			CTM_eco_trade_resources_grid = {
+				array = global.resource_array
+				value = res_t_v
+				index = res_t_i 
+				entry_container = CTM_eco_trade_res_entry
+			}
+		}
+		
+		effects {
+			cetr_res_plus_click = {
+				add_to_variable = { ROOT.trading_res_array^res_t_i = 1 }
+				check_available_resource = yes 
+			}
+			cetr_res_minus_click = {
+				add_to_variable = { ROOT.trading_res_array^res_t_i = -1 }
+				check_available_resource = yes 
+			}
+		}
+		
+		properties = {
+			cetr_icon = {
+				frame = res_t_v
+			}
+		}
+	}
+}

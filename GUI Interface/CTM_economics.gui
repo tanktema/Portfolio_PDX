@@ -1,0 +1,1207 @@
+guiTypes = {
+	
+	containerWindowType = {
+		name = "economics_overview_window"
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 300 
+		position = { x = 6 y = 25 }
+		size = { width = 610 height = 100%% }   
+		moveable = no 
+		orientation = upper_left  
+		clipping = no 
+		
+		iconType = {
+			name = "economics_bg"  
+			quadTextureSprite = "GFX_tiled_bg"
+		}
+		
+		containerWindowType = {
+			name = "economics_overview_window_scroll_container"  
+			position = { x = 0 y = 0 }  
+			size = { width = 580 height = 100%% }
+			Orientation = upper_left   
+			scroll_wheel_factor = 40
+			smooth_scrolling = yes 
+			verticalScrollbar = "right_vertical_slider" 
+		 
+			background = {
+				name = "economics_background"  
+				quadTextureSprite = "GFX_ECO_eco_overview_bg"
+			}
+			
+			instantTextBoxType = {
+				name ="economics_income_pointer"
+				position = { x = -6 y = 105 }
+				font = "hoi_clockfont"
+				text = "eco_income"
+				format = center
+				maxWidth = 220
+				maxHeight = 110
+				pdx_tooltip = economics_income_pointer_tt
+			}
+			instantTextBoxType = {
+				name ="economics_budget_pointer"
+				position = { x = 180 y = 105 }
+				font = "hoi_clockfont"
+				text = "eco_budget"
+				format = center
+				maxWidth = 220
+				maxHeight = 110 
+				pdx_tooltip = economics_budget_pointer_tt
+			}
+			instantTextBoxType = {
+				name ="economics_expenses_pointer"
+				position = { x = 370 y = 105 }
+				font = "hoi_clockfont"
+				text = "eco_expenses"
+				format = center
+				maxWidth = 220
+				maxHeight = 110
+				pdx_tooltip = economics_expenses_pointer_tt
+			}
+			
+			instantTextBoxType = {
+				name = "economics_tax_income_pointer"
+				position = { x = 17	 y = 146 }
+				font = "hoi_clockfont"
+				text = "income_tax"
+				format = left
+				maxWidth = 275
+				maxHeight = 110
+				pdx_tooltip = economics_tax_income_pointer_tt
+			}
+			instantTextBoxType = {
+				name = "economics_factories_income_pointer"
+				position = { x = 17	 y = 173 }
+				font = "hoi_clockfont"
+				text = "income_fact"
+				format = left
+				maxWidth = 275
+				maxHeight = 110
+				pdx_tooltip = economics_factories_income_pointer_tt
+			}
+			instantTextBoxType = {
+				name = "economics_export_income_pointer"
+				position = { x = 17	 y = 200 }
+				font = "hoi_clockfont"
+				text = "income_export"
+				format = left
+				maxWidth = 275
+				maxHeight = 110
+				pdx_tooltip = economics_export_income_pointer_tt
+			}
+			instantTextBoxType = {
+				name = "economics_army_expenses_pointer"
+				position = { x = 17	 y = 227 }
+				font = "hoi_clockfont"
+				text = "expenses_army"
+				format = left
+				maxWidth = 275
+				maxHeight = 110
+				pdx_tooltip = economics_army_expenses_pointer_tt
+			}
+			instantTextBoxType = {
+				name = "economics_air_expenses_pointer"
+				position = { x = 17	 y = 254 }
+				font = "hoi_clockfont"
+				text = "expenses_air"
+				format = left
+				maxWidth = 275
+				maxHeight = 110
+				pdx_tooltip = economics_air_expenses_pointer_tt
+			}
+			instantTextBoxType = {
+				name = "economics_navy_expenses_pointer"
+				position = { x = 17	 y = 281 }
+				font = "hoi_clockfont"
+				text = "expenses_fleet"
+				format = left
+				maxWidth = 275
+				maxHeight = 110
+				pdx_tooltip = economics_navy_expenses_pointer_tt
+			}
+			instantTextBoxType = {
+				name = "economics_social_expenses_pointer"
+				position = { x = 17	 y = 308 }
+				font = "hoi_clockfont"
+				text = "expenses_soc"
+				format = left
+				maxWidth = 275
+				maxHeight = 110
+				pdx_tooltip = economics_social_expenses_pointer_tt
+			}
+			instantTextBoxType = {
+				name = "economics_admin_expenses_pointer"
+				position = { x = 297 y = 146 }
+				font = "hoi_clockfont"
+				text = "expenses_admin"
+				format = left
+				maxWidth = 275
+				maxHeight = 110
+				pdx_tooltip = economics_admin_expenses_pointer_tt
+			}
+			instantTextBoxType = {
+				name = "economics_research_expenses_pointer"
+				position = { x = 297 y = 173 }
+				font = "hoi_clockfont"
+				text = "expenses_res"
+				format = left
+				maxWidth = 275
+				maxHeight = 110
+				pdx_tooltip = economics_research_expenses_pointer_tt
+			}
+			instantTextBoxType = {
+				name = "economics_import_expenses_pointer"
+				position = { x = 297 y = 200 }
+				font = "hoi_clockfont"
+				text = "expenses_import"
+				format = left
+				maxWidth = 275
+				maxHeight = 110
+				pdx_tooltip = economics_import_expenses_pointer_tt
+			}
+			instantTextBoxType = {
+				name = "economics_ecology_expenses_pointer"
+				position = { x = 297 y = 227 }
+				font = "hoi_clockfont"
+				text = "expenses_ecology"
+				format = left
+				maxWidth = 275
+				maxHeight = 110
+				pdx_tooltip = economics_ecology_expenses_pointer_tt
+			}
+			instantTextBoxType = {
+				name = "economics_other_incomes_pointer"
+				position = { x = 297 y = 254 }
+				font = "hoi_clockfont"
+				text = "incomes_other"
+				format = left
+				maxWidth = 275
+				maxHeight = 110
+				pdx_tooltip = economics_other_incomes_pointer_tt
+			}
+			instantTextBoxType = {
+				name = "economics_national_debt_ptr"
+				position = { x = 297 y = 281 }
+				font = "hoi_clockfont"
+				text = "nat_debt_pointer"
+				format = left
+				maxWidth = 275
+				maxHeight = 110
+				pdx_tooltip = economics_national_debt_ptr_tt
+			}
+			instantTextBoxType = {
+				name = "economics_wmd_expenses_ptr"
+				position = { x = 297 y = 308 }
+				font = "hoi_clockfont"
+				text = "expenses_wmd"
+				format = left
+				maxWidth = 275
+				maxHeight = 110
+				pdx_tooltip = economics_wmd_expenses_ptr_tt
+			}
+			
+			### Scrollbars
+			
+			instantTextBoxType = {
+				name = "economics_taxes_value"
+				position = { x = 15 y = 347 }
+				font = "standard_18"
+				text = "tax_value"
+				format = left
+				maxWidth = 300
+				maxHeight = 110
+				pdx_tooltip = economics_wmd_expenses_ptr_tt
+			}
+			gridBoxType = {
+				name = "economics_taxes_grid"
+				position = { x = -55 y = 353 } 
+				size = { width = 404 height = 4 } 
+				slotsize = { width = 4 height = 4 }  
+				max_slots_vertical = 1  				
+				add_horizontal = yes
+			}
+			buttonType = {
+				name = "economics_taxes_minus_btn"
+				position = { x = 128 y = 347 }
+				quadTextureSprite = "GFX_ECO_progressbar_minus"   
+				pdx_tooltip = economics_taxes_minus_tt
+			}
+			buttonType = {
+				name = "economics_taxes_plus_btn"
+				position = { x = 550 y = 347 }
+				quadTextureSprite = "GFX_ECO_progressbar_plus"   
+				pdx_tooltip = economics_taxes_plus_tt
+			}
+			iconType = {
+				name = "economics_taxes_pointer"
+				position = { x = 145 y = 347 }
+				quadTextureSprite = "GFX_ECO_progressbar_marker"
+			}
+			 
+			instantTextBoxType = {
+				name = "economics_army_value"
+				position = { x = 15 y = 375 }
+				font = "standard_18"
+				text = "army_value"
+				format = left
+				maxWidth = 300
+				maxHeight = 110
+				pdx_tooltip = economics_wmd_expenses_ptr_tt
+			}
+			gridBoxType = {
+				name = "economics_army_grid"
+				position = { x = -53 y = 380 } 
+				size = { width = 404 height = 4 } 
+				slotsize = { width = 4 height = 4 }  
+				max_slots_vertical = 1  				
+				add_horizontal = yes
+			}
+			buttonType = {
+				name = "economics_army_minus_btn"
+				position = { x = 128 y = 375 }
+				quadTextureSprite = "GFX_ECO_progressbar_minus"   
+				pdx_tooltip = economics_taxes_minus_tt
+			}
+			buttonType = {
+				name = "economics_army_plus_btn"
+				position = { x = 550 y = 375 }
+				quadTextureSprite = "GFX_ECO_progressbar_plus"   
+				pdx_tooltip = economics_taxes_plus_tt
+			}
+			iconType = {
+				name = "economics_army_pointer"
+				position = { x = 145 y = 375 }
+				quadTextureSprite = "GFX_ECO_progressbar_marker"
+			}
+			
+			instantTextBoxType = {
+				name = "economics_air_value"
+				position = { x = 15 y = 402 }
+				font = "standard_18"
+				text = "air_value"
+				format = left
+				maxWidth = 300
+				maxHeight = 110
+				pdx_tooltip = economics_wmd_expenses_ptr_tt
+			}
+			gridBoxType = {
+				name = "economics_air_grid"
+				position = { x = -53 y = 408 } 
+				size = { width = 404 height = 4 } 
+				slotsize = { width = 4 height = 4 }  
+				max_slots_vertical = 1  				
+				add_horizontal = yes
+			}
+			buttonType = {
+				name = "economics_air_minus_btn"
+				position = { x = 128 y = 402 }
+				quadTextureSprite = "GFX_ECO_progressbar_minus"   
+				pdx_tooltip = economics_taxes_minus_tt
+			}
+			buttonType = {
+				name = "economics_air_plus_btn"
+				position = { x = 550 y = 402 }
+				quadTextureSprite = "GFX_ECO_progressbar_plus"   
+				pdx_tooltip = economics_taxes_plus_tt
+			}
+			iconType = {
+				name = "economics_air_pointer"
+				position = { x = 145 y = 402 }
+				quadTextureSprite = "GFX_ECO_progressbar_marker"
+			}
+			
+			instantTextBoxType = {
+				name = "economics_navy_value"
+				position = { x = 15 y = 430 }
+				font = "standard_18"
+				text = "naval_value"
+				format = left
+				maxWidth = 300
+				maxHeight = 110
+				pdx_tooltip = economics_wmd_expenses_ptr_tt
+			}
+			gridBoxType = {
+				name = "economics_navy_grid"
+				position = { x = -53 y = 436 } 
+				size = { width = 404 height = 4 } 
+				slotsize = { width = 4 height = 4 }  
+				max_slots_vertical = 1  				
+				add_horizontal = yes
+			}
+			buttonType = {
+				name = "economics_navy_minus_btn"
+				position = { x = 128 y = 430 }
+				quadTextureSprite = "GFX_ECO_progressbar_minus"   
+				pdx_tooltip = economics_taxes_minus_tt
+			} 
+			buttonType = {
+				name = "economics_navy_plus_btn" 
+				position = { x = 550 y = 430 }
+				quadTextureSprite = "GFX_ECO_progressbar_plus"   
+				pdx_tooltip = economics_taxes_plus_tt
+			}  
+			iconType = {
+				name = "economics_navy_pointer"
+				position = { x = 145 y = 430 }
+				quadTextureSprite = "GFX_ECO_progressbar_marker"
+			}
+			
+			instantTextBoxType = {
+				name = "economics_social_value"
+				position = { x = 15 y = 458 }
+				font = "standard_18"
+				text = "social_value"
+				format = left
+				maxWidth = 300
+				maxHeight = 110
+				pdx_tooltip = economics_wmd_expenses_ptr_tt
+			}
+			gridBoxType = {
+				name = "economics_social_grid"
+				position = { x = -53 y = 464 } 
+				size = { width = 404 height = 4 } 
+				slotsize = { width = 4 height = 4 }  
+				max_slots_vertical = 1  				
+				add_horizontal = yes
+			}
+			buttonType = {
+				name = "economics_social_minus_btn"
+				position = { x = 128 y = 458 }
+				quadTextureSprite = "GFX_ECO_progressbar_minus"   
+				pdx_tooltip = economics_taxes_minus_tt
+			}
+			buttonType = {
+				name = "economics_social_plus_btn"
+				position = { x = 550 y = 458 }
+				quadTextureSprite = "GFX_ECO_progressbar_plus"   
+				pdx_tooltip = economics_taxes_plus_tt
+			}
+			iconType = {
+				name = "economics_social_pointer"
+				position = { x = 145 y = 458 }
+				quadTextureSprite = "GFX_ECO_progressbar_marker"
+			}
+			
+			instantTextBoxType = {
+				name = "economics_admin_value"
+				position = { x = 15 y = 486 }
+				font = "standard_18"
+				text = "admin_value"
+				format = left
+				maxWidth = 300
+				maxHeight = 110
+				pdx_tooltip = economics_wmd_expenses_ptr_tt
+			}
+			gridBoxType = {
+				name = "economics_admin_grid"
+				position = { x = -53 y = 492 } 
+				size = { width = 404 height = 4 } 
+				slotsize = { width = 4 height = 4 }  
+				max_slots_vertical = 1  				
+				add_horizontal = yes
+			}
+			buttonType = {
+				name = "economics_admin_minus_btn"
+				position = { x = 128 y = 486 }
+				quadTextureSprite = "GFX_ECO_progressbar_minus"   
+				pdx_tooltip = economics_taxes_minus_tt
+			}
+			buttonType = {
+				name = "economics_admin_plus_btn"
+				position = { x = 550 y = 486 }
+				quadTextureSprite = "GFX_ECO_progressbar_plus"   
+				pdx_tooltip = economics_taxes_plus_tt
+			}
+			iconType = {
+				name = "economics_admin_pointer"
+				position = { x = 145 y = 486 }
+				quadTextureSprite = "GFX_ECO_progressbar_marker"
+			}
+			
+			instantTextBoxType = {
+				name = "economics_science_value"
+				position = { x = 15 y = 514 }
+				font = "standard_18"
+				text = "science_value"
+				format = left
+				maxWidth = 300
+				maxHeight = 110
+				pdx_tooltip = economics_wmd_expenses_ptr_tt
+			}
+			gridBoxType = { 
+				name = "economics_science_grid"
+				position = { x = -53 y = 520 } 
+				size = { width = 404 height = 4 } 
+				slotsize = { width = 4 height = 4 }  
+				max_slots_vertical = 1  				
+				add_horizontal = yes
+			}
+			buttonType = {
+				name = "economics_science_minus_btn"
+				position = { x = 128 y = 514 }
+				quadTextureSprite = "GFX_ECO_progressbar_minus"   
+				pdx_tooltip = economics_taxes_minus_tt
+			}
+			buttonType = {
+				name = "economics_science_plus_btn"
+				position = { x = 550 y = 514 }
+				quadTextureSprite = "GFX_ECO_progressbar_plus"   
+				pdx_tooltip = economics_taxes_plus_tt
+			}
+			iconType = {
+				name = "economics_science_pointer"
+				position = { x = 145 y = 514 }
+				quadTextureSprite = "GFX_ECO_progressbar_marker"
+			}
+			
+			instantTextBoxType = {
+				name = "economics_debt_value"
+				position = { x = 15 y = 542 }
+				font = "standard_18"
+				text = "debt_value"
+				format = left
+				maxWidth = 300
+				maxHeight = 110 
+				pdx_tooltip = economics_wmd_expenses_ptr_tt
+			}
+			gridBoxType = { 
+				name = "economics_debt_grid"
+				position = { x = -53 y = 548 } 
+				size = { width = 404 height = 4 } 
+				slotsize = { width = 4 height = 4 }  
+				max_slots_vertical = 1  				
+				add_horizontal = yes
+			}
+			buttonType = {
+				name = "economics_debt_minus_btn"
+				position = { x = 128 y = 542 }
+				quadTextureSprite = "GFX_ECO_progressbar_minus"   
+				pdx_tooltip = economics_taxes_minus_tt
+			}
+			buttonType = {
+				name = "economics_debt_plus_btn"
+				position = { x = 550 y = 542 }
+				quadTextureSprite = "GFX_ECO_progressbar_plus"   
+				pdx_tooltip = economics_taxes_plus_tt
+			}
+			iconType = {
+				name = "economics_debt_pointer"
+				position = { x = 145 y = 542 }
+				quadTextureSprite = "GFX_ECO_progressbar_marker"
+			}
+			
+			instantTextBoxType = {
+				name = "economics_wmd_value"
+				position = { x = 15 y = 570 }
+				font = "standard_18"
+				text = "wmd_value"
+				format = left
+				maxWidth = 300
+				maxHeight = 110
+				pdx_tooltip = economics_wmd_expenses_ptr_tt
+			}
+			gridBoxType = {
+				name = "economics_wmd_grid"
+				position = { x = -53 y = 576 } 
+				size = { width = 404 height = 4 } 
+				slotsize = { width = 4 height = 4 }  
+				max_slots_vertical = 1  				
+				add_horizontal = yes
+			}
+			buttonType = {
+				name = "economics_wmd_minus_btn"
+				position = { x = 128 y = 570 }
+				quadTextureSprite = "GFX_ECO_progressbar_minus"   
+				pdx_tooltip = economics_taxes_minus_tt
+			}
+			buttonType = {
+				name = "economics_wmd_plus_btn"
+				position = { x = 550 y = 570 }
+				quadTextureSprite = "GFX_ECO_progressbar_plus"   
+				pdx_tooltip = economics_taxes_plus_tt
+			}
+			iconType = {
+				name = "economics_wmd_pointer"
+				position = { x = 145 y = 570 }
+				quadTextureSprite = "GFX_ECO_progressbar_marker"
+			}
+			
+			instantTextBoxType = { 
+				name = "economics_total_budget_value"
+				position = { x = 15 y = 598 }
+				font = "standard_18"
+				text = "income_value"
+				format = left
+				maxWidth = 300
+				maxHeight = 110
+				pdx_tooltip = economics_wmd_expenses_ptr_tt
+			}
+			gridBoxType = {
+				name = "economics_total_budget_grid"
+				position = { x = -53 y = 604 } 
+				size = { width = 404 height = 4 } 
+				slotsize = { width = 4 height = 4 }  
+				max_slots_vertical = 1  				
+				add_horizontal = yes
+			}
+			iconType = {
+				name = "economics_budget_pointer_icon"
+				position = { x = 145 y = 598 }
+				quadTextureSprite = "GFX_ECO_progressbar_marker"
+			} 
+			
+			
+		} 
+		
+		instantTextBoxType = {
+			name = "budget_header"
+			position = { x = 150 y = 68 }
+			font = "hoi_clockfont_large"
+			text = "eco_budget_over"
+			format = center
+			maxWidth = 300
+			maxHeight = 110
+			pdx_tooltip = economics_wmd_expenses_ptr_tt
+		}
+		
+		buttonType = {
+			name = "eco_switch_ecoover"
+			position = { x = 7 y = 7 } 
+			quadTextureSprite = "GFX_ECO_eco_switch_button"
+			buttonText = budget_ptr
+			buttonFont = hoi_clockfont_large
+		}
+		buttonType = {
+			name = "eco_switch_trade"
+			position = { x = 196 y = 7 } 
+			quadTextureSprite = "GFX_ECO_eco_switch_button"
+			buttonText = trading_ptr
+			buttonFont = hoi_clockfont_large
+		}
+		buttonType = {
+			name = "eco_switch_overview"
+			position = { x = 385 y = 7 } 
+			quadTextureSprite = "GFX_ECO_eco_switch_button"
+			buttonText = overview_patr
+			buttonFont = hoi_clockfont_large
+		}
+	}
+
+	containerWindowType = {
+		name = "scrollbar_taxes_entry"
+		position = { x = 0 y = 0 }
+		size = { width = 4 height = 4 }
+		buttonType = {
+			name = "scb_taxes_btn"
+			position = { x = 0 y = 0 }
+			quadTextureSprite = "GFX_ECO_progressbar_piece"
+		}
+	}
+	containerWindowType = {
+		name = "scrollbar_army_entry"
+		position = { x = 0 y = 0 }
+		size = { width = 4 height = 4 }
+		buttonType = {
+			name = "scb_army_btn"
+			position = { x = 0 y = 0 }
+			quadTextureSprite = "GFX_ECO_progressbar_piece"
+		}
+	}
+	containerWindowType = {
+		name = "scrollbar_air_entry"
+		position = { x = 0 y = 0 }
+		size = { width = 4 height = 4 }
+		buttonType = {
+			name = "scb_air_btn"
+			position = { x = 0 y = 0 }
+			quadTextureSprite = "GFX_ECO_progressbar_piece"
+		}
+	}
+	containerWindowType = {
+		name = "scrollbar_navy_entry"
+		position = { x = 0 y = 0 }
+		size = { width = 4 height = 4 }
+		buttonType = {
+			name = "scb_navy_btn"
+			position = { x = 0 y = 0 } 
+			quadTextureSprite = "GFX_ECO_progressbar_piece"
+		}
+	}
+	containerWindowType = {
+		name = "scrollbar_social_entry"
+		position = { x = 0 y = 0 }
+		size = { width = 4 height = 4 }
+		buttonType = {
+			name = "scb_social_btn"
+			position = { x = 0 y = 0 }
+			quadTextureSprite = "GFX_ECO_progressbar_piece"
+		}
+	}
+	containerWindowType = {
+		name = "scrollbar_admin_entry"
+		position = { x = 0 y = 0 }
+		size = { width = 4 height = 4 }
+		buttonType = {
+			name = "scb_admin_btn"
+			position = { x = 0 y = 0 }
+			quadTextureSprite = "GFX_ECO_progressbar_piece"
+		}
+	}
+	containerWindowType = {
+		name = "scrollbar_science_entry"
+		position = { x = 0 y = 0 }
+		size = { width = 4 height = 4 }
+		buttonType = {
+			name = "scb_science_btn"
+			position = { x = 0 y = 0 }
+			quadTextureSprite = "GFX_ECO_progressbar_piece"
+		}
+	}
+	containerWindowType = {
+		name = "scrollbar_debt_entry"
+		position = { x = 0 y = 0 }
+		size = { width = 4 height = 4 }
+		buttonType = {
+			name = "scb_debt_btn"
+			position = { x = 0 y = 0 }
+			quadTextureSprite = "GFX_ECO_progressbar_piece"
+		}
+	}
+	containerWindowType = {
+		name = "scrollbar_wmd_entry"
+		position = { x = 0 y = 0 }
+		size = { width = 4 height = 4 }
+		buttonType = {
+			name = "scb_wmd_btn"
+			position = { x = 0 y = 0 }
+			quadTextureSprite = "GFX_ECO_progressbar_piece"
+		}
+	}
+	containerWindowType = {
+		name = "scrollbar_total_budget_entry"
+		position = { x = 0 y = 0 }
+		size = { width = 4 height = 4 }
+		iconType = {
+			name = "scb_budget_btn"
+			position = { x = 0 y = 0 }
+			quadTextureSprite = "GFX_ECO_progressbar_piece"
+		}
+	}
+	
+	containerWindowType = {
+		name = "economics_resource_trading_overview"
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 300 
+		position = { x = 6 y = 25 }
+		size = { width = 610 height = 100%% }  
+		moveable = no 
+		orientation = upper_left  
+		clipping = no 
+		
+		background = {
+			name = "economics_background"  
+			quadTextureSprite = "GFX_ECO_eco_trading_bg"
+		}
+		
+		containerWindowType = {
+			name = "economics_resource_conracts_grid_container"  
+			position = { x = 2 y = 442 }  
+			size = { width = 600 height = 100%% }
+			Orientation = upper_left   
+			scroll_wheel_factor = 40
+			smooth_scrolling = yes 
+			verticalScrollbar = "right_vertical_slider" 
+		 
+			background = {
+				name = "economics_background"  
+				quadTextureSprite = "GFX_ECO_eco_contracts_bg"
+			}
+			
+			gridBoxType = {
+				name = "economics_contracts_gridbox"
+				position = { x = 5 y = 10 } 
+				size = { width = 590 height = 500 } 
+				slotsize = { width = 590 height = 48 }  
+				max_slots_horizontal = 1 	 
+			}
+		}
+		
+		iconType = {
+			name = "economics_resource_conracts_overlay"
+			position = { x = -7 y = 370 } 
+			quadTextureSprite = "GFX_ECO_eco_contracts_header"
+			alwaystransparent = yes 
+		} 
+		
+		gridBoxType = {
+			name = "economics_resources_list_grid"
+			position = { x = -196 y = 70 } 
+			size = { width = 560 height = 400 } 
+			slotsize = { width = 136 height = 100 }  
+			max_slots_horizontal = 4
+		}
+		
+		
+		instantTextBoxType = {
+			name = "contracts_header"
+			position = { x = 150 y = 393 }
+			font = "hoi_clockfont_large"
+			text = res_contr_header
+			format = center
+			maxWidth = 300
+			maxHeight = 110
+			alwaystransparent = yes 
+			pdx_tooltip = economics_wmd_expenses_ptr_tt
+		}
+		
+		buttonType = {
+			name = "eco_switch_ecoover"
+			position = { x = 7 y = 7 } 
+			quadTextureSprite = "GFX_ECO_eco_switch_button"
+			buttonText = budget_ptr
+			buttonFont = hoi_clockfont_large
+		}
+		buttonType = {
+			name = "eco_switch_trade"
+			position = { x = 196 y = 7 } 
+			quadTextureSprite = "GFX_ECO_eco_switch_button"
+			buttonText = trading_ptr
+			buttonFont = hoi_clockfont_large
+		}
+		buttonType = {
+			name = "eco_switch_overview"
+			position = { x = 385 y = 7 } 
+			quadTextureSprite = "GFX_ECO_eco_switch_button"
+			buttonText = overview_patr
+			buttonFont = hoi_clockfont_large
+		}
+	
+		
+	}
+	
+	containerWindowType = {
+		name = "economics_resources_list_entry"
+		position = { x = 0 y = 0 }
+		size = { width = 144 height = 74 }
+		iconType = {
+			name = "resource_selector"
+			position = { x = 0 y = 0 }
+			quadTextureSprite = "GFX_ECO_resource_entry_bg"
+		}
+		 
+		iconType = {
+			name = "resources_icon"
+			position = { x = 10 y = 8 }
+			quadTextureSprite = "GFX_resources_strip"
+			pdx_tooltip = ECO_res_tooltip
+		}
+		
+		instantTextBoxType = {
+			name = "resources_name"
+			position = { x = 40 y = 10 }
+			font = "standard_20"
+			text = "resource_name"
+			format = left
+			fixedsize = yes
+			maxWidth = 90 
+			maxHeight = 20
+			pdx_tooltip = ECO_res_tooltip
+			
+		}
+		 
+		instantTextBoxType = {
+			name = "resources_production"
+			position = { x = 19 y = 45 }
+			font = "hoi_18mbs"
+			text = "resource_prod"
+			format = center
+			maxWidth = 100
+			maxHeight = 110
+			pdx_tooltip = ECO_res_tooltip
+		}
+	}
+	
+	
+	containerWindowType = {
+		name = "economics_contract_entry"
+		position = { x = 0 y = 0 }
+		size = { width = 590 height = 74 }
+		
+		background = {
+			name = "contract_background"  
+			quadTextureSprite = "GFX_ECO_eco_contracts_entry"
+		}
+		
+		iconType = {
+			name = "contract_resource_icon"
+			quadTextureSprite = "GFX_resources_strip"
+			position = { x = 10 y = 8 }
+		}
+		
+		instantTextBoxType = {
+			name = "contract_resource_name"
+			position = { x = 45 y = 10 }
+			font = "hoi_18mbs"
+			text = "contract_resource_name"
+			format = left
+			maxWidth = 110
+			maxHeight = 20
+			fixedsize = yes 
+			#alwaystransparent = yes 
+			pdx_tooltip = economics_wmd_expenses_ptr_tt
+		}
+		 
+		  
+		instantTextBoxType = {
+			name = "contract_owner_name"
+			position = { x = 170 y = 10 }
+			font = "hoi_18mbs" 
+			text = "contract_owner_name"
+			maxWidth = 120
+			maxHeight = 20
+			fixedsize = yes  
+			#alwaystransparent = yes  
+			pdx_tooltip = economics_wmd_expenses_ptr_tt 
+		} 
+		
+		instantTextBoxType = {
+			name = "contract_target_name"
+			position = { x = 320 y = 10 } 
+			font = "hoi_18mbs" 
+			text = "contract_target_name"
+			format = left
+			maxWidth = 120
+			maxHeight = 20
+			fixedsize = yes 
+			#alwaystransparent = yes 
+			pdx_tooltip = economics_wmd_expenses_ptr_tt
+		}
+		 
+		instantTextBoxType = {
+			name = "contract_resource_amount" 
+			position = { x = 460 y = 10 }
+			font = "hoi_18mbs" 
+			text = "contr_amount_res"  
+			format = left
+			maxWidth = 300 
+			maxHeight = 110
+			alwaystransparent = yes  
+			pdx_tooltip = economics_wmd_expenses_ptr_tt  
+		}
+		  
+		instantTextBoxType = { 
+			name = "contract_resource_cost"
+			position = { x = 490 y = 10 }
+			font = "hoi_18mbs"
+			text = "contr_price_res"
+			format = left 
+			maxWidth = 300
+			maxHeight = 110 
+			alwaystransparent = yes
+			pdx_tooltip = economics_wmd_expenses_ptr_tt
+		}
+		
+		instantTextBoxType = {
+			name = "contract_resource_impexpr"
+			position = { x = 290 y = 10 }
+			font = "hoi_18mbs"
+			text = imp_exp_check
+			format = left
+			maxWidth = 300
+			maxHeight = 110 
+			alwaystransparent = yes 
+			#pdx_tooltip = economics_wmd_expenses_ptr_tt
+		}
+		
+		buttonType = {
+			name = "contract_cancel_btn"
+			position = { x = 540 y = 10 }
+			quadTextureSprite = "GFX_ECO_progressbar_plus"
+		}
+		
+		
+	}
+	
+	containerWindowType = {	
+		name = "economics_state_stats_window"
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 300 
+		position = { x = 6 y = 25 }
+		size = { width = 610 height = 100%% }  
+		moveable = no 
+		orientation = upper_left  
+		clipping = no 
+		
+		background = {
+			name = "state_economics_background"  
+			quadTextureSprite = "GFX_ECO_eco_state_overview_bg"
+		}
+		
+		
+		gridBoxType = {
+			name = "economics_buildings_list_grid"
+			position = { x = -250 y = 107 } 
+			size = { width = 580 height = 400 } 
+			slotsize = { width = 70 height = 36 }  
+			max_slots_horizontal = 8
+		}
+		
+		containerWindowType = {
+			name = "economics_states_grid_container"  
+			position = { x = 2 y = 260 }  
+			size = { width = 570 height = 100%% }
+			Orientation = upper_left   
+			scroll_wheel_factor = 40
+			smooth_scrolling = yes 
+			verticalScrollbar = "right_vertical_slider" 
+		 
+			background = {
+				name = "economics_background"  
+				quadTextureSprite = "GFX_ECO_eco_state_list_bg"
+			}
+			
+			gridBoxType = {
+				name = "economics_states_gridbox"
+				position = { x = -148 y = 10 } 
+				size = { width = 580 height = 500 } 
+				slotsize = { width = 275 height = 110 }  
+				max_slots_horizontal = 2	 
+			}
+		}
+		
+		iconType = {
+			name = "economics_resource_statelist_overlay"
+			position = { x = -2 y = 255 } 
+			quadTextureSprite = "GFX_ECO_eco_state_list_overlay"
+			alwaystransparent = yes 
+		} 
+		
+		instantTextBoxType = {
+			name = "overview_header"
+			position = { x = 150 y = 73 }
+			font = "hoi_clockfont_large"
+			text = "eco_total_overview"
+			format = center
+			maxWidth = 300
+			maxHeight = 110
+			pdx_tooltip = economics_wmd_expenses_ptr_tt
+		} 
+		
+		buttonType = {
+			name = "eco_switch_ecoover"
+			position = { x = 7 y = 7 } 
+			quadTextureSprite = "GFX_ECO_eco_switch_button"
+			buttonText = budget_ptr
+			buttonFont = hoi_clockfont_large
+		}
+		buttonType = {
+			name = "eco_switch_trade"
+			position = { x = 196 y = 7 } 
+			quadTextureSprite = "GFX_ECO_eco_switch_button"
+			buttonText = trading_ptr
+			buttonFont = hoi_clockfont_large
+		}
+		buttonType = {
+			name = "eco_switch_overview"
+			position = { x = 385 y = 7 } 
+			quadTextureSprite = "GFX_ECO_eco_switch_button"
+			buttonText = overview_patr
+			buttonFont = hoi_clockfont_large
+		}
+	}
+	
+	containerWindowType = {
+		name = "CTM_eco_trade_popup_window"
+		size = { width = 548 height = 230 }
+		position = { x = 20 y = 10 }
+		
+		background = {
+			name = "Trade_BG"
+			quadTextureSprite = "GFX_ECO_eco_dip_act_trade_bg"
+		}
+		
+		gridBoxType = {
+			name = "CTM_eco_trade_resources_grid"
+			position = { x = -205 y = 10 } 
+			size = { width = 560 height = 400 } 
+			slotsize = { width = 129 height = 70 }  
+			max_slots_horizontal = 4
+		}
+		
+	}
+	
+	containerWindowType = {
+		name = "CTM_eco_buildlist_entry"
+		size = { width = 72 height = 36 }
+		background = {
+			name = "Build_entry"	
+			quadTextureSprite = "GFX_ECO_eco_buildings_bg"
+		}
+		
+		iconType = {
+			name = "CTM_eco_building_icon"
+			position = { x = 5 y = 5 }
+			quadTextureSprite = "GFX_buildings_strip"
+			scale = 0.7
+		}
+		
+		instantTextBoxType = {
+			name = "building_amount"
+			position = { x = 42 y = 15 }
+			font = "hoi_clockfont"
+			text = build_level
+			format = left
+			maxWidth = 300
+			maxHeight = 110
+			alwaystransparent = yes 
+			pdx_tooltip = economics_wmd_expenses_ptr_tt
+		}
+		
+	}
+	
+	containerWindowType = {
+		name = "CTM_eco_state_overview_entry"
+		size = { width = 300 height = 125 }
+		
+		iconType = {
+			name = "state_entry"	
+			quadTextureSprite = "GFX_ECO_eco_state_entry_bg"
+			position = { x = 0 y = 0 }
+			pdx_tooltip = ECO_state_tt
+		}
+		
+		instantTextBoxType = {
+			name = "state_name"
+			position = { x = 2 y = 12 } 
+			font = "hoi_clockfont_large"
+			text = "[?state_v.GetName]"
+			format = center
+			maxWidth = 300
+			maxHeight = 110 
+			alwaystransparent = yes 
+			pdx_tooltip = economics_wmd_expenses_ptr_tt
+		}
+		
+		instantTextBoxType = {
+			name = "state_income"
+			position = { x = -95 y = 42 }
+			font = "hoi_clockfont_large" 
+			text = "[?state_v:modifier@building_income_factor]"
+			format = center
+			maxWidth = 300
+			maxHeight = 110
+			alwaystransparent = yes 
+			pdx_tooltip = economics_wmd_expenses_ptr_tt 
+		}
+		
+		instantTextBoxType = { 
+			name = "state_balance"  
+			position = { x = -9 y = 42 } 
+			font = "hoi_clockfont_large" 
+			text = "[?state_v:buildings_proficit_value?-1]"
+			format = center
+			maxWidth = 300 
+			maxHeight = 110
+			alwaystransparent = yes 
+			pdx_tooltip = economics_wmd_expenses_ptr_tt 
+		}
+		
+		instantTextBoxType = { 
+			name = "state_expenses"
+			position = { x = 76 y = 42 } 
+			font = "hoi_clockfont_large"
+			text = "[?state_v:modifier@building_expenses_factor]"
+			format = center
+			maxWidth = 300 
+			maxHeight = 110
+			alwaystransparent = yes 
+			pdx_tooltip = economics_wmd_expenses_ptr_tt
+		}
+		
+		instantTextBoxType = {
+			name = "state_pop"
+			position = { x = 26 y = 76 }
+			font = "hoi_clockfont_large"
+			text = "[?state_v:state_population_k?-1|0][GetRUENPTR]"
+			format = center
+			maxWidth = 300
+			maxHeight = 110
+			alwaystransparent = yes 
+			pdx_tooltip = economics_wmd_expenses_ptr_tt
+		}
+	}
+	
+	containerWindowType = { 
+		name = "CTM_eco_trade_res_entry"
+		size = { width = 135 height = 77 } 
+		
+		background = {
+			name = "Trade_Entry_BG"
+			quadTextureSprite = "GFX_ECO_eco_dip_act_trade_resource_entry_bg"
+		}
+		
+		iconType = {
+			name = "cetr_icon"
+			quadTextureSprite = "GFX_resources_strip"
+			position = { x = 14 y = 12 }
+		}
+		
+		instantTextBoxType = {
+			name = "cetr_res_name"
+			position = { x = 45 y = 10 }
+			font = "hoi_16mbs"
+			text = "cetr_res_name"
+			format = center
+			maxWidth = 80
+			maxHeight = 40
+			fixedsize = yes 
+			alwaystransparent = yes 
+			pdx_tooltip = economics_wmd_expenses_ptr_tt
+		}
+		
+		instantTextBoxType = {
+			name = "cetr_res_available"
+			position = { x = -13 y = 47 }
+			font = "hoi_16mbs"
+			text = "cetr_res_available"
+			format = center
+			maxWidth = 80
+			maxHeight = 40
+			fixedsize = yes 
+			alwaystransparent = yes 
+			pdx_tooltip = economics_wmd_expenses_ptr_tt
+		}
+		
+		instantTextBoxType = {
+			name = "cetr_res_buy"
+			position = { x = 25 y = 47 }
+			font = "hoi_16mbs"
+			text = "cetr_res_buy"
+			format = center
+			maxWidth = 80
+			maxHeight = 40
+			fixedsize = yes 
+			alwaystransparent = yes 
+			pdx_tooltip = economics_wmd_expenses_ptr_tt
+		}
+		
+		buttonType = {
+			name = "cetr_res_plus"
+			position = { x = 104 y = 43 }
+			quadTextureSprite = "GFX_ECO_contr_plus"
+			scale = 0.92
+		}
+		buttonType = {
+			name = "cetr_res_minus"
+			position = { x = 81 y = 43 }
+			quadTextureSprite = "GFX_ECO_contr_minus"
+			scale = 0.92
+		}
+	
+	}
+}
+	

@@ -1,0 +1,81 @@
+guiTypes = {
+	
+	
+	containerWindowType = {
+		name = "sevent_window_container"
+		position = { x = -400 y = -200 }
+		orientation = CENTER		
+		size = { width = 884 height = 576 }
+		##fullscreen = yes
+		moveable = yes
+		clipping = no
+		
+		background = {
+			name = "Background"	
+			spriteType ="GFX_sevents_bg"
+		}
+		
+		iconType = {
+			name = "sevent_picture"  
+			position = { x = 4 y = 6 }
+			quadTextureSprite = "GFX_sevent_riverwar_p1"
+			pdx_tooltip = "sevent_picture_tt"
+			
+		}
+		
+		instantTextBoxType = {
+			name = "sevents_title"
+			position =  { x = 480 y = 45 }
+			font = "hoi_sevents_fnt" 
+			text = "[GetSuperEventTitle]"
+			maxWidth = 395
+			maxHeight = 999  
+			format = center
+			alwaystransparent = yes
+		} 
+		instantTextBoxType = {
+			name = "sevents_quote"
+			position =  { x = 486 y = 138 }
+			font = "hoi_20b" 
+			text = "[GetSuperEventQuote]"
+			maxWidth = 380
+			maxHeight = 999  
+			format = center
+			alwaystransparent = yes
+		} 
+		instantTextBoxType = {
+			name = "sevents_text"
+			position =  { x = 10 y = 310 }
+			font = "hoi_20b" 
+			text = "[GetSuperEventText]"
+			maxWidth = 865
+			maxHeight = 999  
+			format = left
+			alwaystransparent = yes
+		} 
+		buttonType = {
+			name = "sevents_next_page"
+			quadTextureSprite = "GFX_sevents_next_slide"
+			position = { x = 822 y = 538 }
+			pdx_tooltip = "CTM_sevents_next_page"
+		}
+		buttonType = {
+			name = "sevents_prev_page"
+			quadTextureSprite = "GFX_sevents_prev_slide"
+			position = { x = 6 y = 538 }
+			pdx_tooltip = "CTM_sevents_next_page"
+		}
+		buttonType = {
+			name = "sevents_close"
+			quadTextureSprite = "GFX_sevents_close"
+			position = { x = 2 y = 6 }
+			pdx_tooltip = "CTM_sevents_close"
+		}
+		iconType = {
+			name = "sevent_overlay"
+			position = { x = 0 y = 0 }
+			quadTextureSprite = "GFX_sevents_overlay"
+			alwaystransparent = yes
+		}
+	}
+}
